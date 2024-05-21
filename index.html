@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+            
+    <title>Greedy Ambulance</title>
+    <style>
+        #map {
+            height: 512px;
+            width: 85%;
+            border-radius: 5px;
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: antiquewhite;
+            border-radius: 5px;
+            padding: 0.5rem;
+        }
+
+        .map-container {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            background-color: gray;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <h1>Greedy Ambulance</h1>
+        <div class="control-container">
+            <table>
+                <tr>
+                    <td style="text-align: right;"><label for="latitude">Latitude</label></td>
+                    <td><input type="text" id="latitude" disabled/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="longitude">Longitude</label></td>
+                    <td><input type="text" id="longitude" disabled/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="shouldBigHospital">Big Hospital</label></td>
+                    <td><input type="checkbox" id="shouldBigHospital"></td>
+                </tr>
+            </table>
+            <input type="button" value="reset" onclick="resetLocation()"/>
+            <input type="button" value="copyLatLong" onclick="copyLatLong()"/>
+            <input type="button" value="findHospital" onclick="findHospital()"/>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+</main>
+</body>
+<script>
+    const defaultLatLong = [-7.753881231082619, 110.42189287890972];
+
+    const controlLatitude = document.getElementById('latitude');
+    const controlLongitude = document.getElementById('longitude');
+
+    controlLatitude.value = defaultLatLong[0];
+    controlLongitude.value = defaultLatLong[1];
+    // The map
+    var map = L.map('map').setView([defaultLatLong[0], defaultLatLong[1]], 16);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    setDefaultMarker();
+
+    // On map click
+    map.on('click', function(e) {
+        // remove previous marker
+        map.eachLayer(function (layer) {
+            if (layer instanceof L.Marker) {
+                map.removeLayer(layer);
+            }
+        });
+        // set marker
+        L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
+        controlLatitude.value = e.latlng.lat;
+        controlLongitude.value = e.latlng.lng;
+    });
+
+    function setDefaultMarker() {
+        L.marker([defaultLatLong[0], defaultLatLong[1]], {
+            icon: L.icon({
+                iconUrl: 'https://www.pinclipart.com/picdir/big/79-798120_push-pin-clipart.png',
+                iconSize: [30, 50],
+                iconAnchor: [15, 50],
+                popupAnchor: [0, -50]
+            })
+        }).addTo(map);
+    }
+
+    function resetLocation() {
+        controlLatitude.value = defaultLatLong[0];
+        controlLongitude.value = defaultLatLong[1];
+        map.setView([defaultLatLong[0], defaultLatLong[1]], 16);
+        map.eachLayer(function (layer) {
+            if (layer instanceof L.Marker) {
+                map.removeLayer(layer);
+            }
+        });
+        setDefaultMarker();
+    }
+
+    function copyLatLong() {
+        navigator.clipboard.writeText(`${controlLatitude.value}, ${controlLongitude.value}`);
+    }
+
+    function findHospital() {
+        const startLat = controlLatitude.value;
+        const startLong = controlLongitude.value;
+        const shouldBigHospital = document.getElementById('shouldBigHospital').checked;
+
+        // asynchronous alert
+        setTimeout(() => {
+            alert(`Finding nearest ${shouldBigHospital ? 'big hospital' : 'small hospital'} hospital from [${startLat}, ${startLong}]`);
+        }, 0);
+        // Call greedy method to find nearest hospital
+    }
+</script>
+</html>
