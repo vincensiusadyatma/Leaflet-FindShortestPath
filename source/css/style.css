@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header-container h1 {
+    font-size: 2rem;
+    color: #ff6347;
+    margin-bottom: 1rem;
+}
+
+.control-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.control-container table {
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.control-container td {
+    padding: 0.5rem;
+}
+
+.control-container label {
+    font-weight: bold;
+    color: #555;
+}
+
+.control-container input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.control-container input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.control-container input[type="button"] {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff6347;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.control-container input[type="button"]:hover {
+    background-color: #ff4500;
+}
+
+/* Main Content */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 90%;
+    margin-top: 10px;
+}
+
+#map {
+    height: 512px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .header-container {
+        padding: 0.5rem;
+    }
+
+    .control-container input[type="button"] {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
