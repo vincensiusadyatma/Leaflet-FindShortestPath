@@ -4,39 +4,63 @@ const GraphSearchingAlgorithm = {
 }
 
 class Graph {
-    #vertices
-    
+
+    _vertices;
+    #vertexIdCounmter;
+
+    constructor() {
+        this._vertices = new Map();
+        this.#vertexIdCounmter = 0;
+    }
+
     constructor(initialVertex) {
         if (!(initialVertex instanceof Vertex)) {
             throw new Error('Initial vertex must be an instance of Vertex');
         }
-        this.#vertices = new Map();
+        this._vertices = new Map();
+        this.#vertexIdCounmter = 0;
+        this.addVertex(initialVertex);
     }
 
     // Getters
 
     getVertex(id) {
-        return this.#vertices.get(id);
+        return this._vertices.get(id);
     }
 
+    /**
+     * @returns Map of vertices containing vertices ids as keys and vertices as values.
+     */
     getVertices() {
-        return this.#vertices.values();
+        return this._vertices;
+    }
+
+    getThenIncrementedVertexId() {
+        return this.#vertexIdCounmter++;
+    }
+
+    hasVertexId(id) {
+        return this._vertices.has(id);
     }
 
     // General methods
+
+    createVertex({lat, lon, label = null}) {
+        const newVertex = new Vertex(lat, lon, this, label);
+    }
 
     addVertex(vertex) {
         if (!(vertex instanceof Vertex)) {
             throw new Error('Vertex must be an instance of Vertex');
         }
-        this.#vertices.set(vertex.getId(), vertex);
+        this._vertices.set(vertex.getId(), vertex);
     }
 
-    removeVertex(id) {
-        this.#vertices.delete(id);
+    removeVertexId(id) {
+        this._vertices.delete(id);
 
         // Remove all references to the vertex
-        for (let vertex of this.getVertices()) {
+        for (let vertex of this._vertices.values()) {
             vertex.removeNeighbor(id);
         }
     }
