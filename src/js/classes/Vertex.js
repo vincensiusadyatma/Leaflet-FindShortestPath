@@ -90,5 +90,5 @@ class Vertex {
     }
 }
 
-
+module.exports = Vertex ;
 

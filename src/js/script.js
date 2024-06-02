@@ -22,25 +22,25 @@ class Vertex {
     static #idCounter = 1;      // Counter to generate unique ids
 
     // Single constructor
-    constructor(idOrLat, latOrLon, lonOrLabel = null, label = null) {
-        if (typeof idOrLat === 'number' && typeof latOrLon === 'number' && typeof lonOrLabel === 'number') {
-            // Hospital constructor
-            this.#id = idOrLat;
+    constructor(id, lat, lon = null, label = null) {
+        if (id && typeof lat === 'number' && (lon === null || typeof lon === 'number')) {
+            this.#id = id;
             this.#vertexType = 'HOSPITAL';
-            this.#lat = latOrLon;
-            this.#lon = lonOrLabel;
+            this.#lat = lat;
+            this.#lon = lon;
             this.#label = label;
-        } else if (typeof idOrLat === 'number' && typeof latOrLon === 'number') {
-            // Intersection constructor
-            this.#id = Vertex.idCounter++;
+        } else if (id === undefined && typeof lat === 'number') {
+            this.#id = Vertex.#idCounter++;
             this.#vertexType = 'INTERSECTION';
-            this.#lat = idOrLat;
-            this.#lon = latOrLon;
-            this.#label = lonOrLabel;
+            this.#lat = lat;
+            this.#lon = lon;
+            this.#label = label;
         } else {
             throw new Error('Invalid constructor arguments');
         }
     }
+    
+    
     
     getId() {
         return this.#id;
@@ -286,9 +286,11 @@ hospital_data.forEach(function(hospital) {
 });
 // make hospital data to vertex class
 const hospital_vertices = [];
+let hospital_id = 1;
 for (const data of hospital_data) {
-    const vertex = new Vertex(data.latitude, data.longitude, data.nama, Vertex.idCounter);
+    const vertex = new Vertex(hospital_id,data.latitude, data.longitude, data.nama, Vertex.idCounter);
     hospital_vertices.push(vertex);
+    hospital_id++;
 }
 
 var intersections_data = [
@@ -602,7 +604,7 @@ intersections_data.forEach(function(intersection) {
 // make hospital data to intersection class
 const intersection_vertices = [];
 for (const data of intersections_data) {
-    const vertex = new Vertex(data.latitude, data.longitude, data.nama, Vertex.idCounter);
+    const vertex = new Vertex(undefined,data.latitude, data.longitude, data.nama, Vertex.idCounter);
     intersection_vertices.push(vertex);
 }
 
