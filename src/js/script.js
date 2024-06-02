@@ -640,23 +640,19 @@ map.on('click', function(e) {
     // Play click sound
     clickSoundAccident.play();
 
-    // Remove temporary markers (markers added on click event)
-    map.eachLayer(function (layer) {
-        if (layer instanceof L.Marker && !markers.includes(layer)) {
-            map.removeLayer(layer);
-        }
-    });
-
     // Set new marker at clicked location
     const newMarker = L.marker([e.latlng.lat, e.latlng.lng], { icon: L.icon({
-        iconUrl: 'https://cdn-icons-png.freepik.com/512/2894/2894975.png', // Ganti dengan URL ikon custom yang baru
+        iconUrl: 'https://cdn-icons-png.freepik.com/512/2894/2894975.png', 
         iconSize: [30, 30],
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     })}).addTo(map);
+    
+    markers.push(newMarker); 
     controlLatitude.value = e.latlng.lat;
     controlLongitude.value = e.latlng.lng;
 });
+
 
 function setDefaultMarker() {
     L.marker([defaultLatLong[0], defaultLatLong[1]], {
