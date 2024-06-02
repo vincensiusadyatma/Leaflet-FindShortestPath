@@ -105,3 +105,6 @@ class Vertex {
         return this.distanceFrom(this.#parent.getVertex(id));
     }
 }
+
+module.exports = Vertex ;
+
