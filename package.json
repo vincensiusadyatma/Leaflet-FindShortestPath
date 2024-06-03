@@ -1,8 +1,5 @@
 {
   "dependencies": {
     "leaflet": "^1.9.4"
-  },
-  "scripts": {
-    "start": "http-server -c-1 -p 8081"
   }
 }
