@@ -43,19 +43,32 @@ const hospital_data = [
     { "nama": "RSPAU dr.S. Hardjolukito", "latitude": -7.797334457294952, "longitude": 110.41148185729982 },
     { "nama": "RS THT Dr. Pomo", "latitude": -7.808434310398284, "longitude": 110.36851823329927 }
 ];
+
 // make hospital marker
 var hospital_markers = [];
 hospital_data.forEach(function (hospital) {
     const marker = L.marker([hospital.latitude, hospital.longitude], { icon: hospitalIcon }).bindPopup(hospital.nama);
     hospital_markers.push(marker);
 });
+
+// Parent Graph
+const graph = new Graph();
+
 // make hospital data to vertex class
 const hospital_vertices = [];
-let hospital_id = 1;
-for (const data of hospital_data) {
-    const vertex = new Vertex(hospital_id, data.latitude, data.longitude, data.nama, Vertex.idCounter);
+for (const hospital of hospital_data) {
+    // Create then add into graph
+    const vertex = graph.createVertex(
+        {
+            id: hospital.nama,
+            vertexType: VertexTypes.HOSPITAL,
+            lat: hospital.latitude,
+            lon: hospital.longitude,
+            label: hospital.nama
+        },
+        true
+    )
     hospital_vertices.push(vertex);
-    hospital_id++;
 }
 
 var intersections_data = [
@@ -368,8 +381,17 @@ intersections_data.forEach(function (intersection) {
 });
 // make hospital data to intersection class
 const intersection_vertices = [];
-for (const data of intersections_data) {
-    const vertex = new Vertex(undefined, data.latitude, data.longitude, data.nama, Vertex.idCounter);
+for (const intersection of intersections_data) {
+    // Create then add into graph
+    const vertex = graph.createVertex(
+        {
+            vertexType: VertexTypes.INTERSECTION,
+            lat: intersection.latitude,
+            lon: intersection.longitude,
+            label: 'persimpangan-' + intersection.persimpangan
+        },
+        true
+    )
     intersection_vertices.push(vertex);
 }
 
@@ -500,15 +522,6 @@ class Graph {
     constructor() {
         this._vertices = new Map();
         this.#vertexIdCounter = 0;
-    }
-
-    constructor(initialVertex) {
-        if (!(initialVertex instanceof Vertex)) {
-            throw new Error('Initial vertex must be an instance of Vertex');
-        }
-        this._vertices = new Map();
-        this.#vertexIdCounter = 0;
-        this.addVertex(initialVertex);
     }
 
     // Getters
