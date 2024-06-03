@@ -25,7 +25,7 @@ var hospitalIcon = L.icon({
     popupAnchor: [0, -50] 
   });
   var interceptionIcon = L.icon({
-    iconUrl: 'https://cdn-icons-png.freepik.com/512/2554/2554922.png', 
+    iconUrl: 'https://cdn-icons-png.freepik.com/512/1946/1946345.png', 
     iconSize: [30,30], 
     iconAnchor: [15, 50], 
     popupAnchor: [0, -50] 
@@ -57,7 +57,7 @@ var intersections_data = persimpangan
 // make intersection marker
 var intersection_markers = [];
 intersections_data.forEach(function(intersection) {
-    const marker = L.marker([intersection.latitude, intersection.longitude]).bindPopup(intersection.persimpangan);
+    const marker = L.marker([intersection.latitude, intersection.longitude],{icon: interceptionIcon }).bindPopup(intersection.persimpangan);
     intersection_markers.push(marker);
 });
 // make hospital data to intersection class
@@ -72,6 +72,7 @@ hospital_vertices[0].addNeighbor(intersection_vertices[19].getId)
 
 // The map
 var map = L.map('map').setView([defaultLatLong[0], defaultLatLong[1]], 16);
+
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -116,7 +117,6 @@ map.on('click', function(e) {
     controlLongitude.value = e.latlng.lng;
 });
 
-
 function setDefaultMarker() {
     L.marker([defaultLatLong[0], defaultLatLong[1]], {
         icon: L.icon({
@@ -127,6 +127,7 @@ function setDefaultMarker() {
         })
     }).addTo(map);
 }
+
 
 function resetLocation() {
     controlLatitude.value = defaultLatLong[0];
