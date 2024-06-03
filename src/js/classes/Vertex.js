@@ -1,32 +1,40 @@
 class Vertex {
+    
     #id;                        // Vertex id    
     #vertexType;                // Vertex type (intersection or hospital)
     #lat;                       // Latitude
     #lon;                       // Longitude
     #label;                     // Label
+    #parent;                    // Reference to the parent graph
     #neighborIds = new Set();   // Set of neighbor ids
 
     static #idCounter = 1;      // Counter to generate unique ids
 
     // Full constructor (for special nodes with special id)
-    constructor(id, lat, lon, label = null) {
+    constructor(id, lat, lon, parent, label = null) {
         this.#id = id;
         this.#vertexType = 'HOSPITAL';
         this.#lat = lat;
         this.#lon = lon;
         this.#label = label;
+        this.#parent = parent;
     }
 
     // Intersection constructor
-    constructor(lat, lon, label = null) {
-        this.#id = Vertex.#idCounter++;
+    constructor(lat, lon, parent, label = null) {
+        // Uses parent graph to generate unique id
+        this.#id = this.#parent.getThenIncrementedVertexId();
         this.#vertexType = 'INTERSECTION';
         this.#lat = lat;
         this.#lon = lon;
         this.#label = label;
+        this.#parent = parent;
     }
     
     getId() {
+        if (this.#parent instanceof Graph) {
+            return this.#parent._vertices
+        }
         return this.#id;
     }
 
@@ -55,6 +63,14 @@ class Vertex {
         this.#lat = lat;
         this.#lon = lon;
         this.#label = label;
+    }
+
+    isHospital() {
+        return this.#vertexType === 'HOSPITAL';
+    }
+
+    isIntersection() {
+        return this.#vertexType === 'INTERSECTION';
     }
 
     addNeighbor(neighborId) {
@@ -86,7 +102,7 @@ class Vertex {
         if (!this.#neighborIds.has(id)) {
             throw new Error("The vertex is not a neighbor.");
         }
-        return this.distanceFrom(this.#neighborIds.get(id));
+        return this.distanceFrom(this.#parent.getVertex(id));
     }
 }
 
