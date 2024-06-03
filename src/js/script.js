@@ -22,15 +22,15 @@ class Vertex {
     static #idCounter = 1;      // Counter to generate unique ids
 
     // Single constructor
-    constructor(id, lat, lon = null, label = null) {
-        if (id && typeof lat === 'number' && (lon === null || typeof lon === 'number')) {
-            this.#id = id;
+    constructor(ishospital, lat, lon = null, label = null) {
+        if (ishospital == true && typeof lat === 'number' && (lon === null || typeof lon === 'number')) {
+            this.#id = 'rs-'+Vertex.#idCounter++;
             this.#vertexType = 'HOSPITAL';
             this.#lat = lat;
             this.#lon = lon;
             this.#label = label;
-        } else if (id === undefined && typeof lat === 'number') {
-            this.#id = Vertex.#idCounter++;
+        } else if (ishospital === false && typeof lat === 'number') {
+            this.#id = 'itc-'+Vertex.#idCounter++;
             this.#vertexType = 'INTERSECTION';
             this.#lat = lat;
             this.#lon = lon;
@@ -286,11 +286,10 @@ hospital_data.forEach(function(hospital) {
 });
 // make hospital data to vertex class
 const hospital_vertices = [];
-let hospital_id = 1;
 for (const data of hospital_data) {
-    const vertex = new Vertex(hospital_id,data.latitude, data.longitude, data.nama, Vertex.idCounter);
+    const vertex = new Vertex(true,data.latitude, data.longitude, data.nama, Vertex.idCounter);
     hospital_vertices.push(vertex);
-    hospital_id++;
+ 
 }
 
 var intersections_data = [
@@ -604,7 +603,7 @@ intersections_data.forEach(function(intersection) {
 // make hospital data to intersection class
 const intersection_vertices = [];
 for (const data of intersections_data) {
-    const vertex = new Vertex(undefined,data.latitude, data.longitude, data.nama, Vertex.idCounter);
+    const vertex = new Vertex(false,data.latitude, data.longitude, data.nama, Vertex.idCounter);
     intersection_vertices.push(vertex);
 }
 
