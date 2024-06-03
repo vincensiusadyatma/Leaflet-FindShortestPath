@@ -9,7 +9,8 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
             crossorigin=""></script>
-            
+            <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Greedy Ambulance</title>
 </head>
@@ -35,13 +36,15 @@
             </table>
             <input type="button" value="reset" onclick="resetLocation()"/>
             <input type="button" value="copyLatLong" onclick="copyLatLong()"/>
-            <input type="button" value="findHospital" id="findHospitalButton"/>
+            <input type="button" value="findHospital" id="findHospitalButton" onclick="findHospital()"/>
         </div>
     </div>
     
     <audio id="click-sound" src="public/ambulance_sound.mp3" preload="auto"></audio>
     <audio id="click-sound-crash" src="public/car-accident__sound.mp3" preload="auto"></audio>
 
-    <script src="js/script.js"></script>
+    
+    <script type="module" src="js/script.js"></script>
+   
 </body>
 </html>

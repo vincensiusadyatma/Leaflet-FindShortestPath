@@ -1,32 +1,39 @@
 class Vertex {
+    
     #id;                        // Vertex id    
     #vertexType;                // Vertex type (intersection or hospital)
     #lat;                       // Latitude
     #lon;                       // Longitude
     #label;                     // Label
+    #parent;                    // Reference to the parent graph
     #neighborIds = new Set();   // Set of neighbor ids
 
     static #idCounter = 1;      // Counter to generate unique ids
 
     // Full constructor (for special nodes with special id)
-    constructor(id, lat, lon, label = null) {
-        this.#id = id;
-        this.#vertexType = 'HOSPITAL';
-        this.#lat = lat;
-        this.#lon = lon;
-        this.#label = label;
-    }
-
-    // Intersection constructor
-    constructor(lat, lon, label = null) {
-        this.#id = Vertex.#idCounter++;
-        this.#vertexType = 'INTERSECTION';
-        this.#lat = lat;
-        this.#lon = lon;
-        this.#label = label;
+    constructor(ishospital, lat, lon = null, label = null) {
+        if (ishospital == true && typeof lat === 'number' && (lon === null || typeof lon === 'number')) {
+            this.#id = 'rs-'+Vertex.#idCounter++;
+            this.#vertexType = 'HOSPITAL';
+            this.#lat = lat;
+            this.#lon = lon;
+            this.#label = label;
+        } else if (ishospital === false && typeof lat === 'number') {
+            this.#id = 'itc-'+Vertex.#idCounter++;
+            this.#vertexType = 'INTERSECTION';
+            this.#lat = lat;
+            this.#lon = lon;
+            this.#label = label;
+        } else {
+            throw new Error('Invalid constructor arguments');
+        }
     }
     
+    
     getId() {
+        if (this.#parent instanceof Graph) {
+            return this.#parent._vertices
+        }
         return this.#id;
     }
 
@@ -55,6 +62,14 @@ class Vertex {
         this.#lat = lat;
         this.#lon = lon;
         this.#label = label;
+    }
+
+    isHospital() {
+        return this.#vertexType === 'HOSPITAL';
+    }
+
+    isIntersection() {
+        return this.#vertexType === 'INTERSECTION';
     }
 
     addNeighbor(neighborId) {
@@ -86,6 +101,9 @@ class Vertex {
         if (!this.#neighborIds.has(id)) {
             throw new Error("The vertex is not a neighbor.");
         }
-        return this.distanceFrom(this.#neighborIds.get(id));
+        return this.distanceFrom(this.#parent.getVertex(id));
     }
 }
+
+export default Vertex;
+
