@@ -13,7 +13,7 @@
             <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
             <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
             <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Greedy Ambulance</title>
 </head>
 <body>
@@ -42,10 +42,10 @@
         </div>
     </div>
     
-    <audio id="click-sound" src="public/ambulance_sound.mp3" preload="auto"></audio>
-    <audio id="click-sound-crash" src="public/car-accident__sound.mp3" preload="auto"></audio>
+    <audio id="click-sound" src="src/public/ambulance_sound.mp3" preload="auto"></audio>
+    <audio id="click-sound-crash" src="src/public/car-accident__sound.mp3" preload="auto"></audio>
 
-    <script type="module" src="js/script.js"></script>
+    <script type="module" src="src/js/script.js"></script>
    
 </body>
 </html>
