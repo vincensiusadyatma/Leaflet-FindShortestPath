@@ -68,7 +68,7 @@ for (const data of intersections_data) {
 }
 
 
-hospital_vertices[0].addNeighbor(intersection_vertices[19].getId)
+
 
 // The map
 var map = L.map('map').setView([defaultLatLong[0], defaultLatLong[1]], 16);
@@ -85,12 +85,34 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 hospital_markers.forEach(function(marker) {
     marker.addTo(map);
 });
-
 intersection_markers.forEach(function(marker) {
     marker.addTo(map);
 });
 
-
+hospital_data.forEach(hospital => {
+    hospital.neighborIds.forEach(neighborId => {
+        const neighbor = intersections_data.find(i => i.id === neighborId);
+        if (neighbor) {
+            const latlngs = [
+                [hospital.latitude, hospital.longitude],
+                [neighbor.latitude, neighbor.longitude]
+            ];
+            L.polyline(latlngs, { color: 'red', weight: 5 }).addTo(map);
+        }
+    });
+});
+intersections_data.forEach(intersection => {
+    intersection.neighborIds.forEach(neighborId => {
+        const neighbor = intersections_data.find(i => i.id === neighborId);
+        if (neighbor) {
+            const latlngs = [
+                [intersection.latitude, intersection.longitude],
+                [neighbor.latitude, neighbor.longitude]
+            ];
+            L.polyline(latlngs, { color: 'blue', weight: 5 }).addTo(map);
+        }
+    });
+});
 
 
 setDefaultMarker();
