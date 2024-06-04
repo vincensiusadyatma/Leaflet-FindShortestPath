@@ -1,8 +1,8 @@
 import Vertex from './classes/Vertex.js';
 import Graph from './classes/Graph.js';
 import Result from './classes/Result.js';
-import PERSIMPANGAN from '../PERSIMPANGAN.js';
-import RUMAH_SAKIT from '../RUMAH_SAKIT.js'
+import PERSIMPANGAN from '../persimpangan.js';
+import RUMAH_SAKIT from '../rumahsakit.js'
 
 
 const defaultLatLong = [-7.753881231082619, 110.42189287890972];
