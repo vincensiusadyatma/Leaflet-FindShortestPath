@@ -12,6 +12,7 @@ const controlLongitude = document.getElementById('longitude');
 const clickSound = document.getElementById('click-sound');
 const clickSoundAccident = document.getElementById("click-sound-crash");
 const findHosp = document.getElementById("findHospitalButton");
+const graphButton = document.getElementById("showGraphButton")
 
 controlLatitude.value = defaultLatLong[0];
 controlLongitude.value = defaultLatLong[1];
@@ -89,31 +90,47 @@ intersection_markers.forEach(function(marker) {
     marker.addTo(map);
 });
 
-hospital_data.forEach(hospital => {
-    hospital.neighborIds.forEach(neighborId => {
-        const neighbor = intersections_data.find(i => i.id === neighborId);
-        if (neighbor) {
-            const latlngs = [
-                [hospital.latitude, hospital.longitude],
-                [neighbor.latitude, neighbor.longitude]
-            ];
-            L.polyline(latlngs, { color: 'red', weight: 5 }).addTo(map);
-        }
-    });
-});
-intersections_data.forEach(intersection => {
-    intersection.neighborIds.forEach(neighborId => {
-        const neighbor = intersections_data.find(i => i.id === neighborId);
-        if (neighbor) {
-            const latlngs = [
-                [intersection.latitude, intersection.longitude],
-                [neighbor.latitude, neighbor.longitude]
-            ];
-            L.polyline(latlngs, { color: 'blue', weight: 5 }).addTo(map);
-        }
-    });
-});
 
+// create show graph toggle
+let linesDrawn = false;
+let drawnLines = [];
+
+graphButton.addEventListener('click', function() {
+    if (linesDrawn) {
+        // Remove lines from map
+        drawnLines.forEach(line => map.removeLayer(line));
+        drawnLines = [];
+    } else {
+        // Draw lines on map
+        hospital_data.forEach(hospital => {
+            hospital.neighborIds.forEach(neighborId => {
+                const neighbor = intersections_data.find(i => i.id === neighborId);
+                if (neighbor) {
+                    const latlngs = [
+                        [hospital.latitude, hospital.longitude],
+                        [neighbor.latitude, neighbor.longitude]
+                    ];
+                    const line = L.polyline(latlngs, { color: 'red', weight: 5 }).addTo(map);
+                    drawnLines.push(line);
+                }
+            });
+        });
+        intersections_data.forEach(intersection => {
+            intersection.neighborIds.forEach(neighborId => {
+                const neighbor = intersections_data.find(i => i.id === neighborId);
+                if (neighbor) {
+                    const latlngs = [
+                        [intersection.latitude, intersection.longitude],
+                        [neighbor.latitude, neighbor.longitude]
+                    ];
+                    const line = L.polyline(latlngs, { color: 'blue', weight: 5 }).addTo(map);
+                    drawnLines.push(line);
+                }
+            });
+        });
+    }
+    linesDrawn = !linesDrawn;
+});
 
 setDefaultMarker();
 // find hospital button function event
@@ -133,10 +150,13 @@ map.on('click', function(e) {
         iconAnchor: [15, 30],
         popupAnchor: [0, -30]
     })}).addTo(map);
-    
+    console.log(e.latlng.lat);
+    let markers = []
     markers.push(newMarker); 
     controlLatitude.value = e.latlng.lat;
     controlLongitude.value = e.latlng.lng;
+
+    
 });
 
 function setDefaultMarker() {

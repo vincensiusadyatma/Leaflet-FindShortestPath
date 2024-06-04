@@ -38,6 +38,7 @@
             </table>
             <input type="button" value="reset" onclick="resetLocation()"/>
             <input type="button" value="copyLatLong" onclick="copyLatLong()"/>
+            <input type="button" value="show graph" id="showGraphButton" onclick="showGraph()"/>
             <input type="button" value="findHospital" id="findHospitalButton" onclick="findHospital()"/>
         </div>
     </div>
