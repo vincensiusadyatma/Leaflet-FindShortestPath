@@ -20,15 +20,15 @@ controlLongitude.value = defaultLatLong[1];
 
 var hospitalIcon = L.icon({
     iconUrl: 'https://cdn-icons-png.freepik.com/512/6395/6395229.png', 
-    iconSize: [30,30], 
-    iconAnchor: [15, 50], 
-    popupAnchor: [0, -50] 
+    iconSize: [25,25], 
+    iconAnchor: [25, 25], 
+    popupAnchor: [-12.5, -25] 
   });
   var interceptionIcon = L.icon({
     iconUrl: 'https://cdn-icons-png.freepik.com/512/1946/1946345.png', 
-    iconSize: [30,30], 
-    iconAnchor: [15, 50], 
-    popupAnchor: [0, -50] 
+    iconSize: [15,15], 
+    iconAnchor: [15, 15], 
+    popupAnchor: [-7.5, -15] 
   });
   
 // Create an HOSPITAL MARKER
@@ -37,13 +37,13 @@ const hospital_data = RumahSakit;
 // make hospital marker
 var hospital_markers = [];
 hospital_data.forEach(function(hospital) {
-    const marker = L.marker([hospital.latitude, hospital.longitude], {icon: hospitalIcon }).bindPopup(hospital.nama);
+    const marker = L.marker([hospital.latitude, hospital.longitude], {icon: hospitalIcon }).bindPopup(hospital.label);
     hospital_markers.push(marker);
 });
 // make hospital data to vertex class
 const hospital_vertices = [];
 for (const data of hospital_data) {
-    const vertex = new Vertex(true,data.latitude, data.longitude, data.nama, Vertex.idCounter);
+    const vertex = new Vertex(true,data.latitude, data.longitude, data.label, data.id);
     hospital_vertices.push(vertex);
  
 }
@@ -57,13 +57,13 @@ var intersections_data = persimpangan
 // make intersection marker
 var intersection_markers = [];
 intersections_data.forEach(function(intersection) {
-    const marker = L.marker([intersection.latitude, intersection.longitude],{icon: interceptionIcon }).bindPopup(intersection.persimpangan);
+    const marker = L.marker([intersection.latitude, intersection.longitude],{icon: interceptionIcon }).bindPopup(intersection.label);
     intersection_markers.push(marker);
 });
 // make hospital data to intersection class
 const intersection_vertices = [];
 for (const data of intersections_data) {
-    const vertex = new Vertex(false,data.latitude, data.longitude, data.persimpangan, Vertex.idCounter);
+    const vertex = new Vertex(false,data.latitude, data.longitude, data.label, data.id);
     intersection_vertices.push(vertex);
 }
 

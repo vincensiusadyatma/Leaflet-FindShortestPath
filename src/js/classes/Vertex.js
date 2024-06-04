@@ -11,15 +11,15 @@ class Vertex {
     static #idCounter = 1;      // Counter to generate unique ids
 
     // Full constructor (for special nodes with special id)
-    constructor(ishospital, lat, lon = null, label = null) {
+    constructor(ishospital, lat, lon = null, label = null,id) {
         if (ishospital == true && typeof lat === 'number' && (lon === null || typeof lon === 'number')) {
-            this.#id = 'rs-'+Vertex.#idCounter++;
+            this.#id = id;
             this.#vertexType = 'HOSPITAL';
             this.#lat = lat;
             this.#lon = lon;
             this.#label = label;
         } else if (ishospital === false && typeof lat === 'number') {
-            this.#id = 'itc-'+Vertex.#idCounter++;
+            this.#id = id;
             this.#vertexType = 'INTERSECTION';
             this.#lat = lat;
             this.#lon = lon;
