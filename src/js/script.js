@@ -132,7 +132,7 @@ graphButton.addEventListener('click', function() {
     linesDrawn = !linesDrawn;
 });
 
-setDefaultMarker();
+// setDefaultMarker();
 // find hospital button function event
 findHosp.addEventListener('click', function(){
     clickSound.play();
@@ -197,23 +197,33 @@ function copyLatLong() {
     navigator.clipboard.writeText(`${controlLatitude.value}, ${controlLongitude.value}`);
 }
 
-const result = ["itc-1", "itc-2", "itc-3", "itc-4"];
+const result = ['itc-37', 'itc-57', 'itc-20', 'rs-jih'];
 
+/*'itc-1',  'itc-2',
+  'itc-3',  'itc-26',
+  'itc-27', 'itc-29',
+  'itc-28', 'itc-50',
+  'itc-59', 'rs-siloam-yogyakarta',
+  'itc-32', 'itc-42',
+  'itc-37', 'itc-57',
+  'itc-20', 'rs-jih' */
+
+const full_vertex = PERSIMPANGAN.concat(RUMAH_SAKIT)
 const findNode = (id) => {
-    return PERSIMPANGAN.find(intersection => intersection.id === id);
+    return full_vertex.find(intersection => intersection.id === id);
 };
 findHosp.addEventListener('click', function() {
     const lat = controlLatitude.value;
     const lon = controlLongitude.value;
 
     const routePath = [];
-    routePath.push({
-        id: "ambulance-1",
-        vertexType: "ambulance",
-        latitude: lat,
-        longitude: lon,
-        neighbors: [result[0]]
-    });
+    // routePath.push({
+    //     id: "ambulance-1",
+    //     vertexType: "ambulance",
+    //     latitude: lat,
+    //     longitude: lon,
+    //     neighbors: [result[0]]
+    // });
 
     // make array  to object
     for (let i = 0; i < result.length - 1; i++) {
