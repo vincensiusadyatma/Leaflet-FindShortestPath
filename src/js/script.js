@@ -1,8 +1,8 @@
 import Vertex from './classes/Vertex.js';
 import Graph from './classes/Graph.js';
 import Result from './classes/Result.js';
-import persimpangan from '../persimpangan.js';
-import RumahSakit from '../Rumah-sakit.js'
+import PERSIMPANGAN from '../PERSIMPANGAN.js';
+import RUMAH_SAKIT from '../RUMAH_SAKIT.js'
 
 
 const defaultLatLong = [-7.753881231082619, 110.42189287890972];
@@ -32,7 +32,7 @@ var hospitalIcon = L.icon({
   });
   
 // Create an HOSPITAL MARKER
-const hospital_data = RumahSakit;
+const hospital_data = RUMAH_SAKIT;
 
 // make hospital marker
 var hospital_markers = [];
@@ -51,7 +51,7 @@ for (const data of hospital_data) {
 
 
 // create intersection marker
-var intersections_data = persimpangan
+var intersections_data = PERSIMPANGAN
 
 
 // make intersection marker
