@@ -116,7 +116,6 @@ const PERSIMPANGAN = [
     {id: 'itc-114', vertexType: 'intersection', latitude: -7.7620000479963975, longitude: 110.36938190460206, label: 'Jalan Selokan Mataram', neighborIds: ['itc-38', 'itc-115']},
     {id: 'itc-114', vertexType: 'intersection', latitude: -7.7620000479963975, longitude: 110.36938190460206, label: 'Jalan Selokan Mataram', neighborIds: ['itc-38', 'itc-115', 'itc-119']},
     {id: 'itc-115', vertexType: 'intersection', latitude: -7.767421585629954, longitude: 110.36903858184816, label: 'Jalan Monjali', neighborIds: ['itc-114', 'itc-116']},
-    {id: 'itc-116', vertexType: 'intersection', latitude: -7.767224923232752, longitude: 110.36778867244722, label: 'Jalan Sinduadi', neighborIds: ['itc-115', 'rs-sakina-idaman']}
     {id: 'itc-116', vertexType: 'intersection', latitude: -7.767224923232752, longitude: 110.36778867244722, label: 'Jalan Sinduadi', neighborIds: ['itc-115', 'rs-sakina-idaman']},
     {id: 'itc-117', vertexType: 'intersection', latitude: -7.754367254934401, longitude: 110.38276076316835, label: 'Jalan Ring Road Utara', neighborIds: ['itc-35', 'itc-118', 'itc-120']},
     {id: 'itc-118', vertexType: 'intersection', latitude: -7.756695377806651, longitude: 110.37221431732178, label: 'Jalan Pandega Martra', neighborIds: ['itc-117', 'itc-119']},
