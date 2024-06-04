@@ -1,19 +1,30 @@
 class Result {
-    #pathRoutes = Array();
+    #graph;
+    #pathRoutes;
 
-    constructor(pathRoutes) {
-        if (!(pathRoutes instanceof Array)) {
-            throw new Error('Path routes must be an array');
-        }
+    constructor(graph, pathRoutes) {
+        this.#graph = graph;
         this.#pathRoutes = pathRoutes;
     }
 
     getTotalDistance() {
-        return this.#pathRoutes.reduce((total, route) => total + route.getDistance(), 0);
+        console.log('this.#pathRoutes before reverse:', this.#pathRoutes);
+        let totalDistance = 0;
+        console.log(typeof this.#pathRoutes);
+        this.#pathRoutes.reverse().forEach(path => {
+            if (path.parent != null) {
+                totalDistance += path.cost;
+            }
+        });
+        return totalDistance;
     }
 
     getPathRoutes() {
         return this.#pathRoutes;
+    }
+
+    getRouteIds() {
+        return this.#pathRoutes.map(route => route.getId());
     }
 
     /**
@@ -22,8 +33,15 @@ class Result {
     toJSON() {
         return {
             totalDistance: this.getTotalDistance(),
-            routes: this.#pathRoutes.map(route => route.getId())
+            routes: this.getRouteIds()
         };
+    }
+
+    printRoutes() {
+        console.log(`Total distance: ${this.getTotalDistance()}`);
+        this.#pathRoutes.forEach(route => {
+            console.log(`Vertex: ${route.getId()}, Cost: ${route.cost}`);
+        });
     }
 }
 

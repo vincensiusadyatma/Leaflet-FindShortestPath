@@ -1,20 +1,15 @@
-const GraphSearchingAlgorithm = {
-    DIJKSTRA: 'dijkstra',
-    ASTAR: 'astar',
-}
+import Result from "./Result.js";
+import Vertex from "./Vertex.js";
+import PriorityQueue from "./PriorityQueue.js";
 
 class Graph {
 
     _vertices;
-    #vertexIdCounmter;
+    #vertexIdCounter;
 
-    constructor(initialVertex) {
-        if (!(initialVertex instanceof Vertex)) {
-            throw new Error('Initial vertex must be an instance of Vertex');
-        }
+    constructor() {
         this._vertices = new Map();
-        this.#vertexIdCounmter = 0;
-        this.addVertex(initialVertex);
+        this.#vertexIdCounter = 0;
     }
 
     // Getters
@@ -31,7 +26,7 @@ class Graph {
     }
 
     getThenIncrementedVertexId() {
-        return this.#vertexIdCounmter++;
+        return this.#vertexIdCounter++;
     }
 
     hasVertexId(id) {
@@ -40,15 +35,36 @@ class Graph {
 
     // General methods
 
-    createVertex({lat, lon, label = null}) {
-        const newVertex = new Vertex(lat, lon, this, label);
+    createVertex(id, vertexType, lat, lon, label = null, neighborIds, insert = false) {
+        const vertex = new Vertex(id, vertexType, lat, lon, label, this, neighborIds);
+        if (insert) {
+            console.log(`Inserting vertex ${vertex.getId()} to the graph`)
+            this.addVertex(vertex);
+        }
+        return vertex;
     }
 
-    addVertex(vertex) {
-        if (!(vertex instanceof Vertex)) {
-            throw new Error('Vertex must be an instance of Vertex');
+    addVertex(...vertex) {
+        for (let v of vertex) {
+            if (!(v instanceof Vertex)) {
+                throw new Error('Vertex must be an instance of Vertex');
+            }
+            this._vertices.set(v.getId(), v);
+
+            console.log(`Iterating neighbors of vertex ${v.getId()}`);
+            console.log(`Neighbors:`);
+            v.getNeighborIds().forEach(neighborId => {
+                console.log(`Neighbor id: ${neighborId}`);
+            });
+            for (let neighborId of v.getNeighborIds()) {
+                console.log(`Neighbor id: ${neighborId}`);
+                const neighbor = this.getVertex(neighborId);
+                if (neighbor) {
+                    this.connectVertices(v, neighbor);
+                    console.log(`Connected vertex ${v.getId()} with neighbor ${neighbor.getId()}`);
+                }
+            }
         }
-        this._vertices.set(vertex.getId(), vertex);
     }
 
     removeVertexId(id) {
@@ -95,38 +111,105 @@ class Graph {
         return this.isConnected(vertex1, vertex2);
     }
 
+    updateVertexConnections() {}
+
     // Shortest path finder caller
-    
+
     computeShortestRoute(startId, goalId, algorithm) {
-        if (!Object.values(SearchingAlgoirthm).includes(algorithm.toUpperCase())) {
-            throw new Error(`Algorithm {algorithm} is not supported. Use any of the following: ${Object.values(SearchingAlgoirthm).join(', ')}.`);
-        }
         const startVertex = this.getVertex(startId);
         const goalVertex = this.getVertex(goalId);
+        console.log(`Start vertex: ${startVertex.getId()}`)
+        console.log(`Goal vertex: ${goalVertex.getId()}`)
+        const routes = this.greedy(startVertex, goalVertex);
+        console.log(`Routes: ${routes}`);
 
-        switch (algorithm) {
-            case GraphSearchingAlgorithm.DIJKSTRA:
-                return this.dijkstra(startVertex, goalVertex);
-            case GraphSearchingAlgorithm.ASTAR:
-                return this.astar(startVertex, goalVertex);
+        // Fills the result object with route,
+        // route is an array of vertices id with its cost (like dictionary)
+        return new Result(this, routes);
+    }
+
+    // Shortest path algorithm
+
+    /**
+     * A* algorithm to find the shortest path between two vertices.
+     * @param startVertex Starting vertex
+     * @param goalVertex Goal vertex
+     * @returns Result class Ordered list of vertices id from start to goal
+     */
+    greedy(startVertex, goalVertex) {
+        const vertices = structuredClone(this._vertices);
+        let queue = new PriorityQueue();
+        let visited = new Set();
+
+        // Initialize the queue with the start vertex
+        queue.enqueue({ vertex: startVertex, cost: 0, parent: null });
+
+        console.log("CHECK 1")
+        // While the queue is not empty
+        while (!queue.isEmpty()) {
+            console.log("CHECK 2")
+            // Get the current vertex and its cost from the queue's head
+            const { vertex: currVertex, cost } = queue.dequeue();
+
+            if (!queue.isEmpty()) {
+                console.log(`QUEUE IS NOW EMPTY`)
+            }
+
+            // When finding the goal id, reconstruct the path and return it
+            if (currVertex.getId() === goalVertex.getId()) {
+                console.log("RETURNING")
+                return this.reconstructPath(currVertex);
+            }
+            console.log("CHECK 3")
+
+            // Mark current vertex as visited (after processing its children)
+            visited.add(currVertex.getId());
+
+            console.log("CHECK 4")
+            
+            // Get children and add them to queue with their costs
+            const children = this.greedyGetChildren(currVertex, goalVertex);
+            console.log(children);
+            for (const child of children) {
+                console.log("CHILDREN")
+                if (!visited.has(child.vertex.getId())) {
+                    child.vertex.setParent(currVertex);
+                    queue.enqueue({ vertex: child.vertex, cost: cost + child.cost, parent: currVertex });
+                }
+            }
+            // print contents of queue
+            console.log("QUEUE CONTENTS");
+            console.log(queue.getList());
+
+            console.log("CHECK 5");
         }
     }
 
-    // Shortest path algorithms methods
+    greedyGetChildren(vertex, goalVertex) {
+        const children = [];
+        console.log(`Before iterating neighbor Ids of vertex ${vertex.getId()}`)
+        for (let neighborId of vertex.getNeighborIds()) {
+            console.log(`Neighbor id: ${neighborId}`);
+            const neighbor = this.getVertex(neighborId);
+            const distance = vertex.distanceFrom(neighbor);
+            children.push({ vertex: neighbor, cost: distance, parent: vertex });
+        }
+        console.log(`greedyGetChildren: ${children}`)
+        return children;
+    }
 
-    /**
-     * Dijkstra's algorithm to find the shortest path between two vertices. (brute-force)
-     * @param startVertex Starting vertex
-     * @param goalVertex Goal vertex
-     * @returns Ordered list of vertices id from start to goal
-     */
+    reconstructPath(vertex) {
+        const path = [];
+        let current = vertex;
 
-    /**
-     * A* algorithm to find the shortest path between two vertices. (greedy)
-     * @param startVertex Starting vertex
-     * @param goalVertex Goal vertex
-     * @returns Ordered list of vertices id from start to goal
-     */
+        // Traverse backwards through parent nodes to get the path
+        while (current) {
+            path.push(current.getId());
+            current = current.getParent();
+        }
+
+        return path.reverse();
+    }
 }
 
 export default Graph;

@@ -5,35 +5,24 @@ class Vertex {
     #lat;                       // Latitude
     #lon;                       // Longitude
     #label;                     // Label
-    #parent;                    // Reference to the parent graph
-    #neighborIds = new Set();   // Set of neighbor ids
+    #graph;                     // Reference to the parent graph
+    #neighborIds;               // Set of neighbor ids
+    #pathParent;                // Parent vertex for pathing
 
     static #idCounter = 1;      // Counter to generate unique ids
 
-    // Full constructor (for special nodes with special id)
-    constructor(ishospital, lat, lon = null, label = null,id) {
-        if (ishospital == true && typeof lat === 'number' && (lon === null || typeof lon === 'number')) {
-            this.#id = id;
-            this.#vertexType = 'HOSPITAL';
-            this.#lat = lat;
-            this.#lon = lon;
-            this.#label = label;
-        } else if (ishospital === false && typeof lat === 'number') {
-            this.#id = id;
-            this.#vertexType = 'INTERSECTION';
-            this.#lat = lat;
-            this.#lon = lon;
-            this.#label = label;
-        } else {
-            throw new Error('Invalid constructor arguments');
-        }
+    constructor(id, vertexType, lat, lon, label = null, graph, neighborIds = null) {
+        this.#id = id;
+        this.#vertexType = vertexType;
+        this.#lat = lat;
+        this.#lon = lon;
+        this.#label = label;
+        this.#graph = graph;
+        this.#neighborIds = new Set(neighborIds);
     }
     
     
     getId() {
-        if (this.#parent instanceof Graph) {
-            return this.#parent._vertices
-        }
         return this.#id;
     }
 
@@ -53,8 +42,16 @@ class Vertex {
         return this.#label;
     }
 
-    getNeighbors() {
+    getNeighborIds() {
         return this.#neighborIds;
+    }
+
+    setParent(parent) {
+        this.#pathParent = parent;
+    }
+
+    getParent() {
+        return this.#pathParent;
     }
 
     set({id, lat, lon, label}) {
@@ -65,11 +62,11 @@ class Vertex {
     }
 
     isHospital() {
-        return this.#vertexType === 'HOSPITAL';
+        return this.#vertexType === 'hospital';
     }
 
     isIntersection() {
-        return this.#vertexType === 'INTERSECTION';
+        return this.#vertexType === 'intersection';
     }
 
     addNeighbor(neighborId) {
@@ -90,6 +87,7 @@ class Vertex {
      * @returns float Distance to the vertex
      */
     distanceFrom(vertex) {
+        console.log(vertex == null ? 'null' : 'not null');
         if (!(vertex instanceof Vertex)) {
             throw new TypeError("The vertex must be an instance of Vertex class.");
         }
@@ -101,7 +99,23 @@ class Vertex {
         if (!this.#neighborIds.has(id)) {
             throw new Error("The vertex is not a neighbor.");
         }
-        return this.distanceFrom(this.#parent.getVertex(id));
+        return this.distanceFrom(this.#graph.getVertex(id));
+    }
+
+    // Calculate the Manhattan distance to another vertex
+    manhattanDistanceFrom(vertex) {
+        if (!(vertex instanceof Vertex)) {
+            throw new TypeError("The vertex must be an instance of Vertex class.");
+        }
+        return Math.abs(this.#lat - vertex.getLat()) + Math.abs(this.#lon - vertex.getLon());
+    }
+
+    // Calculate the Manhattan distance to a neighbor by passing the neighbor's id
+    manhattanDistanceFromId(id) {
+        if (!this.#neighborIds.has(id)) {
+            throw new Error("The vertex is not a neighbor.");
+        }
+        return this.manhattanDistanceFrom(this.#graph.getVertex(id));
     }
 }
 
