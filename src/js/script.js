@@ -38,7 +38,7 @@ const hospital_data = RUMAH_SAKIT;
 // make hospital marker
 var hospital_markers = [];
 hospital_data.forEach(function(hospital) {
-    const marker = L.marker([hospital.latitude, hospital.longitude], {icon: hospitalIcon }).bindPopup(hospital.label);
+    const marker = L.marker([hospital.latitude, hospital.longitude], {icon: hospitalIcon }).bindPopup(hospital.id);
     hospital_markers.push(marker);
 });
 // make hospital data to vertex class
@@ -58,7 +58,7 @@ var intersections_data = PERSIMPANGAN
 // make intersection marker
 var intersection_markers = [];
 intersections_data.forEach(function(intersection) {
-    const marker = L.marker([intersection.latitude, intersection.longitude],{icon: interceptionIcon }).bindPopup(intersection.label);
+    const marker = L.marker([intersection.latitude, intersection.longitude],{icon: interceptionIcon }).bindPopup(intersection.id);
     intersection_markers.push(marker);
 });
 // make hospital data to intersection class
@@ -144,7 +144,7 @@ map.on('click', function(e) {
     clickSoundAccident.play();
 
     // Set new marker at clicked location
-    const newMarker = L.marker([e.latlng.lat, e.latlng.lng], { icon: L.icon({
+    const newMarker = L.marker([e   .latlng.lat, e.latlng.lng], { icon: L.icon({
         iconUrl: 'https://cdn-icons-png.freepik.com/512/2894/2894975.png', 
         iconSize: [30, 30],
         iconAnchor: [15, 30],
