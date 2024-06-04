@@ -12,6 +12,7 @@ const controlLongitude = document.getElementById('longitude');
 const clickSound = document.getElementById('click-sound');
 const clickSoundAccident = document.getElementById("click-sound-crash");
 const findHosp = document.getElementById("findHospitalButton");
+const graphButton = document.getElementById("showGraphButton")
 
 controlLatitude.value = defaultLatLong[0];
 controlLongitude.value = defaultLatLong[1];
@@ -37,7 +38,7 @@ const hospital_data = RUMAH_SAKIT;
 // make hospital marker
 var hospital_markers = [];
 hospital_data.forEach(function(hospital) {
-    const marker = L.marker([hospital.latitude, hospital.longitude], {icon: hospitalIcon }).bindPopup(hospital.label);
+    const marker = L.marker([hospital.latitude, hospital.longitude], {icon: hospitalIcon }).bindPopup(hospital.id);
     hospital_markers.push(marker);
 });
 // make hospital data to vertex class
@@ -57,7 +58,7 @@ var intersections_data = PERSIMPANGAN
 // make intersection marker
 var intersection_markers = [];
 intersections_data.forEach(function(intersection) {
-    const marker = L.marker([intersection.latitude, intersection.longitude],{icon: interceptionIcon }).bindPopup(intersection.label);
+    const marker = L.marker([intersection.latitude, intersection.longitude],{icon: interceptionIcon }).bindPopup(intersection.id);
     intersection_markers.push(marker);
 });
 // make hospital data to intersection class
@@ -68,7 +69,7 @@ for (const data of intersections_data) {
 }
 
 
-hospital_vertices[0].addNeighbor(intersection_vertices[19].getId)
+
 
 // The map
 var map = L.map('map').setView([defaultLatLong[0], defaultLatLong[1]], 16);
@@ -85,13 +86,51 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 hospital_markers.forEach(function(marker) {
     marker.addTo(map);
 });
-
 intersection_markers.forEach(function(marker) {
     marker.addTo(map);
 });
 
 
+// create show graph toggle
+let linesDrawn = false;
+let drawnLines = [];
 
+graphButton.addEventListener('click', function() {
+    if (linesDrawn) {
+        // Remove lines from map
+        drawnLines.forEach(line => map.removeLayer(line));
+        drawnLines = [];
+    } else {
+        // Draw lines on map
+        hospital_data.forEach(hospital => {
+            hospital.neighborIds.forEach(neighborId => {
+                const neighbor = intersections_data.find(i => i.id === neighborId);
+                if (neighbor) {
+                    const latlngs = [
+                        [hospital.latitude, hospital.longitude],
+                        [neighbor.latitude, neighbor.longitude]
+                    ];
+                    const line = L.polyline(latlngs, { color: 'red', weight: 5 }).addTo(map);
+                    drawnLines.push(line);
+                }
+            });
+        });
+        intersections_data.forEach(intersection => {
+            intersection.neighborIds.forEach(neighborId => {
+                const neighbor = intersections_data.find(i => i.id === neighborId);
+                if (neighbor) {
+                    const latlngs = [
+                        [intersection.latitude, intersection.longitude],
+                        [neighbor.latitude, neighbor.longitude]
+                    ];
+                    const line = L.polyline(latlngs, { color: 'blue', weight: 5 }).addTo(map);
+                    drawnLines.push(line);
+                }
+            });
+        });
+    }
+    linesDrawn = !linesDrawn;
+});
 
 setDefaultMarker();
 // find hospital button function event
@@ -99,23 +138,36 @@ findHosp.addEventListener('click', function(){
     clickSound.play();
 })
 
+
+
+// Initialize variable to store the marker
+let existinAmbulanceMarker = null;
+
 // On map click
 map.on('click', function(e) {
     // Play click sound
     clickSoundAccident.play();
 
+    // Remove existing marker if present
+    if (existinAmbulanceMarker) {
+        map.removeLayer(existingMarker);
+    }
+
     // Set new marker at clicked location
-    const newMarker = L.marker([e.latlng.lat, e.latlng.lng], { icon: L.icon({
-        iconUrl: 'https://cdn-icons-png.freepik.com/512/2894/2894975.png', 
-        iconSize: [30, 30],
-        iconAnchor: [15, 30],
-        popupAnchor: [0, -30]
-    })}).addTo(map);
-    
-    markers.push(newMarker); 
+    existinAmbulanceMarker = L.marker([e.latlng.lat, e.latlng.lng], { 
+        icon: L.icon({
+            iconUrl: 'https://cdn-icons-png.freepik.com/512/2894/2894975.png', 
+            iconSize: [30, 30],
+            iconAnchor: [15, 30],
+            popupAnchor: [0, -30]
+        })
+    }).addTo(map);
+
+    // Update control values
     controlLatitude.value = e.latlng.lat;
     controlLongitude.value = e.latlng.lng;
 });
+
 
 function setDefaultMarker() {
     L.marker([defaultLatLong[0], defaultLatLong[1]], {
@@ -145,41 +197,64 @@ function copyLatLong() {
     navigator.clipboard.writeText(`${controlLatitude.value}, ${controlLongitude.value}`);
 }
 
-function findHospital() {
-    const startLat = defaultLatLong[0];
-    const startLong = defaultLatLong[1];
-    const shouldBigHospital = document.getElementById('shouldBigHospital').checked;
+const result = ["itc-1", "itc-2", "itc-3", "itc-4"];
 
-    // Clear any existing routes on the map
-    map.eachLayer(function (layer) {
-        if (layer instanceof L.Routing.Control) {
-            map.removeControl(layer);
+const findNode = (id) => {
+    return PERSIMPANGAN.find(intersection => intersection.id === id);
+};
+findHosp.addEventListener('click', function() {
+    const lat = controlLatitude.value;
+    const lon = controlLongitude.value;
+
+    const routePath = [];
+    routePath.push({
+        id: "ambulance-1",
+        vertexType: "ambulance",
+        latitude: lat,
+        longitude: lon,
+        neighbors: [result[0]]
+    });
+
+    // make array  to object
+    for (let i = 0; i < result.length - 1; i++) {
+        const currentNode = findNode(result[i]);
+        const nextNode = findNode(result[i + 1]);
+
+        // check curent node and next node not null
+        if (currentNode && nextNode) {
+            if (!currentNode.neighbors) {
+                currentNode.neighbors = [];
+            }
+            currentNode.neighbors.push(nextNode.id);
+
+            if (!nextNode.neighbors) {
+                nextNode.neighbors = [];
+            }
+            nextNode.neighbors.push(currentNode.id);
+
+            routePath.push(currentNode);
         }
+    }
+
+    // Log route object
+    console.log(routePath);
+
+    // make roue line
+    routePath.forEach(node => {
+        node.neighbors.forEach(neighborId => {
+            const neighbor = intersections_data.find(i => i.id === neighborId);
+            if (neighbor) {
+                const latlngs = [
+                    [node.latitude, node.longitude],
+                    [neighbor.latitude, neighbor.longitude]
+                ];
+                const line = L.polyline(latlngs, { color: 'green', weight: 5 }).addTo(map);
+                drawnLines.push(line);
+            }
+        });
     });
+});
 
-    // Iterate over each marker and find route to the hospital
-    markers.forEach(function(marker) {
-        const hospitalLat = marker.getLatLng().lat;
-        const hospitalLng = marker.getLatLng().lng;
-
-        const start = L.latLng(controlLatitude.value, controlLongitude.value);
-        const end = L.latLng(hospitalLat, hospitalLng);
-
-        // Create routing control
-        L.Routing.control({
-            waypoints: [
-                start,
-                end
-            ],
-            routeWhileDragging: false
-        }).addTo(map);
-    });
-
-    // Asynchronous alert
-    setTimeout(() => {
-        alert(`Finding nearest ${shouldBigHospital ? 'big hospital' : 'small hospital'} hospital from [${startLat}, ${startLong}]`);
-    }, 0);
-}
 
 
 
