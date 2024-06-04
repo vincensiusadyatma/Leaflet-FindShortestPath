@@ -1,10 +1,4 @@
 const RUMAH_SAKIT = [
-    { id: "rs-umum-daerah-wates", vertexType: 'hospital', latitude: -7.9173, longitude: 110.2192, label: 'Rumah Sakit Umum Daerah Wates', neighborIds: [    ] },
-    { id: "rs-santo-yusup-boro", vertexType: 'hospital', latitude: -7.6958125, longitude: 110.2234375, label: 'RSU Santo Yusup Boro', neighborIds: [] },
-    { id: "rs-umum-santa-elisabeth", vertexType: 'hospital', latitude: -7.925667554743602, longitude: 110.31893491744997, label: 'Rumah Sakit Umum Santa Elisabeth', neighborIds: [] },
-    { id: "rs-umum-pku-muhammadiyah-bantul", vertexType: 'hospital', latitude: -7.8868981, longitude: 110.3302126, label: 'RSU PKU Muhammadiyah Bantul', neighborIds: ['itc-86'] },
-    { id: "rs-umum-daerah-wonosari", vertexType: 'hospital', latitude: -7.96184, longitude: 110.6029178, label: 'Rumah Sakit Umum Daerah Wonosari', neighborIds: [] },
-    { id: "rs-umum-dearah-kota-yogyakarta", vertexType: 'hospital', latitude: 7.824968, longitude: 110.377867, label: 'Rumah Sakit Umum Daerah Kota Yogyakarta', neighborIds: [] },
     { id: "rs-pratama", vertexType: 'hospital', latitude: -7.8158269625591315, longitude: 110.37370026111604, label: 'Rumah Sakit Pratama', neighborIds: ['itc-103', 'itc-106'] },
     { id: "rs-jogja", vertexType: 'hospital', latitude: -7.825565824571337, longitude: 110.37804007530214, label: 'Rumah Sakit Jogja', neighborIds: ['itc-104'] },
     { id: "rs-umum-veteran-patmasari", vertexType: 'hospital', latitude: -7.830014004018314, longitude: 110.35995930433275, label: 'Rumah Sakit Umum veteran Patmasari', neighborIds: [] },
