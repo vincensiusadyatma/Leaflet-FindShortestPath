@@ -130,9 +130,12 @@ class Graph {
         const startVertex = this.getVertex(startId);
         console.log(`Start vertex type: ${startVertex}`)
         console.log(`Start vertex: ${startVertex.getId()}`)
-        const goalVertex = this.getVertex(goalId)
-        console.log(`Goal vertex type: ${goalVertex}`)
-        console.log(`Goal vertex: ${goalVertex.getId()}`);
+        let goalVertex = null;
+        if (goalId !== null) {
+            goalVertex = this.getVertex(goalId)
+            console.log(`Goal vertex type: ${goalVertex}`)
+            console.log(`Goal vertex: ${goalVertex.getId()}`);
+        }
 
         let pathRoutes;
         if (algorithm === 'dijkstra') {
@@ -200,11 +203,17 @@ class Graph {
             // Mark current vertex as visited
             visited.add(currVertex.getId());
 
-            // When finding the goal id, reconstruct the path and return it
-            if (currVertex.getId() === goalVertex.getId()) {
+            // Check  goal conditions
+            if (goalVertex !== null && currVertex.getId() === goalVertex.getId()) {
+                // Specific goal vertex found
+                status = 'success';
+                break;
+            } else if (goalVertex === null && currVertex.getId().startsWith("rs-")) {
+                // Hospital vertex found
                 status = 'success';
                 break;
             } else if (currVertex === 'undefined') {
+                // Reached a leaf node (no backtracking)
                 status = 'failed';
                 break;
             }
