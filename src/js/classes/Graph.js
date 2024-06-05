@@ -1,6 +1,8 @@
 import Result from "./Result.js";
 import Vertex from "./Vertex.js";
 import PriorityQueue from "./PriorityQueue.js";
+import Queue from "./Queue.js";
+import { strict as assert } from 'assert';
 
 class Graph {
 
@@ -14,8 +16,8 @@ class Graph {
 
     // Getters
 
-    getVertex(id) {
-        return this._vertices.get(id);
+    getVertex(vertexId) {
+        return this._vertices.get(vertexId);
     }
 
     /**
@@ -44,8 +46,9 @@ class Graph {
         return vertex;
     }
 
-    addVertex(...vertex) {
-        for (let v of vertex) {
+    addVertex(...vertices) {
+        // Adding vertex the graph
+        for (let v of vertices) {
             if (!(v instanceof Vertex)) {
                 throw new Error('Vertex must be an instance of Vertex');
             }
@@ -56,9 +59,17 @@ class Graph {
             v.getNeighborIds().forEach(neighborId => {
                 console.log(`Neighbor id: ${neighborId}`);
             });
+        }
+        // Connecting the vertices
+        for (let v of vertices) {
             for (let neighborId of v.getNeighborIds()) {
-                console.log(`Neighbor id: ${neighborId}`);
+                console.log(`addVertex --> Connecting to neighbor id: ${neighborId}`);
+                console.log(`Vertices:${vertices.map(vertex => vertex.getId())}`)
                 const neighbor = this.getVertex(neighborId);
+                console.log(`Neighbor type: ${typeof neighbor}`);
+                // if (!(neighbor instanceof Vertex)) {
+                //     throw new Error('Vertex must be an instance of Vertex');
+                // }
                 if (neighbor) {
                     this.connectVertices(v, neighbor);
                     console.log(`Connected vertex ${v.getId()} with neighbor ${neighbor.getId()}`);
@@ -111,7 +122,7 @@ class Graph {
         return this.isConnected(vertex1, vertex2);
     }
 
-    updateVertexConnections() {}
+    updateVertexConnections() { }
 
     // Shortest path finder caller
 
@@ -123,148 +134,111 @@ class Graph {
         console.log(`Goal vertex type: ${goalVertex}`)
         console.log(`Goal vertex: ${goalVertex.getId()}`);
 
-        let routes;
+        let pathRoutes;
         if (algorithm === 'dijkstra') {
-            routes = this.dijkstra(startVertex, goalVertex);
-            console.log(`Routes: ${routes}`);
+            let result;
+            result = this.dijkstra(startVertex, goalVertex);
+            result = new Result(this, result[0], goalId, algorithm, result[1]);
+            console.log("<=========================================================================>");
+            console.log(`Dijkstra pathRoutes: ${pathRoutes}`);
+            return result;
         }
         else if (algorithm === 'greedy') {
-            routes = this.greedy(startVertex, goalVertex);
-            console.log(`Routes: ${routes}`);
+            let result;
+            result = this.greedy(startVertex, goalVertex);
+            result = new Result(this, result[0], goalId, algorithm, result[1]);
+            console.log("<=========================================================================>");
+            console.log(`Greedy pathRoutes: ${pathRoutes}`);
+            return result;
         }
         else {
             throw new Error('Algorithm not found');
         }
-        console.log(`Routes: ${routes}`);
+
+        // assert.equal(pathRoutes, 'undefined', 'No path found');
+        // throw new Error('Early break to debug');
 
         // Fills the result object with route,
         // route is an array of vertices id with its cost (like dictionary)
-        return new Result(this, routes);
     }
 
     // Shortest path algorithm
 
     /**
-     * A* algorithm to find the shortest path between two vertices.
+     * Greedy algorithm that hopes to find the shortest path without doing backtracking
+     * by selecting the nearest neighbor of each traveled vertex.
      * @param startVertex Starting vertex
      * @param goalVertex Goal vertex
-     * @returns Result class Ordered list of vertices id from start to goal
+     * @returns an array containing the pathRoutes and status
      */
     greedy(startVertex, goalVertex) {
         const vertices = structuredClone(this._vertices);
-        let queue = new PriorityQueue();
+        let queue = new Queue();
         let visited = new Set();
+        let pathRoutes = [];
+        let status;
 
         // Initialize the queue with the start vertex
-        queue.enqueue({ vertex: startVertex, cost: 0, parent: null });
+        queue.enqueue({ vertex: startVertex, cost: 0 });
+        pathRoutes.push({ vertex: startVertex, cost: 0 });
 
-        console.log("CHECK 1")
         // While the queue is not empty
+        let iterations = 0;
         while (!queue.isEmpty()) {
-            console.log("CHECK 2")
+            ++iterations;
             // Get the current vertex and its cost from the queue's head
             const { vertex: currVertex, cost } = queue.dequeue();
 
-            if (!queue.isEmpty()) {
-                console.log(`QUEUE IS NOW EMPTY`)
-            }
+            console.log("===========================================================================");
+            console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
+            console.log("===========================================================================");
+            console.log(`Queue: `); console.log(queue.items);
+            console.log(`Visited: `); console.log(visited);
+            console.log(`Path routes: `); console.log(pathRoutes);
+            console.log("---------------------------------------------------------------------------");
+
+            // Mark current vertex as visited
+            visited.add(currVertex.getId());
 
             // When finding the goal id, reconstruct the path and return it
             if (currVertex.getId() === goalVertex.getId()) {
-                console.log("RETURNING")
-                return this.reconstructPath(currVertex);
-            }
-            console.log("CHECK 3")
-
-            // Mark current vertex as visited (after processing its children)
-            visited.add(currVertex.getId());
-
-            console.log("CHECK 4")
-            
-            // Get children and add them to queue with their costs
-            const children = this.greedyGetChildren(currVertex, goalVertex);
-            console.log(children);
-            for (const child of children) {
-                console.log("CHILDREN")
-                if (!visited.has(child.vertex.getId())) {
-                    child.vertex.setParent(currVertex);
-                    queue.enqueue({ vertex: child.vertex, cost: cost + child.cost, parent: currVertex });
-                }
-            }
-            // print contents of queue
-            console.log("QUEUE CONTENTS");
-            console.log(queue.getList());
-
-            console.log("CHECK 5");
-        }
-    }
-
-    greedyGetChildren(vertex, goalVertex) {
-        const children = [];
-        console.log(`Before iterating neighbor Ids of vertex ${vertex.getId()}`)
-        for (let neighborId of vertex.getNeighborIds()) {
-            console.log(`Neighbor id: ${neighborId}`);
-            const neighbor = this.getVertex(neighborId);
-            const distance = vertex.distanceFrom(neighbor);
-            children.push({ vertex: neighbor, cost: distance, parent: vertex });
-        }
-        console.log(`greedyGetChildren: ${children}`)
-        return children;
-    }
-
-    reconstructPath(vertex) {
-        const path = [];
-        let current = vertex;
-
-        // Traverse backwards through parent nodes to get the path
-        while (current) {
-            path.push(current.getId());
-            current = current.getParent();
-        }
-
-        return path.reverse();
-    }
-
-    dijkstra(startVertex, goalVertex) {
-        const vertices = structuredClone(this._vertices);
-        let queue = new PriorityQueue();
-        let visited = new Set();
-
-        // Initialize the queue with the start vertex
-        queue.enqueue({ vertex: startVertex, cost: 0, parent: null });
-
-        // While the queue is not empty
-        while (!queue.isEmpty()) {
-            // Get the current vertex and its cost from the queue's head
-            const { vertex: currVertex, cost } = queue.dequeue();
-
-            // When finding the goal id, reconstruct the path and return it
-            if (currVertex.getId() === goalVertex.getId()) {
-                return this.reconstructPath(currVertex);
+                status = 'success';
+                break;
+            } else if (currVertex === 'undefined') {
+                status = 'failed';
+                break;
             }
 
-            // Mark current vertex as visited (after processing its children)
-            visited.add(currVertex.getId());
-
-            // Get children and add them to queue with their costs
-            const children = this.dijkstraGetChildren(currVertex, goalVertex);
-            for (const child of children) {
-                if (!visited.has(child.vertex.getId())) {
-                    child.vertex.setParent(currVertex);
-                    queue.enqueue({ vertex: child.vertex, cost: cost + child.cost, parent: currVertex });
-                }
+            // Get neighbors and add them to queue with their costs
+            let neighborHood = this.nearestNeighborsOf(currVertex);
+            neighborHood = neighborHood.sort((v1, v2) => v1.cost < v2.cost ? -1 : 1).filter(neighbor => !visited.has(neighbor.vertex.getId()));
+            if (neighborHood.length === 0) {
+                status = 'failed';
+                break;
             }
+            console.log(`Shortest neighbors of (${currVertex.getId()}) is ${neighborHood[0].vertex.getId()} (${neighborHood[0].cost})`);
+            console.log(`Enqueueing vertex: ${neighborHood[0].vertex.getId()}`);
+            queue.enqueue({ vertex: neighborHood[0].vertex, cost: neighborHood[0].cost });
+            console.log("Pushing pathRoutes");
+            pathRoutes.push({ vertex: neighborHood[0].vertex, cost: neighborHood[0].cost });
+            console.log("PathRoutes: "); console.log(pathRoutes);
         }
+        console.log(`Returning pathRoutes: ${pathRoutes.map(route => route.vertex.getId())}`);
+        console.log(pathRoutes);
+        return [pathRoutes, status];
     }
 
-    dijkstraGetChildren(vertex, goalVertex) {
-        const children = [];
+    nearestNeighborsOf(vertex) {
+        const neighborHood = [];
         for (let neighborId of vertex.getNeighborIds()) {
             const neighbor = this.getVertex(neighborId);
-            const distance = vertex.distanceFrom(neighbor);
-            children.push({ vertex: neighbor, cost: distance, parent: vertex });
+            console.log(`Neighbor id: (${neighborId})${typeof neighbor === 'undefined' ? " is undefined" : " is defined"}`);
+            const distance = vertex.haversineDistanceFrom(neighbor);
+            neighborHood.push({ vertex: neighbor, cost: distance });
         }
-        return children;
+        // if (vertex.getId() === 'itc-35') throw new Error('Early break to debug');
+        console.log(`greedyGetChildren of (${vertex.getId()}): ${neighborHood.map(neighbor => `\n - ${neighbor.vertex.getId()}: ${neighbor.cost}`)}`);
+        return neighborHood;
     }
 }
 
