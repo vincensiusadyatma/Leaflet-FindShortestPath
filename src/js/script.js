@@ -13,34 +13,70 @@ const clickSound = document.getElementById('click-sound');
 const clickSoundAccident = document.getElementById("click-sound-crash");
 const findHosp = document.getElementById("findHospitalButton");
 const graphButton = document.getElementById("showGraphButton")
+const resetButton = document.getElementById("resetButton");
+const copyLatLongButton = document.getElementById("copyLatLongButton");
+const startPointButton = document.getElementById('startPoint');
+const goalPointButton = document.getElementById('goalPoint');
+const fillStartButton = document.getElementById("fillStartButton");
+const fillGoalButton = document.getElementById("fillGoalButton");
 
-controlLatitude.value = defaultLatLong[0];
-controlLongitude.value = defaultLatLong[1];
+// create toggle fill start and fill goal poin
+fillStartButton.addEventListener('click', function() {
+    console.log('click');
+    startPointButton.disabled = false;
+    goalPointButton.disabled = true;
+    fillStartButton.disabled = true;
+    fillGoalButton.disabled = false;
+    fillStartButton.style.backgroundColor = '#3a3a3a';
+    fillGoalButton.style.backgroundColor = '#0056b3';
+});
+
+fillGoalButton.addEventListener('click', function() {
+    console.log('click');
+    goalPointButton.disabled = false;
+    startPointButton.disabled = true;
+    fillGoalButton.disabled = true;
+    fillStartButton.disabled = false;
+    fillGoalButton.style.backgroundColor = '#3a3a3a';
+    fillStartButton.style.backgroundColor = '#0056b3';
+});
 
 
-
+// create marker icons
 var hospitalIcon = L.icon({
     iconUrl: 'https://cdn-icons-png.freepik.com/512/6395/6395229.png', 
     iconSize: [25,25], 
     iconAnchor: [25, 25], 
     popupAnchor: [-12.5, -25] 
   });
-  var interceptionIcon = L.icon({
+  var intersectionIcon = L.icon({
     iconUrl: 'https://cdn-icons-png.freepik.com/512/1946/1946345.png', 
     iconSize: [15,15], 
     iconAnchor: [15, 15], 
     popupAnchor: [-7.5, -15] 
   });
+
+  var ambulanceIcon = L.icon({
+    iconUrl: 'https://cdn-icons-png.freepik.com/512/2894/2894975.png',
+    iconSize: [30, 30],
+    iconAnchor: [15, 30],
+    popupAnchor: [0, -30]})
   
+
+    
 // Create an HOSPITAL MARKER
 const hospital_data = RUMAH_SAKIT;
 
 // make hospital marker
 var hospital_markers = [];
+
+
 hospital_data.forEach(function(hospital) {
     const marker = L.marker([hospital.latitude, hospital.longitude], {icon: hospitalIcon }).bindPopup(hospital.id);
     hospital_markers.push(marker);
 });
+
+
 // make hospital data to vertex class
 const hospital_vertices = [];
 for (const data of hospital_data) {
@@ -54,13 +90,22 @@ for (const data of hospital_data) {
 // create intersection marker
 var intersections_data = PERSIMPANGAN
 
-
+let lastClickedMarker = null;  
 // make intersection marker
 var intersection_markers = [];
 intersections_data.forEach(function(intersection) {
-    const marker = L.marker([intersection.latitude, intersection.longitude],{icon: interceptionIcon }).bindPopup(intersection.id);
+    const marker = L.marker([intersection.latitude, intersection.longitude], {icon: intersectionIcon }).bindPopup(intersection.id);
+    marker.addEventListener('click', function() {
+        if (lastClickedMarker) {
+            lastClickedMarker.setIcon(intersectionIcon);  
+        }
+        marker.setIcon(ambulanceIcon); 
+        lastClickedMarker = marker;  
+    });
     intersection_markers.push(marker);
 });
+
+
 // make hospital data to intersection class
 const intersection_vertices = [];
 for (const data of intersections_data) {
@@ -141,32 +186,28 @@ findHosp.addEventListener('click', function(){
 
 
 // Initialize variable to store the marker
-let existinAmbulanceMarker = null;
+let existingAmbulanceMarker = null;
 
 // On map click
-map.on('click', function(e) {
+map.on('click', function (e) {
     // Play click sound
     clickSoundAccident.play();
 
     // Remove existing marker if present
-    if (existinAmbulanceMarker) {
-        map.removeLayer(existingMarker);
+    if (existingAmbulanceMarker) {
+        map.removeLayer(existingAmbulanceMarker);
     }
 
     // Set new marker at clicked location
-    existinAmbulanceMarker = L.marker([e.latlng.lat, e.latlng.lng], { 
-        icon: L.icon({
-            iconUrl: 'https://cdn-icons-png.freepik.com/512/2894/2894975.png', 
-            iconSize: [30, 30],
-            iconAnchor: [15, 30],
-            popupAnchor: [0, -30]
-        })
+    existingAmbulanceMarker = L.marker([e.latlng.lat, e.latlng.lng], {
+        icon: ambulanceIcon
     }).addTo(map);
 
     // Update control values
     controlLatitude.value = e.latlng.lat;
     controlLongitude.value = e.latlng.lng;
 });
+
 
 
 function setDefaultMarker() {
@@ -180,22 +221,36 @@ function setDefaultMarker() {
     }).addTo(map);
 }
 
-
-function resetLocation() {
+resetButton.addEventListener('click', function() {
+    console.log('click');
+    linesDrawn = false;
     controlLatitude.value = defaultLatLong[0];
     controlLongitude.value = defaultLatLong[1];
     map.setView([defaultLatLong[0], defaultLatLong[1]], 16);
+
+    // Remove all markers except hospital and intersection markers akwoekawoekawokawoek
     map.eachLayer(function (layer) {
-        if (layer instanceof L.Marker && !markers.includes(layer)) {
+        if (layer instanceof L.Marker && !hospital_markers.includes(layer) && !intersection_markers.includes(layer)) {
             map.removeLayer(layer);
         }
     });
-    setDefaultMarker();
-}
 
-function copyLatLong() {
+    // Remove all drawn lines from map hehehehehe 
+    drawnLines.forEach(line => map.removeLayer(line));
+    drawnLines = [];
+
+    // Remove the existing ambulance marker :v
+    if (existingAmbulanceMarker) {
+        map.removeLayer(existingAmbulanceMarker);
+        existingAmbulanceMarker = null;
+    }
+});
+
+
+copyLatLongButton.addEventListener('click',function(){
     navigator.clipboard.writeText(`${controlLatitude.value}, ${controlLongitude.value}`);
-}
+})
+
 
 const result = ['itc-37', 'itc-57', 'itc-20', 'rs-jih'];
 
