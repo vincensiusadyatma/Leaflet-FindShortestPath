@@ -1,6 +1,6 @@
 import Graph from "../classes/Graph.js";
-import PERSIMPANGAN from "../persimpangan.js";
-import RUMAH_SAKIT from "../rumahsakit.js";
+import PERSIMPANGAN from "../../persimpangan.js";
+import RUMAH_SAKIT from "../../rumahsakit.js";
 
 const graph = new Graph();
 
@@ -16,9 +16,10 @@ fullVertices.forEach(vertexData => {
 
 // console.log(graph.getVertex("itc-1").getNeighborIds());
 
+const startId = "itc-33";
+const goalId = null;
 const algorithm = 'greedy';
-
-const result = graph.computeShortestRoute("itc-33", "rs-siloam-yogyakarta", algorithm);
+const result = graph.computeShortestRoute(startId, goalId, algorithm);
 if (result == []) {
     console.log('No path found');
 }
