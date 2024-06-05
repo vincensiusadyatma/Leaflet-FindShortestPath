@@ -19,7 +19,7 @@ const PERSIMPANGAN = [
     { id: "itc-18", vertexType: 'intersection', latitude: -7.745033372738852, longitude: 110.43406873941423, label: 'Jalan Raya Tajem', neighborIds: ['itc-1', 'itc-6'] },
     { id: "itc-19", vertexType: 'intersection', latitude: -7.763956061796632, longitude: 110.42223215103151, label: 'Jalan Padjajaran: Ring Road Utara', neighborIds: ['itc-26', 'itc-41'] },
     { id: "itc-20", vertexType: 'intersection', latitude: -7.759143082136332, longitude: 110.40407091379167, label: 'Jalan Padjajaran: Ring Road Utara', neighborIds: ['itc-22', 'itc-21', 'itc-33'] },
-    { id: "itc-21", vertexType: 'intersection', latitude: -7.7573039831454285, longitude: 110.40475755929948, label: 'Jalan Selotomo', neighborIds: ['itc-20', 'itc-23', 'rs-10'] },
+    { id: "itc-21", vertexType: 'intersection', latitude: -7.7573039831454285, longitude: 110.40475755929948, label: 'Jalan Selotomo', neighborIds: ['itc-20', 'itc-23', 'rs-bethesda'] },
     { id: "itc-22", vertexType: 'intersection', latitude: -7.75952578380552, longitude: 110.40528059005739, label: 'Jalan Padjajaran: Ring Road Utara', neighborIds: ['itc-23', 'itc-20', 'itc-41'] },
     { id: "itc-23", vertexType: 'intersection', latitude: -7.757601641331072, longitude: 110.40573924779895, label: 'Jalan Cempaka', neighborIds: ['itc-21', 'itc-22', 'itc-24'] },
     { id: "itc-24", vertexType: 'intersection', latitude: -7.75617447472122, longitude: 110.40608257055285, label: 'Jalan Alpukat', neighborIds: ['itc-23', 'itc-25'] },
