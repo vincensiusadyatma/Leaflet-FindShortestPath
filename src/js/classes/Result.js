@@ -1,20 +1,22 @@
 class Result {
     #graph;
     #pathRoutes;
+    #goalId;
+    #algorithm;
+    #status;
 
-    constructor(graph, pathRoutes) {
+    constructor(graph, pathRoutes, goalId, algorithm, status) {
         this.#graph = graph;
         this.#pathRoutes = pathRoutes;
+        this.#goalId = goalId;
+        this.#algorithm = algorithm;
+        this.#status = status;
     }
 
     getTotalDistance() {
-        console.log('this.#pathRoutes before reverse:', this.#pathRoutes);
         let totalDistance = 0;
-        console.log(typeof this.#pathRoutes);
-        this.#pathRoutes.reverse().forEach(path => {
-            if (path.parent != null) {
-                totalDistance += path.cost;
-            }
+        this.#pathRoutes.forEach(path => {
+            totalDistance += path.cost;
         });
         return totalDistance;
     }
@@ -23,20 +25,42 @@ class Result {
         return this.#pathRoutes;
     }
 
+    getGoalId() {
+        return this.#goalId;
+    }
+
+    getAlgorithm() {
+        return this.#algorithm;
+    }
+
+    getStatus() {
+        return this.#status;
+    }
+
     /**
      * Returns a JSON containg the path total distance and ids of the routes.
      */
     toJSON() {
         return {
+            status: this.#status,
+            algorithm: this.#algorithm,
+            startId: this.#pathRoutes[0].vertex.getId(),
+            goalId: this.#goalId,
             totalDistance: this.getTotalDistance(),
             routes: this.getRouteIds()
         };
     }
 
     printRoutes() {
+        console.log("=== Routes ===");
+        console.log(`Status: ${this.#status}`)
+        console.log(`Algorithm: ${this.#algorithm}`);
+        console.log(`Start: ${this.#pathRoutes[0].vertex.getId()}`);
+        
         console.log(`Total distance: ${this.getTotalDistance()}`);
-        this.#pathRoutes.forEach(route => {
-            console.log(`Vertex: ${route.getId()}, Cost: ${route.cost}`);
+        console.log(`Route used:`)
+        this.#pathRoutes.forEach(path => {
+            console.log(`--> Vertex: ${path.vertex.getId()}, Cost: ${path.cost}`);
         });
     }
 }
