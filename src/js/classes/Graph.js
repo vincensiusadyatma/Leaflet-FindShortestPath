@@ -157,6 +157,14 @@ class Graph {
             console.log(`Greedy pathRoutes: ${pathRoutes}`);
             return result;
         }
+        else if (algorithm === 'greedyBacktrack') {
+            let result;
+            result = this.greedyBacktrack(startVertex, goalVertex);
+            result = new Result(this, result[0], goalId, algorithm, result[1]);
+            console.log("<=========================================================================>");
+            console.log(`Greedy backtrack pathRoutes: ${pathRoutes}`);
+            return result;
+        }
         else {
             throw new Error('Algorithm not found');
         }
@@ -215,7 +223,7 @@ class Graph {
                 // Hospital vertex found
                 status = 'success';
                 break;
-            } else if (currVertex === 'undefined') {
+            } else if (typeof currVertex === 'undefined') {
                 // Reached a leaf node (no backtracking)
                 status = 'failed';
                 break;
@@ -239,6 +247,80 @@ class Graph {
         console.log(pathRoutes);
         return [pathRoutes, status];
     }
+
+    /**
+     * Greedy with backtracking, this algorithm properly handles leaf nodes by backtracking
+     * and selecting another path based on cost.
+     * @param {*} vertex 
+     * @returns 
+     */
+    greedyBacktrack(startVertex, goalVertex) {
+        const vertices = structuredClone(this._vertices);
+        let queue = new PriorityQueue(); // Using priority queue for better path selection
+        let visited = new Set();
+        let pathRoutes = [];
+        let status = 'failed';
+    
+        // Initialize the queue with the start vertex
+        queue.enqueue({ vertex: startVertex, cost: 0, path: [{ vertex: startVertex, cost: 0 }] });
+    
+        // While the queue is not empty
+        let iterations = 0;
+        while (!queue.isEmpty()) {
+            ++iterations;
+            // Get the current vertex and its cost from the queue's head
+            const { vertex: currVertex, cost, path } = queue.dequeue();
+    
+            console.log("===========================================================================");
+            console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
+            console.log("===========================================================================");
+            console.log(`Queue: `); console.log(queue.items);
+            console.log(`Visited: `); console.log(visited);
+            console.log(`Path routes: `); console.log(pathRoutes);
+            console.log("---------------------------------------------------------------------------");
+    
+            // Mark current vertex as visited
+            visited.add(currVertex.getId());
+    
+            // Check for goal conditions
+            if (goalVertex !== null && currVertex.getId() === goalVertex.getId()) {
+                // Specific goal vertex found
+                pathRoutes = path;
+                status = 'success';
+                break;
+            } else if (goalVertex === null && currVertex.getId().startsWith("rs-")) {
+                // Hospital vertex found
+                pathRoutes = path;
+                status = 'success';
+                break;
+            } else if (typeof currVertex === 'undefined') {
+                continue; // Skip undefined vertices
+            }
+    
+            // Get neighbors and add them to queue with their costs
+            let neighborHood = this.nearestNeighborsOf(currVertex);
+            neighborHood = neighborHood.sort((v1, v2) => v1.cost < v2.cost ? -1 : 1).filter(neighbor => !visited.has(neighbor.vertex.getId()));
+            if (neighborHood.length === 0) {
+                continue; // Backtrack by continuing the loop
+            }
+    
+            // Enqueue all neighbors
+            for (let neighbor of neighborHood) {
+                console.log(`Shortest neighbors of (${currVertex.getId()}) is ${neighbor.vertex.getId()} (${neighbor.cost})`);
+                console.log(`Enqueueing vertex: ${neighbor.vertex.getId()}`);
+                queue.enqueue({
+                    vertex: neighbor.vertex,
+                    cost: neighbor.cost,
+                    path: [...path, { vertex: neighbor.vertex, cost: neighbor.cost }]
+                });
+            }
+        }
+    
+        console.log(`Returning pathRoutes: ${pathRoutes.map(route => route.vertex.getId())}`);
+        console.log(pathRoutes);
+        return [pathRoutes, status];
+    }
+    
 
     nearestNeighborsOf(vertex) {
         const neighborHood = [];
