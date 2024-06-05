@@ -9,6 +9,7 @@ const defaultLatLong = [-7.753881231082619, 110.42189287890972];
 
 const controlLatitude = document.getElementById('latitude');
 const controlLongitude = document.getElementById('longitude');
+let selectedId = null;
 const clickSound = document.getElementById('click-sound');
 const clickSoundAccident = document.getElementById("click-sound-crash");
 const findHosp = document.getElementById("findHospitalButton");
@@ -257,7 +258,20 @@ copyLatLongButton.addEventListener('click',function(){
     navigator.clipboard.writeText(`${controlLatitude.value}, ${controlLongitude.value}`);
 })
 
-const result = ['itc-33', 'itc-37', 'itc-57', 'itc-20', 'rs-jih'];
+const result = [
+    'itc-33', 'itc-37',
+    'itc-57', 'itc-20',
+    'rs-jih', 'itc-21',
+    'itc-23', 'itc-22',
+    'itc-41', 'itc-19',
+    'itc-26', 'itc-95',
+    'itc-27', 'itc-29',
+    'itc-28', 'itc-58',
+    'itc-62', 'itc-63',
+    'itc-69', 'itc-97',
+    'itc-98', 'itc-100',
+    'itc-60', 'itc-59',
+    'itc-91', 'rs-siloam-yogyakarta'];
 
 /*'itc-1',  'itc-2',
   'itc-3',  'itc-26',
