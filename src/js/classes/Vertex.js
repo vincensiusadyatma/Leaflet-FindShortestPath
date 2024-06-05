@@ -1,3 +1,7 @@
+Math.radians = function(degrees) {
+    return degrees * Math.PI / 180;
+};
+
 class Vertex {
     
     #id;                        // Vertex id    
@@ -87,7 +91,7 @@ class Vertex {
      * @returns float Distance to the vertex
      */
     distanceFrom(vertex) {
-        console.log(vertex == null ? 'null' : 'not null');
+        console.log(vertex == null ? 'null' : '(exists)');
         if (!(vertex instanceof Vertex)) {
             throw new TypeError("The vertex must be an instance of Vertex class.");
         }
@@ -116,6 +120,32 @@ class Vertex {
             throw new Error("The vertex is not a neighbor.");
         }
         return this.manhattanDistanceFrom(this.#graph.getVertex(id));
+    }
+
+    // Haversine formula to calculate the distance between two points on the Earth
+    haversineDistanceFrom(vertex) {
+        if (!(vertex instanceof Vertex)) {
+            throw new TypeError("The vertex must be an instance of Vertex class.");
+        }
+        const R = 6372.8; // Radius Bumi in km
+        const distanceLat = Math.radians(vertex.getLat() - this.#lat);
+        const distanceLon = Math.radians(vertex.getLon() - this.#lon);
+        const sourceLat = Math.radians(this.#lat);
+        const destLat = Math.radians(vertex.getLat());
+        const a = 
+            Math.pow(Math.sin(distanceLat / 2), 2) 
+            + Math.cos(sourceLat) 
+            * Math.cos(destLat)
+            * Math.pow(Math.sin(distanceLon / 2), 2);
+        const c = 2 * R * Math.asin(Math.sqrt(a));
+        return c;
+    }
+
+    haversineDistanceFromId(id) {
+        if (!this.#neighborIds.has(id)) {
+            throw new Error("The vertex is not a neighbor.");
+        }
+        return this.haversineDistanceFrom(this.#graph.getVertex(id));
     }
 }
 

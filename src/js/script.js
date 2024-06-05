@@ -84,6 +84,8 @@ for (const data of hospital_data) {
     hospital_vertices.push(vertex);
 }
 
+const markers = hospital_markers.concat(intersection_markers);
+
 // create intersection marker
 var intersections_data = PERSIMPANGAN
 
@@ -255,8 +257,7 @@ copyLatLongButton.addEventListener('click',function(){
     navigator.clipboard.writeText(`${controlLatitude.value}, ${controlLongitude.value}`);
 })
 
-
-const result = ['itc-37', 'itc-57', 'itc-20', 'rs-jih'];
+const result = ['itc-33', 'itc-37', 'itc-57', 'itc-20', 'rs-jih'];
 
 /*'itc-1',  'itc-2',
   'itc-3',  'itc-26',
