@@ -128,6 +128,9 @@ class Graph {
 
     computeShortestRoute(startId, goalId, algorithm) {
         const startVertex = this.getVertex(startId);
+        if (startVertex === 'undefined') {
+            throw new Error('Start vertex not found.');
+        }
         console.log(`Start vertex type: ${startVertex}`)
         console.log(`Start vertex: ${startVertex.getId()}`)
         let goalVertex = null;
