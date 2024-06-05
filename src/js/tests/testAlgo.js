@@ -1,4 +1,4 @@
-import Graph from "./classes/Graph.js";
+import Graph from "../classes/Graph.js";
 import PERSIMPANGAN from "../persimpangan.js";
 import RUMAH_SAKIT from "../rumahsakit.js";
 
