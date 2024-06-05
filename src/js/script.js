@@ -9,6 +9,7 @@ const defaultLatLong = [-7.753881231082619, 110.42189287890972];
 
 const controlLatitude = document.getElementById('latitude');
 const controlLongitude = document.getElementById('longitude');
+let selectedId = null;
 const clickSound = document.getElementById('click-sound');
 const clickSoundAccident = document.getElementById("click-sound-crash");
 const findHosp = document.getElementById("findHospitalButton");
@@ -19,20 +20,24 @@ const latLongCopyButton = document.getElementById("copyLatLongButton");
 controlLatitude.value = defaultLatLong[0];
 controlLongitude.value = defaultLatLong[1];
 
-
-
-var hospitalIcon = L.icon({
+const hospitalIcon = L.icon({
     iconUrl: 'https://cdn-icons-png.freepik.com/512/6395/6395229.png',
     iconSize: [25, 25],
     iconAnchor: [12.5, 25],
     popupAnchor: [0, -25]
 });
-var intersectionIcon = L.icon({
+const intersectionIcon = L.icon({
     iconUrl: 'https://cdn-icons-png.freepik.com/512/1946/1946345.png',
     iconSize: [15, 15],
     iconAnchor: [7.5, 15],
     popupAnchor: [0, -15]
 });
+const ambulanceIcon = L.icon({
+    iconUrl: 'https://cdn-icons-png.freepik.com/512/2894/2894975.png',
+    iconSize: [30, 30],
+    iconAnchor: [30, 30],
+    popupAnchor: [0, -30]
+})
 
 // Create an HOSPITAL MARKER
 const hospital_data = RUMAH_SAKIT;
@@ -40,7 +45,11 @@ const hospital_data = RUMAH_SAKIT;
 // make hospital marker
 var hospital_markers = [];
 hospital_data.forEach(function (hospital) {
-    const marker = L.marker([hospital.latitude, hospital.longitude], { icon: hospitalIcon }).bindPopup(hospital.id);
+    const marker = L.marker([hospital.latitude, hospital.longitude], { icon: hospitalIcon, id: hospital.id }).bindPopup(hospital.id);
+    marker.on('click', function (e) {
+        selectedId = hospital.id;
+        alert(`Selected hospital: ${selectedId}`);
+    });
     hospital_markers.push(marker);
 });
 // make hospital data to vertex class
@@ -59,6 +68,10 @@ var intersections_data = PERSIMPANGAN
 var intersection_markers = [];
 intersections_data.forEach(function (intersection) {
     const marker = L.marker([intersection.latitude, intersection.longitude], { icon: intersectionIcon }).bindPopup(intersection.id);
+    marker.on('click', function (e) {
+        selectedId = intersection.id;
+        alert(`Selected intersection: ${selectedId}`);
+    });
     intersection_markers.push(marker);
 });
 
@@ -163,12 +176,7 @@ map.on('click', function (e) {
 
     // Set new marker at clicked location
     existingAmbulanceMarker = L.marker([e.latlng.lat, e.latlng.lng], {
-        icon: L.icon({
-            iconUrl: 'https://cdn-icons-png.freepik.com/512/2894/2894975.png',
-            iconSize: [30, 30],
-            iconAnchor: [30, 30],
-            popupAnchor: [0, -30]
-        })
+        icon: ambulanceIcon
     }).addTo(map);
     existsAmbulanceMarker = true;
 
@@ -210,7 +218,20 @@ function copyLatLong() {
     navigator.clipboard.writeText(`${controlLatitude.value}, ${controlLongitude.value}`);
 }
 
-const result = ['itc-33', 'itc-37', 'itc-57', 'itc-20', 'rs-jih'];
+const result = [
+    'itc-33', 'itc-37',
+    'itc-57', 'itc-20',
+    'rs-jih', 'itc-21',
+    'itc-23', 'itc-22',
+    'itc-41', 'itc-19',
+    'itc-26', 'itc-95',
+    'itc-27', 'itc-29',
+    'itc-28', 'itc-58',
+    'itc-62', 'itc-63',
+    'itc-69', 'itc-97',
+    'itc-98', 'itc-100',
+    'itc-60', 'itc-59',
+    'itc-91', 'rs-siloam-yogyakarta'];
 
 /*'itc-1',  'itc-2',
   'itc-3',  'itc-26',
