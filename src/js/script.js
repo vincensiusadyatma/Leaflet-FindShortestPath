@@ -80,12 +80,9 @@ hospital_data.forEach(function(hospital) {
 // make hospital data to vertex class
 const hospital_vertices = [];
 for (const data of hospital_data) {
-    const vertex = new Vertex(true,data.latitude, data.longitude, data.label, data.id);
+    const vertex = new Vertex(true, data.latitude, data.longitude, data.label, data.id);
     hospital_vertices.push(vertex);
- 
 }
-
-
 
 // create intersection marker
 var intersections_data = PERSIMPANGAN
@@ -109,12 +106,9 @@ intersections_data.forEach(function(intersection) {
 // make hospital data to intersection class
 const intersection_vertices = [];
 for (const data of intersections_data) {
-    const vertex = new Vertex(false,data.latitude, data.longitude, data.label, data.id);
+    const vertex = new Vertex(false, data.latitude, data.longitude, data.label, data.id);
     intersection_vertices.push(vertex);
 }
-
-
-
 
 // The map
 var map = L.map('map').setView([defaultLatLong[0], defaultLatLong[1]], 16);
@@ -126,12 +120,21 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-
 // Add initial markers to the map
-hospital_markers.forEach(function(marker) {
+hospital_markers.forEach(function (marker) {
+    marker.on('click', function (e) {
+        const lat = e.latlng.lat;
+        const lon = e.latlng.lng;
+        setCurrentLocation(lat, lon);
+    });
     marker.addTo(map);
 });
-intersection_markers.forEach(function(marker) {
+intersection_markers.forEach(function (marker) {
+    marker.on('click', function (e) {
+        const lat = e.latlng.lat;
+        const lon = e.latlng.lng;
+        setCurrentLocation(lat, lon);
+    });
     marker.addTo(map);
 });
 
@@ -140,7 +143,7 @@ intersection_markers.forEach(function(marker) {
 let linesDrawn = false;
 let drawnLines = [];
 
-graphButton.addEventListener('click', function() {
+graphButton.addEventListener('click', function () {
     if (linesDrawn) {
         // Remove lines from map
         drawnLines.forEach(line => map.removeLayer(line));
@@ -179,7 +182,7 @@ graphButton.addEventListener('click', function() {
 
 // setDefaultMarker();
 // find hospital button function event
-findHosp.addEventListener('click', function(){
+findHosp.addEventListener('click', function () {
     clickSound.play();
 })
 
@@ -202,6 +205,7 @@ map.on('click', function (e) {
     existingAmbulanceMarker = L.marker([e.latlng.lat, e.latlng.lng], {
         icon: ambulanceIcon
     }).addTo(map);
+    existsAmbulanceMarker = true;
 
     // Update control values
     controlLatitude.value = e.latlng.lat;
@@ -267,7 +271,7 @@ const full_vertex = PERSIMPANGAN.concat(RUMAH_SAKIT)
 const findNode = (id) => {
     return full_vertex.find(intersection => intersection.id === id);
 };
-findHosp.addEventListener('click', function() {
+findHosp.addEventListener('click', function () {
     const lat = controlLatitude.value;
     const lon = controlLongitude.value;
 
@@ -319,7 +323,3 @@ findHosp.addEventListener('click', function() {
         });
     });
 });
-
-
-
-
