@@ -15,8 +15,11 @@ fullVertices.forEach(vertexData => {
 
 // console.log(graph.getVertex("itc-1").getNeighborIds());
 
-const result = graph.computeShortestRoute("itc-37", "rs-jih", 'greedy');
+const algorithm = 'greedy';
+
+const result = graph.computeShortestRoute("itc-33", "rs-jih", algorithm);
 if (result == []) {
     console.log('No path found');
 }
+console.log(`Algorithm: ${algorithm}`);
 console.log(result.toJSON());

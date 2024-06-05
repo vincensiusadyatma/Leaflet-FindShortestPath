@@ -13,6 +13,8 @@ const clickSound = document.getElementById('click-sound');
 const clickSoundAccident = document.getElementById("click-sound-crash");
 const findHosp = document.getElementById("findHospitalButton");
 const graphButton = document.getElementById("showGraphButton")
+const resetButton = document.getElementById("resetButton");
+const latLongCopyButton = document.getElementById("copyLatLongButton");
 
 controlLatitude.value = defaultLatLong[0];
 controlLongitude.value = defaultLatLong[1];
@@ -47,6 +49,8 @@ for (const data of hospital_data) {
     const vertex = new Vertex(true, data.latitude, data.longitude, data.label, data.id);
     hospital_vertices.push(vertex);
 }
+
+const markers = hospital_markers.concat(intersection_markers);
 
 // create intersection marker
 var intersections_data = PERSIMPANGAN
@@ -135,7 +139,7 @@ graphButton.addEventListener('click', function () {
     linesDrawn = !linesDrawn;
 });
 
-setDefaultMarker();
+// setDefaultMarker();
 // find hospital button function event
 findHosp.addEventListener('click', function () {
     clickSound.play();
@@ -186,17 +190,16 @@ function setDefaultMarker() {
 }
 
 
-function resetLocation() {
-    controlLatitude.value = defaultLatLong[0];
-    controlLongitude.value = defaultLatLong[1];
-    map.setView([defaultLatLong[0], defaultLatLong[1]], 16);
+resetButton.addEventListener('click', function () {
     map.eachLayer(function (layer) {
-        if (layer instanceof L.Marker && !markers.includes(layer)) {
+        if (layer instanceof L.Polyline && !drawnLines.includes(layer)) {
             map.removeLayer(layer);
         }
     });
     setDefaultMarker();
-}
+});
+
+
 
 function setCurrentLocation(lat, lon) {
     controlLatitude.value = lat;
@@ -207,23 +210,33 @@ function copyLatLong() {
     navigator.clipboard.writeText(`${controlLatitude.value}, ${controlLongitude.value}`);
 }
 
-const result = ["itc-1", "itc-2", "itc-3", "itc-4"];
+const result = ['itc-33', 'itc-37', 'itc-57', 'itc-20', 'rs-jih'];
 
+/*'itc-1',  'itc-2',
+  'itc-3',  'itc-26',
+  'itc-27', 'itc-29',
+  'itc-28', 'itc-50',
+  'itc-59', 'rs-siloam-yogyakarta',
+  'itc-32', 'itc-42',
+  'itc-37', 'itc-57',
+  'itc-20', 'rs-jih' */
+
+const full_vertex = PERSIMPANGAN.concat(RUMAH_SAKIT)
 const findNode = (id) => {
-    return PERSIMPANGAN.find(intersection => intersection.id === id);
+    return full_vertex.find(intersection => intersection.id === id);
 };
 findHosp.addEventListener('click', function () {
     const lat = controlLatitude.value;
     const lon = controlLongitude.value;
 
     const routePath = [];
-    routePath.push({
-        id: "ambulance-1",
-        vertexType: "ambulance",
-        latitude: lat,
-        longitude: lon,
-        neighbors: [result[0]]
-    });
+    // routePath.push({
+    //     id: "ambulance-1",
+    //     vertexType: "ambulance",
+    //     latitude: lat,
+    //     longitude: lon,
+    //     neighbors: [result[0]]
+    // });
 
     // make array  to object
     for (let i = 0; i < result.length - 1; i++) {

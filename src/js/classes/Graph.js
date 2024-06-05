@@ -117,10 +117,24 @@ class Graph {
 
     computeShortestRoute(startId, goalId, algorithm) {
         const startVertex = this.getVertex(startId);
-        const goalVertex = this.getVertex(goalId);
+        console.log(`Start vertex type: ${startVertex}`)
         console.log(`Start vertex: ${startVertex.getId()}`)
-        console.log(`Goal vertex: ${goalVertex.getId()}`)
-        const routes = this.greedy(startVertex, goalVertex);
+        const goalVertex = this.getVertex(goalId)
+        console.log(`Goal vertex type: ${goalVertex}`)
+        console.log(`Goal vertex: ${goalVertex.getId()}`);
+
+        let routes;
+        if (algorithm === 'dijkstra') {
+            routes = this.dijkstra(startVertex, goalVertex);
+            console.log(`Routes: ${routes}`);
+        }
+        else if (algorithm === 'greedy') {
+            routes = this.greedy(startVertex, goalVertex);
+            console.log(`Routes: ${routes}`);
+        }
+        else {
+            throw new Error('Algorithm not found');
+        }
         console.log(`Routes: ${routes}`);
 
         // Fills the result object with route,
@@ -209,6 +223,48 @@ class Graph {
         }
 
         return path.reverse();
+    }
+
+    dijkstra(startVertex, goalVertex) {
+        const vertices = structuredClone(this._vertices);
+        let queue = new PriorityQueue();
+        let visited = new Set();
+
+        // Initialize the queue with the start vertex
+        queue.enqueue({ vertex: startVertex, cost: 0, parent: null });
+
+        // While the queue is not empty
+        while (!queue.isEmpty()) {
+            // Get the current vertex and its cost from the queue's head
+            const { vertex: currVertex, cost } = queue.dequeue();
+
+            // When finding the goal id, reconstruct the path and return it
+            if (currVertex.getId() === goalVertex.getId()) {
+                return this.reconstructPath(currVertex);
+            }
+
+            // Mark current vertex as visited (after processing its children)
+            visited.add(currVertex.getId());
+
+            // Get children and add them to queue with their costs
+            const children = this.dijkstraGetChildren(currVertex, goalVertex);
+            for (const child of children) {
+                if (!visited.has(child.vertex.getId())) {
+                    child.vertex.setParent(currVertex);
+                    queue.enqueue({ vertex: child.vertex, cost: cost + child.cost, parent: currVertex });
+                }
+            }
+        }
+    }
+
+    dijkstraGetChildren(vertex, goalVertex) {
+        const children = [];
+        for (let neighborId of vertex.getNeighborIds()) {
+            const neighbor = this.getVertex(neighborId);
+            const distance = vertex.distanceFrom(neighbor);
+            children.push({ vertex: neighbor, cost: distance, parent: vertex });
+        }
+        return children;
     }
 }
 

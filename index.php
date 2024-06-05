@@ -36,8 +36,8 @@
                     <td><input type="checkbox" id="shouldBigHospital"></td>
                 </tr>
             </table>
-            <input type="button" value="reset" onclick="resetLocation()"/>
-            <input type="button" value="copyLatLong" onclick="copyLatLong()"/>
+            <input type="button" value="reset" id="resetButton"/>
+            <input type="button" value="copyLatLong" if="copyLatLongButton"/>
             <input type="button" value="show graph" id="showGraphButton" />
             <input type="button" value="findHospital" id="findHospitalButton"/>
         </div>

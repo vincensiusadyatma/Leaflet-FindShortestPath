@@ -19,12 +19,8 @@ class Result {
         return totalDistance;
     }
 
-    getPathRoutes() {
-        return this.#pathRoutes;
-    }
-
     getRouteIds() {
-        return this.#pathRoutes.map(route => route.getId());
+        return this.#pathRoutes;
     }
 
     /**
