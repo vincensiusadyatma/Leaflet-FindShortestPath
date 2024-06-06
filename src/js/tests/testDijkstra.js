@@ -17,7 +17,8 @@ fullVertices.forEach(vertexData => {
 // console.log(graph.getVertex("itc-1").getNeighborIds());
 
 const startId = "itc-57";
-const goalId = "rs-siloam-yogyakarta";
+// const goalId = "rs-drs-hardjolukito";
+const goalId = "rs-gaada";
 // const goalId = null;
 const algorithm = 'dijkstra';
 const result = graph.computeShortestRoute(startId, goalId, algorithm);
