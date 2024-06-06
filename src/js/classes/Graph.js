@@ -174,6 +174,17 @@ class Graph {
             console.log("<=========================================================================>");
             return result;
         }
+        else if (algorithm === 'astar') {
+            if (goalVertex === null) {
+                throw new Error('Goal vertex must be specified for A* algorithm');
+            }
+            let result;
+            result = this.astar(startVertex, goalVertex);
+            console.log(`A* pathRoutes: ${result[0].map(route => route.vertex.getId())}`);
+            result = new Result(this, result[0], goalId, algorithm, result[1]);
+            console.log("<=========================================================================>");
+            return result;
+        }
         else {
             throw new Error("Algorithm not found, use either: 'greedy', 'bfs', or 'dijkstra'.");
         }
@@ -261,25 +272,25 @@ class Graph {
     bfs(startVertex, goalVertex) {
         const vertices = structuredClone(this._vertices);
         // Making a priority queue with lower cost as the priority
-        let queue = new PriorityQueue();
+        let priorityQueue = new PriorityQueue();
         let visited = new Set();
         let pathRoutes = [];
         let status = 'failed';
 
         // Initialize the queue with the start vertex
-        queue.enqueue({ vertex: startVertex, cost: 0, path: [{ vertex: startVertex, cost: 0 }] });
+        priorityQueue.enqueue({ vertex: startVertex, cost: 0, path: [{ vertex: startVertex, cost: 0 }] });
 
         // While the queue is not empty
         let iterations = 0;
-        while (!queue.isEmpty()) {
+        while (!priorityQueue.isEmpty()) {
             ++iterations;
             // Get the current vertex and its cost from the queue's head
-            const { vertex: currVertex, cost, path } = queue.dequeue();
+            const { vertex: currVertex, cost, path } = priorityQueue.dequeue();
 
             console.log("===========================================================================");
             console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
             console.log("===========================================================================");
-            console.log(`Queue: `); console.log(queue.items);
+            console.log(`Queue: `); console.log(priorityQueue.items);
             console.log(`Visited: `); console.log(visited);
             console.log(`Path routes: `); console.log(pathRoutes);
             console.log("---------------------------------------------------------------------------");
@@ -313,7 +324,7 @@ class Graph {
             for (let neighbor of neighborHood) {
                 console.log(`Shortest neighbors of (${currVertex.getId()}) is ${neighbor.vertex.getId()} (${neighbor.cost})`);
                 console.log(`Enqueueing vertex: ${neighbor.vertex.getId()}`);
-                queue.enqueue({
+                priorityQueue.enqueue({
                     vertex: neighbor.vertex,
                     cost: neighbor.cost,
                     path: [...path, { vertex: neighbor.vertex, cost: neighbor.cost }]
@@ -384,12 +395,97 @@ class Graph {
             // Get neighbors and update distances
             let neighbors = this.nearestNeighborsOf(currVertex);
             for (let neighbor of neighbors) {
-                let alternate = distances[currVertex.getId()];
+                let alternate = distances[currVertex.getId()] + neighbor.cost;
                 if (alternate < distances[neighbor.vertex.getId()]) {
                     distances[neighbor.vertex.getId()] = alternate;
                     // console.log(`Distances: `); console.log(distances);
                     previousVertices[neighbor.vertex.getId()] = currVertex;
                     priorityQueue.enqueue({ vertex: neighbor.vertex, cost: alternate });
+                }
+            }
+        }
+
+        // Recalculate the distances/cost in pathRoutes for each vertex
+        // starting from the second vertex
+        for (let i = 1; i < pathRoutes.length; i++) {
+            const currVertex = pathRoutes[i].vertex;
+            const prevVertex = pathRoutes[i - 1].vertex;
+            pathRoutes[i].cost = currVertex.haversineDistanceFrom(prevVertex);
+        }
+        
+        // Path to goal vertex not found
+        if (pathRoutes.length === 0) {
+            pathRoutes = [{vertex: goalVertex, cost: 0}];
+        }
+
+        console.log(`Returning pathRoutes: ${pathRoutes.map(route => route.vertex.getId())}`);
+        console.log(pathRoutes);
+        return [pathRoutes, status];
+    }
+
+    // Add this method to compute the heuristic (e.g., using the haversine distance)
+    heuristic(vertex, goalVertex) {
+        return vertex.haversineDistanceFrom(goalVertex);
+    }
+
+    /**
+     * A* algorithm to find the most optimal shortest path using a heuristic to prioritize paths.
+     * @param startVertex 
+     * @param goalVertex 
+     * @returns an array containing the pathRoutes and status
+     */
+    astar(startVertex, goalVertex) {
+        const vertices = this._vertices;
+        let priorityQueue = new PriorityQueue();
+        let distances = {};
+        let previousVertices = {};
+        let pathRoutes = [];
+        let status = 'failed';
+
+        // Initialize distances and priority queue
+        for (let vertex of vertices.values()) {
+            if (!(vertex instanceof Vertex)) throw new Error('Vertex is undefined');
+            distances[vertex.getId()] = Infinity;
+            previousVertices[vertex.getId()] = null;
+        }
+        distances[startVertex.getId()] = 0;
+        priorityQueue.enqueue({ vertex: startVertex, cost: 0 });
+
+        let iterations = 0;
+        while (!priorityQueue.isEmpty()) {
+            ++iterations;
+            const { vertex: currVertex } = priorityQueue.dequeue();
+
+            console.log("===========================================================================");
+            console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
+            console.log("===========================================================================");
+            console.log(`Queue: `); console.log(priorityQueue.items);
+            console.log(`Path routes: `); console.log(pathRoutes);
+            console.log("---------------------------------------------------------------------------");
+
+            // Stop if we reached the goal
+            if (currVertex.getId() === goalVertex.getId()) {
+                status = 'success';
+                let vertex = currVertex;
+                while (vertex) {
+                    console.log(`Pushing pathRoutes: ${vertex.getId()}`);
+                    pathRoutes.unshift({ vertex: vertex, cost: distances[vertex.getId()] });
+                    vertex = previousVertices[vertex.getId()];
+                }
+                break;
+            }
+
+            // Get neighbors and update distances
+            let neighbors = this.nearestNeighborsOf(currVertex);
+            for (let neighbor of neighbors) {
+                let newCost = distances[currVertex.getId()] + neighbor.cost;
+                if (newCost < distances[neighbor.vertex.getId()]) {
+                    distances[neighbor.vertex.getId()] = newCost;
+                    previousVertices[neighbor.vertex.getId()] = currVertex;
+                    const heuristic = this.heuristic(neighbor.vertex, goalVertex);
+                    console.log(`Heuristic: ${heuristic}`);
+                    let priority = newCost + heuristic;
+                    priorityQueue.enqueue({ vertex: neighbor.vertex, cost: priority });
                 }
             }
         }

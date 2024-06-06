@@ -19,13 +19,21 @@ fullVertices.forEach(vertexData => {
 const startId = "itc-57";
 // const goalId = "rs-drs-hardjolukito";
 // { id: "rs-gaada", vertexType: 'hospital', latitude: -7.81485173520654325, longitude: 110.38163959980212, label: 'DOES NOT EXIST', neighborIds: [] }
-const goalId = "rs-gaada";
+// const goalId = "rs-gaada";
+const goalId = "rs-pratama";
 // const goalId = null;
 const algorithm = 'dijkstra';
+
+const startTime = performance.now();
 const result = graph.computeShortestRoute(startId, goalId, algorithm);
+const endTime = performance.now();
+
 if (result == []) {
     console.log('No path found');
 }
 console.log(`Algorithm: ${algorithm}`);
 console.log(result.toJSON());
 result.printRoutes();
+
+const timeElapsed = endTime - startTime;
+console.log(`Time elapsed: ${timeElapsed.toFixed(2)} milliseconds`);
