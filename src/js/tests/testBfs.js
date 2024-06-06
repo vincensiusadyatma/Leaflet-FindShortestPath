@@ -21,7 +21,7 @@ const startId = "itc-57";
 const goalId = "rs-gaada";
 // const goalId = null;
 // const goalId = "rs-siloam-yogyakarta";
-const algorithm = 'greedyBacktrack';
+const algorithm = 'bfs';
 const result = graph.computeShortestRoute(startId, goalId, algorithm);
 if (result == []) {
     console.log('No path found');
