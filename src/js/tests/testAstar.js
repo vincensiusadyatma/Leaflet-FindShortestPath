@@ -17,12 +17,9 @@ fullVertices.forEach(vertexData => {
 // console.log(graph.getVertex("itc-1").getNeighborIds());
 
 const startId = "itc-57";
-// const goalId = "rs-drs-hardjolukito";
-// { id: "rs-gaada", vertexType: 'hospital', latitude: -7.81485173520654325, longitude: 110.38163959980212, label: 'DOES NOT EXIST', neighborIds: [] }
-// const goalId = "rs-gaada";
 const goalId = "rs-pratama";
 // const goalId = null;
-const algorithm = 'dijkstra';
+const algorithm = 'astar';
 
 const startTime = performance.now();
 const result = graph.computeShortestRoute(startId, goalId, algorithm);
