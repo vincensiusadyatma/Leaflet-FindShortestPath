@@ -1,10 +1,11 @@
 import Graph from "../classes/Graph.js";
 import PERSIMPANGAN from "../../persimpangan.js";
 import RUMAH_SAKIT from "../../rumahsakit.js";
+import { hrtime } from 'process';
 
 function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy', 'bfs', 'astar']) {
     const algoAndAverageTime = [];
-    const runHistory = [];
+    const runHistory = {};
 
     const graph = new Graph();
     const fullVertices = PERSIMPANGAN.concat(RUMAH_SAKIT);
@@ -14,18 +15,25 @@ function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy
 
     algorithms.forEach(algorithm => {
         runHistory[algorithm] = [];
-        let totalTime = 0;
+        let totalTimeNs = 0n;
         for (let i = 0; i < nTimes; i++) {
-            const startTime = performance.now();
+            const startTime = hrtime.bigint();
             const result = graph.computeShortestRoute(startId, goalId, algorithm);
-            // run history contains only the status and the time elapsed for each run, for each algorithm
-            const endTime = performance.now();
-            const timeElapsed = endTime - startTime;
-            runHistory[algorithm].push({ status: result.getStatus(), timeElapsed });
-            totalTime += timeElapsed;
+            const endTime = hrtime.bigint();
+            const timeElapsedNs = endTime - startTime; 
+            const timeElapsedMs = Number(timeElapsedNs) / 1e6;
+            runHistory[algorithm].push({ 
+                status: result.getStatus(), 
+                timeElapsed: `${timeElapsedMs.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})} miliseconds (${timeElapsedNs.toLocaleString()} nanoseconds)`
+            });
+            totalTimeNs += timeElapsedNs;
         }
-        const averageTime = totalTime / nTimes;
-        algoAndAverageTime.push({ algorithm, averageTime });
+        const averageTimeNs = totalTimeNs / BigInt(nTimes);
+        const averageTimeMs = Number(averageTimeNs) / 1e6;
+        algoAndAverageTime.push({ 
+            algorithm, 
+            averageTime: `${averageTimeMs.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})} miliseconds (${averageTimeNs.toLocaleString()} nanoseconds)`
+        });
     });
 
     return {
