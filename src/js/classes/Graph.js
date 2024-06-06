@@ -138,7 +138,11 @@ class Graph {
         console.log(`Start vertex: ${startVertex.getId()}`)
         let goalVertex = null;
         if (goalId !== null) {
-            goalVertex = this.getVertex(goalId)
+            try {
+                goalVertex = this.getVertex(goalId)
+            } catch (e) {
+                throw new Error(`This vertex does not exist in the graph!`)
+            }
             console.log(`Goal vertex type: ${goalVertex}`)
             console.log(`Goal vertex: ${goalVertex.getId()}`);
         }
@@ -257,7 +261,8 @@ class Graph {
      */
     greedyBacktrack(startVertex, goalVertex) {
         const vertices = structuredClone(this._vertices);
-        let queue = new PriorityQueue(); // Using priority queue for better path selection
+        // Making a priority queue with lower cost as the priority
+        let queue = new PriorityQueue();
         let visited = new Set();
         let pathRoutes = [];
         let status = 'failed';
@@ -331,8 +336,7 @@ class Graph {
      */
     dijkstra(startVertex, goalVertex) {
         const vertices = this._vertices;
-        console.log(vertices);
-        // throw new Error('Early break to debug');
+        // Making a priority queue with lower cost as the priority
         let priorityQueue = new PriorityQueue();
         let distances = {};
         let previousVertices = {};
@@ -349,6 +353,7 @@ class Graph {
         priorityQueue.enqueue({ vertex: startVertex, cost: 0 });
 
         let iterations = 0;
+        const maxIterations = vertices.size ** 2;
         while (!priorityQueue.isEmpty()) {
             ++iterations;
             const { vertex: currVertex, cost } = priorityQueue.dequeue();
@@ -359,7 +364,6 @@ class Graph {
             console.log(`Queue: `); console.log(priorityQueue.items);
             console.log(`Path routes: `); console.log(pathRoutes);
             console.log("---------------------------------------------------------------------------");
-
 
             // Stop if we reached the goal
             if (currVertex.getId() === goalVertex.getId()) {
@@ -376,7 +380,7 @@ class Graph {
             // Get neighbors and update distances
             let neighbors = this.nearestNeighborsOf(currVertex);
             for (let neighbor of neighbors) {
-                let alternate = distances[currVertex.getId()] + neighbor.cost;
+                let alternate = distances[currVertex.getId()];
                 if (alternate < distances[neighbor.vertex.getId()]) {
                     distances[neighbor.vertex.getId()] = alternate;
                     // console.log(`Distances: `); console.log(distances);
@@ -392,6 +396,11 @@ class Graph {
             const currVertex = pathRoutes[i].vertex;
             const prevVertex = pathRoutes[i - 1].vertex;
             pathRoutes[i].cost = currVertex.haversineDistanceFrom(prevVertex);
+        }
+        
+        // Path to goal vertex not found
+        if (pathRoutes.length === 0) {
+            pathRoutes = [{vertex: goalVertex, cost: 0}];
         }
 
         console.log(`Returning pathRoutes: ${pathRoutes.map(route => route.vertex.getId())}`);
