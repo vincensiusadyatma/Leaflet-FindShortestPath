@@ -18,6 +18,7 @@ fullVertices.forEach(vertexData => {
 
 const startId = "itc-57";
 // const goalId = "rs-drs-hardjolukito";
+// { id: "rs-gaada", vertexType: 'hospital', latitude: -7.81485173520654325, longitude: 110.38163959980212, label: 'DOES NOT EXIST', neighborIds: [] }
 const goalId = "rs-gaada";
 // const goalId = null;
 const algorithm = 'dijkstra';
