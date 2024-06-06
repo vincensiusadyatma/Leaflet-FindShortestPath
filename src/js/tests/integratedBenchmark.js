@@ -15,6 +15,7 @@ function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy
 
     algorithms.forEach(algorithm => {
         runHistory[algorithm] = [];
+        let hasFailedStatus = false;
         let totalTimeNs = 0n;
         for (let i = 0; i < nTimes; i++) {
             const startTime = hrtime.bigint();
@@ -27,11 +28,15 @@ function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy
                 timeElapsed: `${timeElapsedMs.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})} miliseconds (${timeElapsedNs.toLocaleString()} nanoseconds)`
             });
             totalTimeNs += timeElapsedNs;
+            if (result.getStatus() === 'failed') {
+                hasFailedStatus = true;
+            }
         }
         const averageTimeNs = totalTimeNs / BigInt(nTimes);
         const averageTimeMs = Number(averageTimeNs) / 1e6;
+
         algoAndAverageTime.push({ 
-            algorithm, 
+            algorithm: `${algorithm} (${hasFailedStatus ? 'has failed status' : 'success'})`, 
             averageTime: `${averageTimeMs.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})} miliseconds (${averageTimeNs.toLocaleString()} nanoseconds)`
         });
     });
@@ -40,6 +45,7 @@ function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy
         history: runHistory,
         startId: startId,
         goalId: goalId,
+        iterations: nTimes,
         averageTime: algoAndAverageTime
     };
 }
