@@ -66,9 +66,6 @@ class Graph {
                 console.log(`Vertices:${vertices.map(vertex => vertex.getId())}`)
                 const neighbor = this.getVertex(neighborId);
                 console.log(`Neighbor type: ${typeof neighbor}`);
-                // if (!(neighbor instanceof Vertex)) {
-                //     throw new Error('Vertex must be an instance of Vertex');
-                // }
                 if (neighbor) {
                     this.connectVertices(v, neighbor);
                     console.log(`Connected vertex ${v.getId()} with neighbor ${neighbor.getId()}`);
@@ -125,6 +122,13 @@ class Graph {
 
     // Shortest path finder caller
 
+    /**
+     * Caller method to compute the shortest path between two vertices using a specified algorithm.
+     * @param startId id of the starting vertex
+     * @param goalId id of the goal vertex, can be null to automatically find the nearest hospital
+     * @param algorithm algorithm to use: can be 'greedy','greedyBacktrack', or dijkstra'
+     * @returns 
+     */
     computeShortestRoute(startId, goalId, algorithm) {
         const startVertex = this.getVertex(startId);
         if (startVertex === 'undefined') {
