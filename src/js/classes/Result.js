@@ -57,11 +57,10 @@ class Result {
         console.log(`Algorithm: ${this.#algorithm}`);
         console.log(`Start: ${this.#pathRoutes[0].vertex.getId()}`);
         console.log(`Goal: ${this.#goalId}`);
-        console.log(`Total distance: ${this.getTotalDistance()}`);
+        console.log(`Total distance: ${this.getTotalDistance()} (KM)`);
         console.log(`Route used:`)
-        this.#pathRoutes.forEach(path => {
-            console.log(`--> Vertex: ${path.vertex.getId()}, Cost: ${path.cost}`);
-        });
+        // this.#pathRoutes.forEach(path => {console.log(`--> Vertex: ${path.vertex.getId()}, Cost: ${path.cost}`);});
+        console.log(this.#pathRoutes.map(path => path.vertex.getId()));
     }
 }
 
