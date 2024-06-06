@@ -53,7 +53,7 @@ const PERSIMPANGAN = [
     { id: "itc-52", vertexType: 'intersection', latitude: -7.788533023763781, longitude: 110.37395238876343, label: 'Jalan Sultan Agung', neighborIds: ['itc-53', 'itc-48'] },
     { id: "itc-53", vertexType: 'intersection', latitude: -7.790417162628816, longitude: 110.37296265363696, label: 'Jalan Parangtritis', neighborIds: ['itc-54', 'itc-52'] },
     { id: "itc-54", vertexType: 'intersection', latitude: -7.790496886230279, longitude: 110.37409991025926, label: 'Jalan Irian', neighborIds: ['itc-56', 'itc-55'] },
-    { id: "itc-55", vertexType: 'intersection', latitude: -7.796675419165053, longitude: 110.36911368370056, label: 'Jalan Sumatra', neighborIds: ['itc-54', "rs-lempuyangwangi"] },
+    { id: "itc-55", vertexType: 'intersection', latitude: -7.796675419165053, longitude: 110.36911368370056, label: 'Jalan Sumatra', neighborIds: ['itc-54'] },
     { id: "itc-56", vertexType: 'intersection', latitude: -7.789999942200338, longitude: 110.37820369005205, label: 'Jalan Java', neighborIds: ['itc-51', 'itc-54', 'itc-60'] },
     { id: "itc-57", vertexType: 'intersection', latitude: -7.769122445763837, longitude: 110.40208339691164, label: 'Jalan Bali', neighborIds: ['itc-37', 'itc-20'] },
     { id: "itc-58", vertexType: 'intersection', latitude: -7.798570150990592, longitude: 110.40987253189088, label: 'Jalan Sumatra', neighborIds: ['itc-28', 'itc-62', 'itc-93'] },
