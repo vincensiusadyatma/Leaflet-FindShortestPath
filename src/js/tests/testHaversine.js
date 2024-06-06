@@ -1,6 +1,6 @@
 import Vertex from "../classes/Vertex.js";
 import Graph from "../classes/Graph.js";
-import { strict as assert } from 'assert';
+// import { strict as assert } from 'assert';
 
 const vertex1 = new Vertex("loc1", "intersection", -7.745820063276957, 110.39869308471681, null, null, ["loc2", "loc3", "loc4", "loc5", "loc6", "loc7"]);
 const vertex2 = new Vertex("loc2", "intersection", -7.754532031177765, 110.42155086994173, null, null, ["loc1", "loc3", "loc4", "loc5", "loc6", "loc7"]);

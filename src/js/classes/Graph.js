@@ -2,7 +2,6 @@ import Result from "./Result.js";
 import Vertex from "./Vertex.js";
 import PriorityQueue from "./PriorityQueue.js";
 import Queue from "./Queue.js";
-import { strict as assert } from 'assert';
 
 class Graph {
 
@@ -67,9 +66,6 @@ class Graph {
                 console.log(`Vertices:${vertices.map(vertex => vertex.getId())}`)
                 const neighbor = this.getVertex(neighborId);
                 console.log(`Neighbor type: ${typeof neighbor}`);
-                // if (!(neighbor instanceof Vertex)) {
-                //     throw new Error('Vertex must be an instance of Vertex');
-                // }
                 if (neighbor) {
                     this.connectVertices(v, neighbor);
                     console.log(`Connected vertex ${v.getId()} with neighbor ${neighbor.getId()}`);
@@ -126,6 +122,13 @@ class Graph {
 
     // Shortest path finder caller
 
+    /**
+     * Caller method to compute the shortest path between two vertices using a specified algorithm.
+     * @param startId id of the starting vertex
+     * @param goalId id of the goal vertex, can be null to automatically find the nearest hospital
+     * @param algorithm algorithm to use: can be 'greedy','greedyBacktrack', or dijkstra'
+     * @returns 
+     */
     computeShortestRoute(startId, goalId, algorithm) {
         const startVertex = this.getVertex(startId);
         if (startVertex === 'undefined') {
@@ -142,38 +145,35 @@ class Graph {
 
         let pathRoutes;
         if (algorithm === 'dijkstra') {
+            if (goalVertex === null) {
+                throw new Error('Goal vertex must be specified for Dijkstra algorithm');
+            }
             let result;
             result = this.dijkstra(startVertex, goalVertex);
+            console.log(`Dijkstra pathRoutes: ${result[0].map(route => route.vertex.getId())}`);
             result = new Result(this, result[0], goalId, algorithm, result[1]);
             console.log("<=========================================================================>");
-            console.log(`Dijkstra pathRoutes: ${pathRoutes}`);
             return result;
         }
         else if (algorithm === 'greedy') {
             let result;
             result = this.greedy(startVertex, goalVertex);
+            console.log(`Greedy pathRoutes: ${result[0].map(route => route.vertex.getId())}`);
             result = new Result(this, result[0], goalId, algorithm, result[1]);
             console.log("<=========================================================================>");
-            console.log(`Greedy pathRoutes: ${pathRoutes}`);
             return result;
         }
         else if (algorithm === 'greedyBacktrack') {
             let result;
             result = this.greedyBacktrack(startVertex, goalVertex);
+            console.log(`Greedy backtrack pathRoutes: ${result[0].map(route => route.vertex.getId())}`);
             result = new Result(this, result[0], goalId, algorithm, result[1]);
             console.log("<=========================================================================>");
-            console.log(`Greedy backtrack pathRoutes: ${pathRoutes}`);
             return result;
         }
         else {
             throw new Error('Algorithm not found');
         }
-
-        // assert.equal(pathRoutes, 'undefined', 'No path found');
-        // throw new Error('Early break to debug');
-
-        // Fills the result object with route,
-        // route is an array of vertices id with its cost (like dictionary)
     }
 
     // Shortest path algorithm
@@ -182,7 +182,7 @@ class Graph {
      * Greedy algorithm that hopes to find the shortest path without doing backtracking
      * by selecting the nearest neighbor of each traveled vertex.
      * @param startVertex Starting vertex
-     * @param goalVertex Goal vertex
+     * @param goalVertex Goal vertex, can be null
      * @returns an array containing the pathRoutes and status
      */
     greedy(startVertex, goalVertex) {
@@ -251,8 +251,9 @@ class Graph {
     /**
      * Greedy with backtracking, this algorithm properly handles leaf nodes by backtracking
      * and selecting another path based on cost.
-     * @param {*} vertex 
-     * @returns 
+     * @param startVertex Starting vertex
+     * @param goalVertex Goal vertex, can be null
+     * @returns an array containing the pathRoutes and status
      */
     greedyBacktrack(startVertex, goalVertex) {
         const vertices = structuredClone(this._vertices);
@@ -260,17 +261,17 @@ class Graph {
         let visited = new Set();
         let pathRoutes = [];
         let status = 'failed';
-    
+
         // Initialize the queue with the start vertex
         queue.enqueue({ vertex: startVertex, cost: 0, path: [{ vertex: startVertex, cost: 0 }] });
-    
+
         // While the queue is not empty
         let iterations = 0;
         while (!queue.isEmpty()) {
             ++iterations;
             // Get the current vertex and its cost from the queue's head
             const { vertex: currVertex, cost, path } = queue.dequeue();
-    
+
             console.log("===========================================================================");
             console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
             console.log("===========================================================================");
@@ -278,10 +279,10 @@ class Graph {
             console.log(`Visited: `); console.log(visited);
             console.log(`Path routes: `); console.log(pathRoutes);
             console.log("---------------------------------------------------------------------------");
-    
+
             // Mark current vertex as visited
             visited.add(currVertex.getId());
-    
+
             // Check for goal conditions
             if (goalVertex !== null && currVertex.getId() === goalVertex.getId()) {
                 // Specific goal vertex found
@@ -296,14 +297,14 @@ class Graph {
             } else if (typeof currVertex === 'undefined') {
                 continue; // Skip undefined vertices
             }
-    
+
             // Get neighbors and add them to queue with their costs
             let neighborHood = this.nearestNeighborsOf(currVertex);
             neighborHood = neighborHood.sort((v1, v2) => v1.cost < v2.cost ? -1 : 1).filter(neighbor => !visited.has(neighbor.vertex.getId()));
             if (neighborHood.length === 0) {
                 continue; // Backtrack by continuing the loop
             }
-    
+
             // Enqueue all neighbors
             for (let neighbor of neighborHood) {
                 console.log(`Shortest neighbors of (${currVertex.getId()}) is ${neighbor.vertex.getId()} (${neighbor.cost})`);
@@ -315,12 +316,88 @@ class Graph {
                 });
             }
         }
-    
+
         console.log(`Returning pathRoutes: ${pathRoutes.map(route => route.vertex.getId())}`);
         console.log(pathRoutes);
         return [pathRoutes, status];
     }
-    
+
+    /**
+     * Dijkstra algorithm to find the most optimal shortest path, this id done by iterating
+     * each and every vertex. 
+     * @param startVertex 
+     * @param goalVertex 
+     * @returns an array containing the pathRoutes and status
+     */
+    dijkstra(startVertex, goalVertex) {
+        const vertices = this._vertices;
+        console.log(vertices);
+        // throw new Error('Early break to debug');
+        let priorityQueue = new PriorityQueue();
+        let distances = {};
+        let previousVertices = {};
+        let pathRoutes = [];
+        let status = 'failed';
+
+        // Initialize distances and priority queue
+        for (let vertex of vertices.values()) {
+            if (!vertex instanceof Vertex) throw new Error('Vertex is undefined');
+            distances[vertex.getId()] = Infinity;
+            previousVertices[vertex.getId()] = null;
+        }
+        distances[startVertex.getId()] = 0;
+        priorityQueue.enqueue({ vertex: startVertex, cost: 0 });
+
+        let iterations = 0;
+        while (!priorityQueue.isEmpty()) {
+            ++iterations;
+            const { vertex: currVertex, cost } = priorityQueue.dequeue();
+
+            console.log("===========================================================================");
+            console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
+            console.log("===========================================================================");
+            console.log(`Queue: `); console.log(priorityQueue.items);
+            console.log(`Path routes: `); console.log(pathRoutes);
+            console.log("---------------------------------------------------------------------------");
+
+
+            // Stop if we reached the goal
+            if (currVertex.getId() === goalVertex.getId()) {
+                status = 'success';
+                let vertex = currVertex;
+                while (vertex) {
+                    console.log(`Pushing pathRoutes: ${vertex.getId()}`);
+                    pathRoutes.unshift({ vertex: vertex, cost: distances[vertex.getId()] });
+                    vertex = previousVertices[vertex.getId()];
+                }
+                break;
+            }
+
+            // Get neighbors and update distances
+            let neighbors = this.nearestNeighborsOf(currVertex);
+            for (let neighbor of neighbors) {
+                let alternate = distances[currVertex.getId()] + neighbor.cost;
+                if (alternate < distances[neighbor.vertex.getId()]) {
+                    distances[neighbor.vertex.getId()] = alternate;
+                    // console.log(`Distances: `); console.log(distances);
+                    previousVertices[neighbor.vertex.getId()] = currVertex;
+                    priorityQueue.enqueue({ vertex: neighbor.vertex, cost: alternate });
+                }
+            }
+        }
+
+        // Recalculate the distances/cost in pathRoutes for each vertex
+        // starting from the second vertex
+        for (let i = 1; i < pathRoutes.length; i++) {
+            const currVertex = pathRoutes[i].vertex;
+            const prevVertex = pathRoutes[i - 1].vertex;
+            pathRoutes[i].cost = currVertex.haversineDistanceFrom(prevVertex);
+        }
+
+        console.log(`Returning pathRoutes: ${pathRoutes.map(route => route.vertex.getId())}`);
+        console.log(pathRoutes);
+        return [pathRoutes, status];
+    }
 
     nearestNeighborsOf(vertex) {
         const neighborHood = [];
@@ -329,6 +406,7 @@ class Graph {
             console.log(`Neighbor id: (${neighborId})${typeof neighbor === 'undefined' ? " is undefined" : " is defined"}`);
             const distance = vertex.haversineDistanceFrom(neighbor);
             neighborHood.push({ vertex: neighbor, cost: distance });
+            console.log(`Neighbor id: ${neighborId}, cost: ${distance}`);
         }
         // if (vertex.getId() === 'itc-35') throw new Error('Early break to debug');
         console.log(`greedyGetChildren of (${vertex.getId()}): ${neighborHood.map(neighbor => `\n - ${neighbor.vertex.getId()}: ${neighbor.cost}`)}`);

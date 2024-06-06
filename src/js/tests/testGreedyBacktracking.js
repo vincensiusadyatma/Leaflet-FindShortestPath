@@ -17,8 +17,8 @@ fullVertices.forEach(vertexData => {
 // console.log(graph.getVertex("itc-1").getNeighborIds());
 
 const startId = "itc-57";
-// const goalId = "rs-siloam-yogyakarta";
-const goalId = null;
+const goalId = "rs-siloam-yogyakarta";
+// const goalId = null;
 const algorithm = 'greedyBacktrack';
 const result = graph.computeShortestRoute(startId, goalId, algorithm);
 if (result == []) {
