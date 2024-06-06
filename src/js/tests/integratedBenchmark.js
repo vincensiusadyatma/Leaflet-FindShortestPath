@@ -37,15 +37,22 @@ function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy
     });
 
     return {
-        runHistory,
-        algoAndAverageTime
+        history: runHistory,
+        startId: startId,
+        goalId: goalId,
+        averageTime: algoAndAverageTime
     };
 }
 
-const startId = "itc-57";
-const goalId = "rs-pratama";
+const startId = "itc-18";
+const goalId = "rs-umum-veteran-patmasari";
 const nTimes = 10;
-const algorithms = ['dijkstra', 'greedy', 'bfs', 'astar'];
+const algorithms = [
+    'greedy', 
+    'dijkstra', 
+    'astar',
+    'bfs'
+];
 
 const results = runBenchmark(startId, goalId, nTimes, algorithms);
 console.log(JSON.stringify(results, null, 2));
