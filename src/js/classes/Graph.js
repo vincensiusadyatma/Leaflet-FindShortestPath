@@ -147,22 +147,21 @@ class Graph {
             console.log(`Goal vertex: ${goalVertex.getId()}`);
         }
 
-        let pathRoutes;
-        if (algorithm === 'dijkstra') {
+        let pathRoutes;if (algorithm === 'greedy') {
+            let result;
+            result = this.greedy(startVertex, goalVertex);
+            console.log(`Greedy pathRoutes: ${result[0].map(route => route.vertex.getId())}`);
+            result = new Result(this, result[0], goalId, algorithm, result[1]);
+            console.log("<=========================================================================>");
+            return result;
+        }
+        else if (algorithm === 'dijkstra') {
             if (goalVertex === null) {
                 throw new Error('Goal vertex must be specified for Dijkstra algorithm');
             }
             let result;
             result = this.dijkstra(startVertex, goalVertex);
             console.log(`Dijkstra pathRoutes: ${result[0].map(route => route.vertex.getId())}`);
-            result = new Result(this, result[0], goalId, algorithm, result[1]);
-            console.log("<=========================================================================>");
-            return result;
-        }
-        else if (algorithm === 'greedy') {
-            let result;
-            result = this.greedy(startVertex, goalVertex);
-            console.log(`Greedy pathRoutes: ${result[0].map(route => route.vertex.getId())}`);
             result = new Result(this, result[0], goalId, algorithm, result[1]);
             console.log("<=========================================================================>");
             return result;
@@ -223,12 +222,12 @@ class Graph {
                 // Specific goal vertex found
                 status = 'success';
                 break;
-            } else if (goalVertex === null && currVertex.getId().startsWith("rs-")) {
+            } else if (goalVertex === null && currVertex.vertexType === 'hospital') {
                 // Hospital vertex found
                 status = 'success';
                 break;
             } else if (typeof currVertex === 'undefined') {
-                // Reached a leaf node (no backtracking)
+                // Reached a leaf node (buntu)
                 status = 'failed';
                 break;
             }
