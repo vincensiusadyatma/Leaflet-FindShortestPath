@@ -4,14 +4,14 @@ Testing is done locally using node.js
 
 ## Running tests
 
-To run test, you can do the following in this current directory.<br>
+To run test, you can do the following in this current directory.
+<br><br>
+Do full integration (benchmark) test by running:
 
-Testing the full algorithm using the predefined persimpangan.js and rumahsakit.js data.
 ```bash
-node ./testAlgo.js
+npm run bm
 ```
-
-Testing stubs of the classes under `src/js/classes`. One here is focused for Haversine formula.
+or 
 ```bash
-node ./testHaversine.js
+node .\src\js\tests\integratedBenchmark.js
 ```
