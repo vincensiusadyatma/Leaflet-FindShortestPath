@@ -17,13 +17,21 @@ fullVertices.forEach(vertexData => {
 // console.log(graph.getVertex("itc-1").getNeighborIds());
 
 const startId = "itc-57";
-const goalId = "rs-siloam-yogyakarta";
+// const goalId = "rs-siloam-yogyakarta";
+const goalId = "rs-pratama";
 // const goalId = null;
 const algorithm = 'greedy';
+
+const startTime = performance.now();
 const result = graph.computeShortestRoute(startId, goalId, algorithm);
+const endTime = performance.now();
+
 if (result == []) {
     console.log('No path found');
 }
 console.log(`Algorithm: ${algorithm}`);
 console.log(result.toJSON());
 result.printRoutes();
+
+const timeElapsed = endTime - startTime;
+console.log(`Time elapsed: ${timeElapsed.toFixed(2)} milliseconds`);
