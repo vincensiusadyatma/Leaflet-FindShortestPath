@@ -167,16 +167,16 @@ class Graph {
             console.log("<=========================================================================>");
             return result;
         }
-        else if (algorithm === 'greedyBacktrack') {
+        else if (algorithm === 'bfs') {
             let result;
-            result = this.greedyBacktrack(startVertex, goalVertex);
+            result = this.bfs(startVertex, goalVertex);
             console.log(`Greedy backtrack pathRoutes: ${result[0].map(route => route.vertex.getId())}`);
             result = new Result(this, result[0], goalId, algorithm, result[1]);
             console.log("<=========================================================================>");
             return result;
         }
         else {
-            throw new Error('Algorithm not found');
+            throw new Error("Algorithm not found, use either: 'greedy', 'bfs', or 'dijkstra'.");
         }
     }
 
@@ -253,13 +253,13 @@ class Graph {
     }
 
     /**
-     * Greedy with backtracking, this algorithm properly handles leaf nodes by backtracking
-     * and selecting another path based on cost.
+     * Backtracking algorithm, this algorithm properly handles leaf nodes by backtracking
+     * and selecting another path based on cost. This approach is a Breadth-First-Search (BFS).
      * @param startVertex Starting vertex
      * @param goalVertex Goal vertex, can be null
      * @returns an array containing the pathRoutes and status
      */
-    greedyBacktrack(startVertex, goalVertex) {
+    bfs(startVertex, goalVertex) {
         const vertices = structuredClone(this._vertices);
         // Making a priority queue with lower cost as the priority
         let queue = new PriorityQueue();
@@ -320,6 +320,11 @@ class Graph {
                     path: [...path, { vertex: neighbor.vertex, cost: neighbor.cost }]
                 });
             }
+        }
+        
+        // Path to goal vertex not found
+        if (pathRoutes.length === 0) {
+            pathRoutes = [{vertex: goalVertex, cost: 0}];
         }
 
         console.log(`Returning pathRoutes: ${pathRoutes.map(route => route.vertex.getId())}`);
