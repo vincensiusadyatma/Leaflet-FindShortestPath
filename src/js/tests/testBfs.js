@@ -17,9 +17,11 @@ fullVertices.forEach(vertexData => {
 // console.log(graph.getVertex("itc-1").getNeighborIds());
 
 const startId = "itc-57";
-const goalId = "rs-siloam-yogyakarta";
+// { id: "rs-gaada", vertexType: 'hospital', latitude: -7.81485173520654325, longitude: 110.38163959980212, label: 'DOES NOT EXIST', neighborIds: [] }
+const goalId = "rs-gaada";
 // const goalId = null;
-const algorithm = 'greedyBacktrack';
+// const goalId = "rs-siloam-yogyakarta";
+const algorithm = 'bfs';
 const result = graph.computeShortestRoute(startId, goalId, algorithm);
 if (result == []) {
     console.log('No path found');

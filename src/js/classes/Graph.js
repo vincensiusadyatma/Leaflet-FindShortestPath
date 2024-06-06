@@ -138,7 +138,11 @@ class Graph {
         console.log(`Start vertex: ${startVertex.getId()}`)
         let goalVertex = null;
         if (goalId !== null) {
-            goalVertex = this.getVertex(goalId)
+            try {
+                goalVertex = this.getVertex(goalId)
+            } catch (e) {
+                throw new Error(`This vertex does not exist in the graph!`)
+            }
             console.log(`Goal vertex type: ${goalVertex}`)
             console.log(`Goal vertex: ${goalVertex.getId()}`);
         }
@@ -163,16 +167,16 @@ class Graph {
             console.log("<=========================================================================>");
             return result;
         }
-        else if (algorithm === 'greedyBacktrack') {
+        else if (algorithm === 'bfs') {
             let result;
-            result = this.greedyBacktrack(startVertex, goalVertex);
+            result = this.bfs(startVertex, goalVertex);
             console.log(`Greedy backtrack pathRoutes: ${result[0].map(route => route.vertex.getId())}`);
             result = new Result(this, result[0], goalId, algorithm, result[1]);
             console.log("<=========================================================================>");
             return result;
         }
         else {
-            throw new Error('Algorithm not found');
+            throw new Error("Algorithm not found, use either: 'greedy', 'bfs', or 'dijkstra'.");
         }
     }
 
@@ -249,15 +253,16 @@ class Graph {
     }
 
     /**
-     * Greedy with backtracking, this algorithm properly handles leaf nodes by backtracking
-     * and selecting another path based on cost.
+     * Backtracking algorithm, this algorithm properly handles leaf nodes by backtracking
+     * and selecting another path based on cost. This approach is a Breadth-First-Search (BFS).
      * @param startVertex Starting vertex
      * @param goalVertex Goal vertex, can be null
      * @returns an array containing the pathRoutes and status
      */
-    greedyBacktrack(startVertex, goalVertex) {
+    bfs(startVertex, goalVertex) {
         const vertices = structuredClone(this._vertices);
-        let queue = new PriorityQueue(); // Using priority queue for better path selection
+        // Making a priority queue with lower cost as the priority
+        let queue = new PriorityQueue();
         let visited = new Set();
         let pathRoutes = [];
         let status = 'failed';
@@ -316,6 +321,11 @@ class Graph {
                 });
             }
         }
+        
+        // Path to goal vertex not found
+        if (pathRoutes.length === 0) {
+            pathRoutes = [{vertex: goalVertex, cost: 0}];
+        }
 
         console.log(`Returning pathRoutes: ${pathRoutes.map(route => route.vertex.getId())}`);
         console.log(pathRoutes);
@@ -331,8 +341,7 @@ class Graph {
      */
     dijkstra(startVertex, goalVertex) {
         const vertices = this._vertices;
-        console.log(vertices);
-        // throw new Error('Early break to debug');
+        // Making a priority queue with lower cost as the priority
         let priorityQueue = new PriorityQueue();
         let distances = {};
         let previousVertices = {};
@@ -349,6 +358,7 @@ class Graph {
         priorityQueue.enqueue({ vertex: startVertex, cost: 0 });
 
         let iterations = 0;
+        const maxIterations = vertices.size ** 2;
         while (!priorityQueue.isEmpty()) {
             ++iterations;
             const { vertex: currVertex, cost } = priorityQueue.dequeue();
@@ -359,7 +369,6 @@ class Graph {
             console.log(`Queue: `); console.log(priorityQueue.items);
             console.log(`Path routes: `); console.log(pathRoutes);
             console.log("---------------------------------------------------------------------------");
-
 
             // Stop if we reached the goal
             if (currVertex.getId() === goalVertex.getId()) {
@@ -376,7 +385,7 @@ class Graph {
             // Get neighbors and update distances
             let neighbors = this.nearestNeighborsOf(currVertex);
             for (let neighbor of neighbors) {
-                let alternate = distances[currVertex.getId()] + neighbor.cost;
+                let alternate = distances[currVertex.getId()];
                 if (alternate < distances[neighbor.vertex.getId()]) {
                     distances[neighbor.vertex.getId()] = alternate;
                     // console.log(`Distances: `); console.log(distances);
@@ -392,6 +401,11 @@ class Graph {
             const currVertex = pathRoutes[i].vertex;
             const prevVertex = pathRoutes[i - 1].vertex;
             pathRoutes[i].cost = currVertex.haversineDistanceFrom(prevVertex);
+        }
+        
+        // Path to goal vertex not found
+        if (pathRoutes.length === 0) {
+            pathRoutes = [{vertex: goalVertex, cost: 0}];
         }
 
         console.log(`Returning pathRoutes: ${pathRoutes.map(route => route.vertex.getId())}`);

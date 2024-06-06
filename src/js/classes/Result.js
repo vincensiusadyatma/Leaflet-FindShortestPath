@@ -56,7 +56,7 @@ class Result {
         console.log(`Status: ${this.#status}`)
         console.log(`Algorithm: ${this.#algorithm}`);
         console.log(`Start: ${this.#pathRoutes[0].vertex.getId()}`);
-        
+        console.log(`Goal: ${this.#goalId}`);
         console.log(`Total distance: ${this.getTotalDistance()}`);
         console.log(`Route used:`)
         this.#pathRoutes.forEach(path => {
