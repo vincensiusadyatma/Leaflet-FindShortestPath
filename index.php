@@ -30,12 +30,10 @@
             border: 2px solid #0056b3;
         }
         .pilih-algoritma {
-            margin-top: 10px; /* Atur jarak atas */
+            margin-top: 10px;
         }
-
         .pilih-algoritma label {
-            /* Gaya untuk label */
-            margin-right: 10px; /* Atur jarak kanan antara label dan dropdown */
+            margin-right: 10px;
         }
 
         .pilih-algoritma select {

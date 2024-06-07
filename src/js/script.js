@@ -10,7 +10,6 @@ const defaultLatLong = [-7.753881231082619, 110.42189287890972];
 // declaration of object html ELEMENTS
 const controlLatitude = document.getElementById("latitude");
 const controlLongitude = document.getElementById("longitude");
-let selectedId = null;
 const clickSound = document.getElementById("click-sound");
 const clickSoundAccident = document.getElementById("click-sound-crash");
 const findHosp = document.getElementById("findHospitalButton");
