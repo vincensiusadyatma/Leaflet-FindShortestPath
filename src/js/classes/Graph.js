@@ -370,8 +370,10 @@ class Graph {
         return [pathRoutes, status];
     }
 
-    // Add this method to compute the heuristic (e.g., using the haversine distance)
-    heuristic(vertex, goalVertex) {
+    heuristic(vertex, goalVertex, radius) {
+        if (goalVertex === null) {
+            return radius;
+        }
         return vertex.haversineDistanceFrom(goalVertex);
     }
 
@@ -388,11 +390,7 @@ class Graph {
         let previousVertices = {};
         let pathRoutes = [];
         let status = 'failed';
-
-        if (goalVertex === null) {
-            status = 'failed: could not compute heuristic without goal vertex';
-            return [[{ vertex: startVertex, cost: 0 }], status];
-        }
+        let searchRadius = 0;
 
         // Initialize distances and priority queue
         for (let vertex of vertices.values()) {
@@ -421,6 +419,14 @@ class Graph {
                     vertex = previousVertices[vertex.getId()];
                 }
                 break;
+            } else if (goalVertex === null && currVertex.getVertexType() === 'hospital') {
+                status = `success: nearest hospital found {${currVertex.getId()}}`;
+                let vertex = currVertex;
+                while (vertex) {
+                    pathRoutes.unshift({ vertex: vertex, cost: distances[vertex.getId()] });
+                    vertex = previousVertices[vertex.getId()];
+                }
+                break;
             }
 
             // Get neighbors and update distances
@@ -430,10 +436,15 @@ class Graph {
                 if (newCost < distances[neighbor.vertex.getId()]) {
                     distances[neighbor.vertex.getId()] = newCost;
                     previousVertices[neighbor.vertex.getId()] = currVertex;
-                    const heuristic = this.heuristic(neighbor.vertex, goalVertex);
-                    let priority = newCost + heuristic;
+                    const heuristicValue = this.heuristic(neighbor.vertex, goalVertex, searchRadius);
+                    let priority = newCost + heuristicValue;
                     priorityQueue.enqueue({ vertex: neighbor.vertex, cost: priority });
                 }
+            }
+
+            // Increase the radius if goal vertex is null to expand the search
+            if (goalVertex === null) {
+                searchRadius += 2;
             }
         }
 
