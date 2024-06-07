@@ -1,0 +1,2441 @@
+{
+  "history": {
+    "dijkstra": [
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.20 miliseconds (1,204,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (726,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (720,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (726,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (704,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (817,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (782,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (789,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.87 miliseconds (865,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (749,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (788,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (699,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (769,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.85 miliseconds (846,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.09 miliseconds (1,085,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (677,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (693,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (666,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (658,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.92 miliseconds (923,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.87 miliseconds (867,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (727,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.89 miliseconds (889,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (817,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.54 miliseconds (1,540,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.13 miliseconds (1,127,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.92 miliseconds (918,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.04 miliseconds (1,037,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.06 miliseconds (1,060,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.10 miliseconds (1,099,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.24 miliseconds (1,240,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.99 miliseconds (987,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.85 miliseconds (846,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.93 miliseconds (931,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.31 miliseconds (1,308,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.86 miliseconds (864,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.88 miliseconds (883,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (749,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (735,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (818,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (676,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (723,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.90 miliseconds (903,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.95 miliseconds (948,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.09 miliseconds (1,085,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (752,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (704,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (660,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (708,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (767,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (697,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.14 miliseconds (1,139,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (697,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (670,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (726,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (673,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (728,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (697,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (670,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.76 miliseconds (760,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (731,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.60 miliseconds (599,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (652,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (664,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (695,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (653,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.61 miliseconds (610,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.60 miliseconds (600,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.60 miliseconds (598,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.60 miliseconds (595,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.76 miliseconds (758,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (707,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (766,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.62 miliseconds (620,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.59 miliseconds (590,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (648,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.60 miliseconds (604,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.60 miliseconds (599,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.62 miliseconds (618,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.59 miliseconds (589,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (710,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.64 miliseconds (635,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.61 miliseconds (609,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (709,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.62 miliseconds (621,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.60 miliseconds (602,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.63 miliseconds (634,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.62 miliseconds (618,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.63 miliseconds (627,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.63 miliseconds (627,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.60 miliseconds (600,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.81 miliseconds (813,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.84 miliseconds (839,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (654,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.59 miliseconds (591,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.59 miliseconds (588,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.59 miliseconds (589,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (682,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.76 miliseconds (761,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.63 miliseconds (630,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.58 miliseconds (578,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.60 miliseconds (602,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.57 miliseconds (570,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.59 miliseconds (585,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.62 miliseconds (617,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (700,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (698,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.59 miliseconds (592,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.59 miliseconds (587,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (766,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.63 miliseconds (633,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.57 miliseconds (568,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.90 miliseconds (900,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.98 miliseconds (984,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (674,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.56 miliseconds (555,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (718,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (652,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.58 miliseconds (580,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.58 miliseconds (578,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.59 miliseconds (591,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (789,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (664,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.59 miliseconds (585,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.61 miliseconds (612,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.87 miliseconds (867,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.64 miliseconds (643,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (651,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (693,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (752,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (721,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (648,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (729,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.61 miliseconds (609,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.60 miliseconds (596,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.62 miliseconds (623,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (684,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (685,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (694,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.25 miliseconds (1,250,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (679,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.59 miliseconds (587,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.62 miliseconds (617,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.61 miliseconds (611,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (741,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (725,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.57 miliseconds (574,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (645,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.60 miliseconds (600,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.59 miliseconds (592,200 nanoseconds)"
+      }
+    ],
+    "greedy": [
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.84 miliseconds (840,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (822,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.02 miliseconds (1,024,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (733,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (703,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (737,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (750,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (686,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (710,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (726,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (682,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (773,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (749,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (704,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (704,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (681,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (751,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (781,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.76 miliseconds (760,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (724,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (690,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (815,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (785,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (724,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (724,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (719,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (691,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (729,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (707,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (666,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (711,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (795,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (722,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (706,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.84 miliseconds (836,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (729,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (692,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (733,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.87 miliseconds (873,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.93 miliseconds (926,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.81 miliseconds (812,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.11 miliseconds (1,110,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.87 miliseconds (868,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (754,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (767,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (742,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (747,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (788,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (750,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.81 miliseconds (805,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (753,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (794,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.90 miliseconds (899,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (782,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.84 miliseconds (843,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (732,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.76 miliseconds (759,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.94 miliseconds (935,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.88 miliseconds (880,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.01 miliseconds (1,009,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (798,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (729,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.03 miliseconds (1,034,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (728,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (739,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (713,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (796,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (749,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (663,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (741,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (791,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (781,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (765,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (715,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.85 miliseconds (854,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (776,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (716,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (793,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.81 miliseconds (805,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.98 miliseconds (975,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (753,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (728,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (720,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (698,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (724,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (738,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (792,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (771,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (746,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (740,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (743,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (743,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (743,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.94 miliseconds (940,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.81 miliseconds (805,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (798,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (782,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.76 miliseconds (758,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (705,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (734,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (711,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (713,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (748,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (725,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (728,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (668,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.86 miliseconds (860,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (741,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (663,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (695,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (821,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (752,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (667,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (656,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (722,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (747,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (741,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.83 miliseconds (833,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (818,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (784,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (682,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (731,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (729,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (741,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (733,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (740,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (682,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (648,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (717,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.92 miliseconds (924,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (804,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (727,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.10 miliseconds (1,095,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (713,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (685,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (681,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.88 miliseconds (880,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.88 miliseconds (878,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (771,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (709,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (779,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (681,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.62 miliseconds (620,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (747,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (749,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (721,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.85 miliseconds (848,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (785,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (700,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (686,900 nanoseconds)"
+      }
+    ],
+    "bfs": [
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.96 miliseconds (961,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.85 miliseconds (850,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (792,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (795,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (750,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (683,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (720,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.88 miliseconds (880,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.81 miliseconds (805,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (725,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (750,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.76 miliseconds (760,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (691,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.83 miliseconds (826,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.86 miliseconds (856,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (768,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (728,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (796,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (779,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (722,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (659,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (823,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.81 miliseconds (810,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (713,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (745,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (706,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (783,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (721,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (754,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (689,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (778,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (792,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (732,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (718,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (710,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (699,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (791,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (682,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.97 miliseconds (967,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.83 miliseconds (830,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (781,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.63 miliseconds (632,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (696,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.26 miliseconds (1,259,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (777,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.81 miliseconds (810,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (776,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (714,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (680,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.90 miliseconds (900,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (799,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (749,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (791,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (682,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (657,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (696,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.83 miliseconds (827,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (725,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (816,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (797,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (751,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (712,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (669,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (727,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (769,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.84 miliseconds (835,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (769,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (775,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (672,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (645,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.64 miliseconds (638,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (767,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (680,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (784,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.76 miliseconds (758,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (714,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (655,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (647,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.81 miliseconds (805,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.89 miliseconds (888,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (754,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (774,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (795,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (670,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (738,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.98 miliseconds (981,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.93 miliseconds (925,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (794,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (690,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.76 miliseconds (763,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.76 miliseconds (756,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (689,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (777,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (820,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (723,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (740,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (785,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (672,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (677,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (685,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (713,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (710,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.15 miliseconds (1,148,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.88 miliseconds (880,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (797,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (735,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (803,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (784,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.88 miliseconds (875,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (774,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (707,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (687,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (678,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (775,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (784,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (815,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (815,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (765,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (649,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.22 miliseconds (1,222,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.17 miliseconds (1,171,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.90 miliseconds (903,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.89 miliseconds (888,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.88 miliseconds (877,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (767,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.76 miliseconds (756,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.22 miliseconds (1,221,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (712,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (733,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (714,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (679,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.62 miliseconds (622,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (690,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (748,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.76 miliseconds (758,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (696,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (745,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (690,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.37 miliseconds (2,370,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.84 miliseconds (842,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.80 miliseconds (801,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (734,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (675,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (669,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.64 miliseconds (643,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (656,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.63 miliseconds (634,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (667,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (705,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.78 miliseconds (781,800 nanoseconds)"
+      }
+    ],
+    "astar": [
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.64 miliseconds (1,643,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.76 miliseconds (1,755,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.97 miliseconds (1,968,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.67 miliseconds (1,672,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.91 miliseconds (1,910,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.67 miliseconds (1,669,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.71 miliseconds (1,712,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.64 miliseconds (1,637,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.40 miliseconds (2,396,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.68 miliseconds (1,678,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.73 miliseconds (1,731,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.77 miliseconds (1,769,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.76 miliseconds (1,757,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.60 miliseconds (1,598,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.56 miliseconds (1,562,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.78 miliseconds (1,781,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.70 miliseconds (1,704,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.68 miliseconds (1,683,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.06 miliseconds (2,062,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.56 miliseconds (2,556,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.96 miliseconds (1,960,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.97 miliseconds (1,965,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.67 miliseconds (1,665,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.01 miliseconds (2,007,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.45 miliseconds (2,451,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.36 miliseconds (2,355,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.12 miliseconds (2,116,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "3.13 miliseconds (3,132,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.00 miliseconds (2,004,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.20 miliseconds (2,195,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.74 miliseconds (1,740,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.11 miliseconds (2,105,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.46 miliseconds (1,457,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.67 miliseconds (1,669,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.53 miliseconds (1,525,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.54 miliseconds (1,540,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.49 miliseconds (1,492,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.75 miliseconds (1,748,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.53 miliseconds (1,526,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.39 miliseconds (1,392,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.60 miliseconds (1,601,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.65 miliseconds (1,645,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.50 miliseconds (1,499,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.43 miliseconds (1,431,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.48 miliseconds (1,477,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.59 miliseconds (1,587,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.54 miliseconds (1,539,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.64 miliseconds (1,636,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.52 miliseconds (1,516,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.53 miliseconds (1,533,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "3.88 miliseconds (3,877,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "3.13 miliseconds (3,132,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.75 miliseconds (2,750,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.37 miliseconds (2,365,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "9.61 miliseconds (9,611,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "3.02 miliseconds (3,016,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.35 miliseconds (2,345,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "3.17 miliseconds (3,169,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.76 miliseconds (2,759,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.10 miliseconds (2,101,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.62 miliseconds (2,617,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.27 miliseconds (2,267,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "4.84 miliseconds (4,836,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.38 miliseconds (2,376,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.31 miliseconds (2,314,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.30 miliseconds (2,298,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.67 miliseconds (2,674,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.30 miliseconds (2,302,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "3.39 miliseconds (3,392,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.98 miliseconds (1,984,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.83 miliseconds (1,827,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.98 miliseconds (1,980,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.75 miliseconds (1,751,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.73 miliseconds (1,731,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.18 miliseconds (2,177,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.85 miliseconds (1,851,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.29 miliseconds (2,290,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.90 miliseconds (1,900,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.98 miliseconds (1,980,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.94 miliseconds (1,942,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.87 miliseconds (1,872,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.78 miliseconds (1,775,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.21 miliseconds (2,210,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.03 miliseconds (2,030,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.11 miliseconds (2,110,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.14 miliseconds (2,143,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.78 miliseconds (1,781,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.91 miliseconds (1,914,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.17 miliseconds (2,173,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.72 miliseconds (1,715,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.86 miliseconds (1,864,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.12 miliseconds (2,124,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.57 miliseconds (1,569,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.75 miliseconds (1,747,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.83 miliseconds (1,826,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.86 miliseconds (1,864,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.85 miliseconds (1,845,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.03 miliseconds (2,032,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.00 miliseconds (2,003,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.90 miliseconds (1,895,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.64 miliseconds (1,637,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.55 miliseconds (1,547,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.23 miliseconds (2,226,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.96 miliseconds (1,956,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.55 miliseconds (2,545,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.91 miliseconds (2,905,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.29 miliseconds (2,290,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.37 miliseconds (2,368,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.98 miliseconds (1,984,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.94 miliseconds (1,937,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.93 miliseconds (1,929,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.78 miliseconds (1,778,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.83 miliseconds (1,832,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.89 miliseconds (1,891,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.99 miliseconds (1,986,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.04 miliseconds (2,041,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.17 miliseconds (2,173,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.19 miliseconds (2,186,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.17 miliseconds (2,173,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.97 miliseconds (1,966,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.97 miliseconds (1,966,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.09 miliseconds (2,092,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.59 miliseconds (1,588,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.09 miliseconds (2,091,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.09 miliseconds (2,086,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.90 miliseconds (1,899,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.23 miliseconds (2,232,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.16 miliseconds (2,161,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.27 miliseconds (2,267,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.05 miliseconds (2,045,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.65 miliseconds (1,647,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.63 miliseconds (1,627,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.74 miliseconds (1,744,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.80 miliseconds (1,797,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.57 miliseconds (1,573,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.88 miliseconds (1,884,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.24 miliseconds (2,238,100 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.38 miliseconds (2,379,300 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.24 miliseconds (2,238,600 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.85 miliseconds (1,848,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.97 miliseconds (1,970,500 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.95 miliseconds (1,954,200 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.10 miliseconds (2,098,700 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.11 miliseconds (2,112,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.39 miliseconds (2,390,000 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "1.75 miliseconds (1,749,900 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.22 miliseconds (2,224,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.22 miliseconds (2,223,400 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.31 miliseconds (2,306,800 nanoseconds)"
+      },
+      {
+        "status": "success: nearest hospital found {rs-umum-veteran-patmasari}",
+        "timeElapsed": "2.51 miliseconds (2,505,200 nanoseconds)"
+      }
+    ]
+  },
+  "startId": "itc-87",
+  "goalId": "null / nearest hospital",
+  "iterations": 150,
+  "averageTime": [
+    {
+      "algorithm": "dijkstra",
+      "status": "success: nearest hospital found {rs-umum-veteran-patmasari} (total distance: 5.086 KM)",
+      "pathRoutes": "'itc-87','itc-77','itc-78','itc-110','rs-umum-veteran-patmasari'",
+      "averageTime": "0.74 miliseconds (736,010 nanoseconds)"
+    },
+    {
+      "algorithm": "greedy",
+      "status": "success: nearest hospital found {rs-umum-veteran-patmasari} (total distance: 7.17 KM)",
+      "pathRoutes": "'itc-87','itc-86','itc-79','itc-109','itc-110','rs-umum-veteran-patmasari'",
+      "averageTime": "0.77 miliseconds (765,417 nanoseconds)"
+    },
+    {
+      "algorithm": "bfs",
+      "status": "success: nearest hospital found {rs-umum-veteran-patmasari} (total distance: 5.086 KM)",
+      "pathRoutes": "'itc-87','itc-77','itc-78','itc-110','rs-umum-veteran-patmasari'",
+      "averageTime": "0.78 miliseconds (779,336 nanoseconds)"
+    },
+    {
+      "algorithm": "astar",
+      "status": "success: nearest hospital found {rs-umum-veteran-patmasari} (total distance: 5.086 KM)",
+      "pathRoutes": "'itc-87','itc-77','itc-78','itc-110','rs-umum-veteran-patmasari'",
+      "averageTime": "2.08 miliseconds (2,081,412 nanoseconds)"
+    }
+  ]
+}
