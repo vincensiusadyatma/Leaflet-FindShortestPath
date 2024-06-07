@@ -9,12 +9,28 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
             crossorigin=""></script>
-            <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
-            <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
-            <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
-            <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
     <link rel="stylesheet" href="src/css/style.css">
     <title>Greedy Ambulance</title>
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px; 
+        }
+        .button-container input {
+            margin-right: 10px; 
+        }
+        .button-container input:last-child {
+            margin-right: 0; 
+        }
+        .highlight {
+    border: 2px solid #0056b3;
+}
+
+    </style>
 </head>
 <body>
     <div id="map"></div>
@@ -32,13 +48,25 @@
                     <td><input type="text" id="longitude" disabled/></td>
                 </tr>
                 <tr>
+                    <td style="text-align: right;"><label for="startPoint">Start Point</label></td>
+                    <td><input type="text" id="startPoint" disabled/></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="goalPoint">Goal Point</label></td>
+                    <td><input type="text" id="goalPoint" disabled/></td>
+                </tr>
+                <tr>
                     <td style="text-align: right;"><label for="shouldBigHospital">Big Hospital</label></td>
                     <td><input type="checkbox" id="shouldBigHospital"></td>
                 </tr>
             </table>
-            <input type="button" value="reset" onclick="resetLocation()"/>
-            <input type="button" value="copyLatLong" onclick="copyLatLong()"/>
+            <input type="button" value="reset" id="resetButton"/>
+            <input type="button" value="copyLatLong" id="copyLatLongButton"/>
             <input type="button" value="show graph" id="showGraphButton" />
+            <div class="button-container">
+                <input type="button" value="fill start" id="fillStartButton"/>
+                <input type="button" value="fill goal" id="fillGoalButton"/>
+            </div>
             <input type="button" value="findHospital" id="findHospitalButton"/>
         </div>
     </div>

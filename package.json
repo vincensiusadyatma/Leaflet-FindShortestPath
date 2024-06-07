@@ -2,5 +2,8 @@
   "dependencies": {
     "leaflet": "^1.9.4"
   },
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "bm": "node .\\src\\js\\tests\\integratedBenchmark.js"
+  }
 }
