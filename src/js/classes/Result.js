@@ -22,7 +22,7 @@ class Result {
     }
 
     getRouteIds() {
-        return this.#pathRoutes.map(path => `'${path.vertex.getId()}'`).join(',');
+        return this.#pathRoutes.map(path => path.vertex.getId())
     }
 
     getRoutee() {

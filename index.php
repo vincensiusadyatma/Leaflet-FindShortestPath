@@ -27,8 +27,28 @@
             margin-right: 0; 
         }
         .highlight {
-    border: 2px solid #0056b3;
-}
+            border: 2px solid #0056b3;
+        }
+        .pilih-algoritma {
+            margin-top: 10px; /* Atur jarak atas */
+        }
+
+        .pilih-algoritma label {
+            /* Gaya untuk label */
+            margin-right: 10px; /* Atur jarak kanan antara label dan dropdown */
+        }
+
+        .pilih-algoritma select {
+            
+            padding: 5px; 
+            border-radius: 5px; 
+            border: 1px solid #ccc; 
+            background-color: #fff; 
+            font-size: 16px; 
+        }
+
+
+
 
     </style>
 </head>
@@ -68,6 +88,18 @@
                 <input type="button" value="fill goal" id="fillGoalButton"/>
             </div>
             <input type="button" value="findHospital" id="findHospitalButton"/>
+            <div class="button-container">
+            <div class="pilih-algoritma">
+                <label for="algorithmSelect">Select Algorithm:</label>
+                <select id="algorithmSelect">
+                    <option value="greedy">Greedy</option>
+                    <option value="dijkstra">Dijkstra</option>
+                    <option value="astar">A*</option>
+                    <option value="bfs">BFS</option>
+                </select>
+            </div>
+        </div>
+
         </div>
     </div>
     
