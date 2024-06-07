@@ -132,7 +132,7 @@ class Graph {
             }
         }
 
-        let pathRoutes; if (algorithm === 'greedy') {
+        if (algorithm === 'greedy') {
             let result;
             result = this.greedy(startVertex, goalVertex);
             result = new Result(this, result[0], goalId, algorithm, result[1]);
