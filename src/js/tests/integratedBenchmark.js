@@ -57,7 +57,7 @@ function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy
 const startId = "itc-28";
 // const goalId = "rs-jogja";
 const goalId = null;
-const nTimes = 10;
+const nTimes = 100;
 const algorithms = [
     'greedy',
     'dijkstra',
@@ -66,4 +66,5 @@ const algorithms = [
 ];
 
 const results = runBenchmark(startId, goalId, nTimes, algorithms);
+console.info("<================================= BENCHMARK RESULTS =================================>")
 console.log(JSON.stringify(results, null, 2));
