@@ -8,7 +8,7 @@ class Result {
     constructor(graph, pathRoutes, goalId, algorithm, status) {
         this.#graph = graph;
         this.#pathRoutes = pathRoutes;
-        this.#goalId = goalId;
+        this.#goalId = goalId !== null ? goalId : 'null / nearest hospital';
         this.#algorithm = algorithm;
         this.#status = status;
     }
@@ -22,6 +22,10 @@ class Result {
     }
 
     getRouteIds() {
+        return this.#pathRoutes.map(path => `'${path.vertex.getId()}'`).join(',');
+    }
+
+    getRoutee() {
         return this.#pathRoutes;
     }
 
