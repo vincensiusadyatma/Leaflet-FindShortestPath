@@ -139,9 +139,6 @@ class Graph {
             return result;
         }
         else if (algorithm === 'dijkstra') {
-            if (goalVertex === null) {
-                throw new Error('Goal vertex must be specified for Dijkstra algorithm');
-            }
             let result;
             result = this.dijkstra(startVertex, goalVertex);
             result = new Result(this, result[0], goalId, algorithm, result[1]);
@@ -154,9 +151,6 @@ class Graph {
             return result;
         }
         else if (algorithm === 'astar') {
-            if (goalVertex === null) {
-                throw new Error('Goal vertex must be specified for A* algorithm');
-            }
             let result;
             result = this.astar(startVertex, goalVertex);
             result = new Result(this, result[0], goalId, algorithm, result[1]);
@@ -181,7 +175,7 @@ class Graph {
         let queue = new Queue();
         let visited = new Set();
         let pathRoutes = [];
-        let status;
+        let status = 'failed';
 
         // Initialize the queue with the start vertex
         queue.enqueue({ vertex: startVertex, cost: 0 });
@@ -191,9 +185,9 @@ class Graph {
         let iterations = 0;
         while (!queue.isEmpty()) {
             ++iterations;
-            
+
             const { vertex: currVertex, cost } = queue.dequeue();
-            console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
+            console.log(`Iteration: ${iterations} (${currVertex.getId()}: ${currVertex.getVertexType()})`);
 
             // Mark current vertex as visited
             visited.add(currVertex.getId());
@@ -201,15 +195,11 @@ class Graph {
             // Check  goal conditions
             if (goalVertex !== null && currVertex.getId() === goalVertex.getId()) {
                 // Specific goal vertex found
-                status = 'success';
+                status = `success: goal vertex found {${currVertex.getId()}}`;
                 break;
-            } else if (goalVertex === null && currVertex.vertexType === 'hospital') {
+            } else if (goalVertex === null && currVertex.getVertexType() === 'hospital') {
                 // Hospital vertex found
-                status = 'success';
-                break;
-            } else if (typeof currVertex === 'undefined') {
-                // Reached a leaf node (buntu)
-                status = 'failed';
+                    status = `success: nearest hospital found {${currVertex.getId()}}`;
                 break;
             }
 
@@ -217,7 +207,8 @@ class Graph {
             let neighborHood = this.nearestNeighborsOf(currVertex);
             neighborHood = neighborHood.sort((v1, v2) => v1.cost < v2.cost ? -1 : 1).filter(neighbor => !visited.has(neighbor.vertex.getId()));
             if (neighborHood.length === 0) {
-                status = 'failed';
+                // Reached leaf vertex, jalan buntu
+                status = `failed: leaf vertex reached {${currVertex.getId()}}`;
                 break;
             }
             queue.enqueue({ vertex: neighborHood[0].vertex, cost: neighborHood[0].cost });
@@ -259,12 +250,12 @@ class Graph {
             if (goalVertex !== null && currVertex.getId() === goalVertex.getId()) {
                 // Specific goal vertex found
                 pathRoutes = path;
-                status = 'success';
+                status = `success: goal vertex found {${currVertex.getId()}}`;
                 break;
-            } else if (goalVertex === null && currVertex.getId().startsWith("rs-")) {
+            } else if (goalVertex === null && currVertex.getVertexType() === 'hospital') {
                 // Hospital vertex found
                 pathRoutes = path;
-                status = 'success';
+                status = `success: nearest hospital found {${currVertex.getId()}}`;
                 break;
             } else if (typeof currVertex === 'undefined') {
                 continue; // Skip undefined vertices
@@ -289,6 +280,7 @@ class Graph {
 
         // Path to goal vertex not found
         if (pathRoutes.length === 0) {
+            status = `failed: path to goal not found`
             pathRoutes = [{ vertex: goalVertex, cost: 0 }];
         }
 
@@ -328,9 +320,19 @@ class Graph {
             const { vertex: currVertex, cost } = priorityQueue.dequeue();
             console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
 
-            // Stop if we reached the goal
-            if (currVertex.getId() === goalVertex.getId()) {
-                status = 'success';
+            // Check for goal conditions
+            if (goalVertex !== null && currVertex.getId() === goalVertex.getId()) {
+                // Goal vertex found
+                status = `success: goal vertex found {${currVertex.getId()}}`;
+                let vertex = currVertex;
+                while (vertex) {
+                    pathRoutes.unshift({ vertex: vertex, cost: distances[vertex.getId()] });
+                    vertex = previousVertices[vertex.getId()];
+                }
+                break;
+            } else if (goalVertex === null && currVertex.getVertexType()  === 'hospital') {
+                // Hospital vertex found
+                status = `success: nearest hospital found {${currVertex.getId()}}`;
                 let vertex = currVertex;
                 while (vertex) {
                     pathRoutes.unshift({ vertex: vertex, cost: distances[vertex.getId()] });
@@ -361,6 +363,7 @@ class Graph {
 
         // Path to goal vertex not found
         if (pathRoutes.length === 0) {
+            status = 'failed: path to goal not found';
             pathRoutes = [{ vertex: goalVertex, cost: 0 }];
         }
 
@@ -386,10 +389,15 @@ class Graph {
         let pathRoutes = [];
         let status = 'failed';
 
+        if (goalVertex === null) {
+            status = 'failed: could not compute heuristic without goal vertex';
+            return [[{ vertex: startVertex, cost: 0 }], status];
+        }
+
         // Initialize distances and priority queue
         for (let vertex of vertices.values()) {
-            if (!(vertex instanceof Vertex)) { 
-                throw new Error('Vertex is undefined'); 
+            if (!(vertex instanceof Vertex)) {
+                throw new Error('Vertex is undefined');
             }
             distances[vertex.getId()] = Infinity;
             previousVertices[vertex.getId()] = null;
@@ -405,8 +413,8 @@ class Graph {
             console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
 
             // Stop if we reached the goal
-            if (currVertex.getId() === goalVertex.getId()) {
-                status = 'success';
+            if (goalVertex !== null && currVertex.getId() === goalVertex.getId()) {
+                status = `success: goal vertex found {${currVertex.getId()}}`;
                 let vertex = currVertex;
                 while (vertex) {
                     pathRoutes.unshift({ vertex: vertex, cost: distances[vertex.getId()] });
@@ -439,6 +447,7 @@ class Graph {
 
         // Path to goal vertex not found
         if (pathRoutes.length === 0) {
+            status += ':path to goal not found';
             pathRoutes = [{ vertex: goalVertex, cost: 0 }];
         }
 
