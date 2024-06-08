@@ -438,7 +438,7 @@ var goalIcon = L.icon({
             }
 
         } else {
-                alert("Pilih titik interception untuk mencari rute");
+                alert("Pilih titik intersection untuk mencari rute");
         }
     });
 
