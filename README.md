@@ -22,15 +22,15 @@ The graph lines are drawn over Yogyakarta, Indonesia using [Open Street Map](htt
 
 If no goal point was specified, the website passes `null` to the algorithm and finds the nearest hospital vertex.
 
-- **Main page**
+- **Main page**<br>
   ![image](assets/main-page.png)
-- **Toggling predefined graph**
+- **Toggling predefined graph**<br>
   ![image](assets/toggling-predefined-graph.png)
-- **Select start/goal vertex**
+- **Select start/goal vertex**<br>
   ![image](assets/selecting-start-goal.png)
-- **Algorithm selection**
+- **Algorithm selection**<br>
   ![image](assets/algorithm-selection.png)
-- **Showing the shortest path**
+- **Showing the shortest path**<br>
   ![image](assets/shortest-path.png)
 
 ## Installing
