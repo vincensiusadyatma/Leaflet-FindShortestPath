@@ -171,7 +171,6 @@ class Graph {
      * @returns an array containing the pathRoutes and status
      */
     greedy(startVertex, goalVertex) {
-        const vertices = structuredClone(this._vertices);
         let queue = new Queue();
         let visited = new Set();
         let pathRoutes = [];
@@ -187,7 +186,7 @@ class Graph {
             ++iterations;
 
             const { vertex: currVertex, cost } = queue.dequeue();
-            console.log(`Iteration: ${iterations} (${currVertex.getId()}: ${currVertex.getVertexType()})`);
+            // console.log(`Iteration: ${iterations} (${currVertex.getId()}: ${currVertex.getVertexType()})`);
 
             // Mark current vertex as visited
             visited.add(currVertex.getId());
@@ -219,13 +218,12 @@ class Graph {
 
     /**
      * Backtracking algorithm, this algorithm properly handles leaf nodes by backtracking
-     * and selecting another path based on cost. This approach is a Breadth-First-Search (BFS).
+     * and selecting another path based on cost. This approach is a Best-First-Search (BFS).
      * @param startVertex Starting vertex
      * @param goalVertex Goal vertex, can be null
      * @returns an array containing the pathRoutes and status
      */
     bfs(startVertex, goalVertex) {
-        const vertices = structuredClone(this._vertices);
         // Making a priority queue with lower cost as the priority
         let priorityQueue = new PriorityQueue();
         let visited = new Set();
@@ -241,7 +239,7 @@ class Graph {
             ++iterations;
 
             const { vertex: currVertex, cost, path } = priorityQueue.dequeue();
-            console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
+            // console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
 
             // Mark current vertex as visited
             visited.add(currVertex.getId());
@@ -318,7 +316,7 @@ class Graph {
             ++iterations;
 
             const { vertex: currVertex, cost } = priorityQueue.dequeue();
-            console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
+            // console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
 
             // Check for goal conditions
             if (goalVertex !== null && currVertex.getId() === goalVertex.getId()) {
@@ -408,7 +406,7 @@ class Graph {
             ++iterations;
 
             const { vertex: currVertex } = priorityQueue.dequeue();
-            console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
+            // console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
 
             // Stop if we reached the goal
             if (goalVertex !== null && currVertex.getId() === goalVertex.getId()) {

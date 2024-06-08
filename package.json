@@ -4,6 +4,6 @@
   },
   "type": "module",
   "scripts": {
-    "bm": "node .\\src\\js\\tests\\integratedBenchmark.js"
+    "bm": "node .\\src\\js\\tests\\benchmark.js"
   }
 }

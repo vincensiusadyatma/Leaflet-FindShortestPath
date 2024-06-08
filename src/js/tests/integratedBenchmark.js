@@ -2,10 +2,14 @@ import Graph from "../classes/Graph.js";
 import PERSIMPANGAN from "../../persimpangan.js";
 import RUMAH_SAKIT from "../../rumahsakit.js";
 import { hrtime } from 'process';
+import fs from 'fs';
+import * as path from 'path';
+import { fileURLToPath } from 'url';
 
 function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy', 'bfs', 'astar']) {
     const algoAndAverageTime = [];
     const runHistory = {};
+    const execTimeHistoryNs = {};
 
     const graph = new Graph();
     const fullVertices = PERSIMPANGAN.concat(RUMAH_SAKIT);
@@ -15,6 +19,7 @@ function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy
 
     algorithms.forEach(algorithm => {
         runHistory[algorithm] = [];
+        execTimeHistoryNs[algorithm] = [];
         let lastPathRoutes = [];
         let lastStatus = '';
         let lastTotalDistance = 0;
@@ -29,6 +34,7 @@ function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy
                 status: result.getStatus(),
                 timeElapsed: `${timeElapsedMs.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} miliseconds (${timeElapsedNs.toLocaleString()} nanoseconds)`
             });
+            execTimeHistoryNs[algorithm].push(timeElapsedNs);
             totalTimeNs += timeElapsedNs;
             lastPathRoutes = result.getRouteIds();
             lastStatus = result.getStatus();
@@ -45,26 +51,52 @@ function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy
         });
     });
 
-    return {
-        history: runHistory,
-        startId: startId,
-        goalId: goalId !== null ? goalId : 'null / nearest hospital',
-        iterations: nTimes,
-        averageTime: algoAndAverageTime
-    };
+    return [
+        {
+            // history: runHistory,
+            startId: startId,
+            goalId: goalId !== null ? goalId : 'null / nearest hospital',
+            iterations: nTimes,
+            averageTime: algoAndAverageTime
+        },
+        execTimeHistoryNs
+    ];
 }
 
-const startId = "itc-28";
-// const goalId = "rs-jogja";
-const goalId = null;
-const nTimes = 100;
-const algorithms = [
-    'greedy',
-    'dijkstra',
-    'astar',
-    'bfs'
-];
+function benchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy', 'bfs', 'astar'],) {
+    const results = runBenchmark(startId, goalId, nTimes, algorithms);
+    console.info("<================================= BENCHMARK RESULTS =================================>")
+    console.log(JSON.stringify(results[0], null, 2));
 
-const results = runBenchmark(startId, goalId, nTimes, algorithms);
-console.info("<================================= BENCHMARK RESULTS =================================>")
-console.log(JSON.stringify(results, null, 2));
+    // Get the current file URL and directory name
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = path.dirname(__filename);
+    
+    const dirPath = path.join(__dirname, 'results-csvs');
+    const benchmarkResultsFilename = `benchmark-results-${startId}_to_${goalId !== null ? goalId : 'nearest-hospital'}.json`;
+    const execTimeHistoryNsFilename = `exec-time-history-${startId}_to_${goalId !== null ? goalId : 'nearest-hospital'}.json`;
+    
+    // Ensure the directory exists
+    if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath, { recursive: true });
+    }
+    
+    // Custom replacer function to handle BigInt serialization
+    const replacer = (key, value) => {
+        return typeof value === 'bigint' ? value.toString() : value;
+    };
+    
+    // `results` is an array where:
+    // - `results[0]` contains benchmark results
+    // - `results[1]` contains execution time history in nanoseconds
+    
+    // Write benchmark results to file
+    fs.writeFileSync(path.join(dirPath, benchmarkResultsFilename), JSON.stringify(results[0], null, 2));
+    console.log(`Benchmark results saved to ./results-csvs/${benchmarkResultsFilename}`);
+    
+    // Write execution time history to file using the custom replacer
+    fs.writeFileSync(path.join(dirPath, execTimeHistoryNsFilename), JSON.stringify(results[1], replacer, 2));
+    console.log(`Execution time history saved to ./results-csvs/${execTimeHistoryNsFilename}`);
+}
+
+export default benchmark;
