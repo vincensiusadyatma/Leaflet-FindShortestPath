@@ -3,87 +3,503 @@
     "dijkstra": [
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "17.71 miliseconds (17,711,600 nanoseconds)"
+        "timeElapsed": "16.97 miliseconds (16,974,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "14.02 miliseconds (14,016,400 nanoseconds)"
+        "timeElapsed": "14.66 miliseconds (14,663,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "13.24 miliseconds (13,244,200 nanoseconds)"
+        "timeElapsed": "13.35 miliseconds (13,351,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "18.74 miliseconds (18,736,100 nanoseconds)"
+        "timeElapsed": "15.08 miliseconds (15,081,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "24.81 miliseconds (24,807,100 nanoseconds)"
+        "timeElapsed": "15.12 miliseconds (15,124,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "18.68 miliseconds (18,676,300 nanoseconds)"
+        "timeElapsed": "14.75 miliseconds (14,754,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "15.69 miliseconds (15,693,300 nanoseconds)"
+        "timeElapsed": "14.62 miliseconds (14,621,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "14.04 miliseconds (14,035,800 nanoseconds)"
+        "timeElapsed": "14.54 miliseconds (14,543,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "15.06 miliseconds (15,060,900 nanoseconds)"
+        "timeElapsed": "14.90 miliseconds (14,901,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "14.55 miliseconds (14,554,800 nanoseconds)"
+        "timeElapsed": "13.63 miliseconds (13,631,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "14.11 miliseconds (14,114,800 nanoseconds)"
+        "timeElapsed": "13.26 miliseconds (13,259,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "13.16 miliseconds (13,159,500 nanoseconds)"
+        "timeElapsed": "12.87 miliseconds (12,873,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "13.49 miliseconds (13,493,700 nanoseconds)"
+        "timeElapsed": "14.70 miliseconds (14,699,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "13.67 miliseconds (13,672,700 nanoseconds)"
+        "timeElapsed": "14.58 miliseconds (14,578,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "15.22 miliseconds (15,223,800 nanoseconds)"
+        "timeElapsed": "15.72 miliseconds (15,724,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "13.47 miliseconds (13,473,000 nanoseconds)"
+        "timeElapsed": "13.66 miliseconds (13,661,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.36 miliseconds (12,364,600 nanoseconds)"
+        "timeElapsed": "13.43 miliseconds (13,425,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.71 miliseconds (12,706,700 nanoseconds)"
+        "timeElapsed": "15.58 miliseconds (15,584,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.97 miliseconds (12,972,300 nanoseconds)"
+        "timeElapsed": "14.00 miliseconds (14,004,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.71 miliseconds (12,710,700 nanoseconds)"
+        "timeElapsed": "13.71 miliseconds (13,709,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.44 miliseconds (12,435,100 nanoseconds)"
+        "timeElapsed": "12.60 miliseconds (12,599,100 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.47 miliseconds (13,474,300 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.96 miliseconds (12,956,500 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.91 miliseconds (12,907,400 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.61 miliseconds (13,613,400 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.83 miliseconds (12,825,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.95 miliseconds (11,953,300 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.12 miliseconds (12,120,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.11 miliseconds (12,112,700 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.00 miliseconds (12,996,100 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.38 miliseconds (13,381,900 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.85 miliseconds (11,849,500 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.53 miliseconds (12,530,400 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.84 miliseconds (11,839,000 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.04 miliseconds (11,041,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.88 miliseconds (11,878,600 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.89 miliseconds (12,887,900 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.42 miliseconds (13,424,100 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.97 miliseconds (12,966,000 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.36 miliseconds (12,360,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.78 miliseconds (12,779,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.64 miliseconds (11,635,600 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.44 miliseconds (11,443,500 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "10.82 miliseconds (10,821,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.35 miliseconds (12,354,500 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.30 miliseconds (12,303,700 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.33 miliseconds (12,326,700 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.04 miliseconds (12,037,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.42 miliseconds (12,423,400 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.17 miliseconds (11,165,700 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "10.96 miliseconds (10,958,600 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.86 miliseconds (11,863,300 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.18 miliseconds (12,175,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.61 miliseconds (11,606,000 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "16.56 miliseconds (16,556,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "17.04 miliseconds (17,042,100 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "15.98 miliseconds (15,981,100 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "15.01 miliseconds (15,010,000 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.08 miliseconds (13,083,500 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.98 miliseconds (11,984,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.58 miliseconds (11,581,300 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "10.74 miliseconds (10,738,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.37 miliseconds (11,371,600 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.49 miliseconds (11,491,500 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.92 miliseconds (11,920,400 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.87 miliseconds (11,870,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.78 miliseconds (11,779,500 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.78 miliseconds (11,778,100 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.43 miliseconds (12,428,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.02 miliseconds (13,024,300 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.04 miliseconds (13,037,700 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.54 miliseconds (13,542,400 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.83 miliseconds (13,825,100 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "14.20 miliseconds (14,202,300 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.72 miliseconds (13,719,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.18 miliseconds (13,182,900 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.11 miliseconds (13,109,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.97 miliseconds (11,967,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.41 miliseconds (12,414,100 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.75 miliseconds (12,750,700 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.38 miliseconds (12,376,000 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.25 miliseconds (13,247,000 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.34 miliseconds (12,342,700 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.47 miliseconds (12,468,100 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.72 miliseconds (12,721,500 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.90 miliseconds (11,896,300 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.67 miliseconds (11,674,500 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.89 miliseconds (11,887,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.16 miliseconds (12,162,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.08 miliseconds (12,078,900 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.47 miliseconds (12,470,500 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.69 miliseconds (12,687,900 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.35 miliseconds (12,348,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.21 miliseconds (11,208,700 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "10.87 miliseconds (10,871,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.25 miliseconds (11,250,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.16 miliseconds (12,159,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.31 miliseconds (11,314,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.70 miliseconds (11,702,000 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.19 miliseconds (12,185,000 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.41 miliseconds (11,405,900 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.95 miliseconds (11,946,300 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.65 miliseconds (12,649,900 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.59 miliseconds (13,594,000 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.40 miliseconds (12,401,200 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.30 miliseconds (12,295,900 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.00 miliseconds (12,001,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.32 miliseconds (11,318,100 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.22 miliseconds (11,222,600 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.04 miliseconds (12,042,900 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.08 miliseconds (12,084,100 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.36 miliseconds (12,359,300 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.61 miliseconds (12,605,100 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.60 miliseconds (12,598,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "13.04 miliseconds (13,041,400 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.55 miliseconds (11,546,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.18 miliseconds (11,180,600 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.00 miliseconds (12,002,400 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.14 miliseconds (12,142,400 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "12.20 miliseconds (12,199,300 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.36 miliseconds (11,361,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.92 miliseconds (11,924,700 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.59 miliseconds (11,593,800 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.70 miliseconds (11,702,300 nanoseconds)"
+      },
+      {
+        "status": "success: goal vertex found {rs-jih}",
+        "timeElapsed": "11.95 miliseconds (11,951,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
@@ -91,705 +507,181 @@
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.12 miliseconds (12,115,900 nanoseconds)"
+        "timeElapsed": "12.01 miliseconds (12,008,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.04 miliseconds (12,035,100 nanoseconds)"
+        "timeElapsed": "11.68 miliseconds (11,676,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.70 miliseconds (12,696,500 nanoseconds)"
+        "timeElapsed": "11.56 miliseconds (11,557,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.53 miliseconds (12,530,200 nanoseconds)"
+        "timeElapsed": "11.83 miliseconds (11,828,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.24 miliseconds (12,243,600 nanoseconds)"
+        "timeElapsed": "11.89 miliseconds (11,891,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.13 miliseconds (12,127,200 nanoseconds)"
+        "timeElapsed": "12.43 miliseconds (12,426,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.85 miliseconds (11,854,400 nanoseconds)"
+        "timeElapsed": "12.26 miliseconds (12,264,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.66 miliseconds (11,657,600 nanoseconds)"
+        "timeElapsed": "13.18 miliseconds (13,181,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.94 miliseconds (11,940,000 nanoseconds)"
+        "timeElapsed": "12.35 miliseconds (12,347,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.56 miliseconds (11,560,500 nanoseconds)"
+        "timeElapsed": "12.20 miliseconds (12,201,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.66 miliseconds (11,656,000 nanoseconds)"
+        "timeElapsed": "12.17 miliseconds (12,173,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.88 miliseconds (11,875,400 nanoseconds)"
+        "timeElapsed": "12.37 miliseconds (12,369,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.90 miliseconds (11,895,000 nanoseconds)"
+        "timeElapsed": "12.12 miliseconds (12,121,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.74 miliseconds (11,743,800 nanoseconds)"
+        "timeElapsed": "13.34 miliseconds (13,343,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.66 miliseconds (11,661,000 nanoseconds)"
+        "timeElapsed": "12.71 miliseconds (12,705,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.85 miliseconds (11,853,300 nanoseconds)"
+        "timeElapsed": "12.21 miliseconds (12,212,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.83 miliseconds (11,825,400 nanoseconds)"
+        "timeElapsed": "11.97 miliseconds (11,965,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.74 miliseconds (11,736,200 nanoseconds)"
+        "timeElapsed": "11.88 miliseconds (11,879,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.07 miliseconds (12,066,700 nanoseconds)"
+        "timeElapsed": "12.68 miliseconds (12,676,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.61 miliseconds (11,614,400 nanoseconds)"
+        "timeElapsed": "12.47 miliseconds (12,466,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.41 miliseconds (11,408,000 nanoseconds)"
+        "timeElapsed": "11.52 miliseconds (11,518,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.90 miliseconds (10,897,700 nanoseconds)"
+        "timeElapsed": "12.18 miliseconds (12,175,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.16 miliseconds (11,163,100 nanoseconds)"
+        "timeElapsed": "12.57 miliseconds (12,568,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.76 miliseconds (11,757,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.31 miliseconds (11,312,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.35 miliseconds (11,345,700 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.06 miliseconds (11,061,000 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.03 miliseconds (11,032,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.27 miliseconds (11,269,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.26 miliseconds (11,264,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.51 miliseconds (11,510,500 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.31 miliseconds (11,306,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.40 miliseconds (11,396,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.42 miliseconds (11,415,000 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.51 miliseconds (11,513,600 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.60 miliseconds (11,597,900 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.34 miliseconds (11,339,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.05 miliseconds (11,046,700 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.14 miliseconds (11,144,000 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.13 miliseconds (12,134,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.03 miliseconds (11,026,100 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.62 miliseconds (11,619,400 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.29 miliseconds (11,289,500 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.41 miliseconds (11,406,000 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.09 miliseconds (11,089,100 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.07 miliseconds (11,070,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.10 miliseconds (11,097,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.51 miliseconds (11,511,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.30 miliseconds (11,301,400 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.19 miliseconds (11,194,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.13 miliseconds (11,133,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.52 miliseconds (11,524,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.39 miliseconds (11,386,100 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.39 miliseconds (11,385,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.32 miliseconds (11,319,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.90 miliseconds (11,904,900 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.33 miliseconds (11,331,500 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.18 miliseconds (12,183,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.54 miliseconds (12,543,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.51 miliseconds (12,510,000 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.71 miliseconds (11,709,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.37 miliseconds (11,374,600 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.98 miliseconds (10,978,400 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.38 miliseconds (11,383,400 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.95 miliseconds (11,948,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.18 miliseconds (12,181,500 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.73 miliseconds (11,729,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.37 miliseconds (11,369,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.83 miliseconds (11,831,000 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.35 miliseconds (12,347,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.61 miliseconds (11,606,100 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.82 miliseconds (11,816,700 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.73 miliseconds (11,733,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.47 miliseconds (11,465,600 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.02 miliseconds (11,023,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.24 miliseconds (11,242,400 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.51 miliseconds (11,508,100 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.58 miliseconds (11,579,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.76 miliseconds (11,757,100 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.38 miliseconds (11,377,100 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.25 miliseconds (11,253,000 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.71 miliseconds (11,709,600 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.17 miliseconds (11,165,500 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.59 miliseconds (11,590,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.29 miliseconds (11,293,000 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.35 miliseconds (11,346,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.81 miliseconds (11,806,400 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.17 miliseconds (11,168,400 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.38 miliseconds (11,384,400 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.48 miliseconds (11,477,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.25 miliseconds (11,253,500 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.09 miliseconds (11,085,500 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.67 miliseconds (11,666,900 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.29 miliseconds (11,290,700 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.34 miliseconds (11,340,600 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.38 miliseconds (11,381,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.42 miliseconds (11,420,400 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.16 miliseconds (11,164,500 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.45 miliseconds (11,448,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.18 miliseconds (11,182,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.95 miliseconds (10,947,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.44 miliseconds (11,440,100 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "21.93 miliseconds (21,927,600 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "16.61 miliseconds (16,614,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "15.47 miliseconds (15,473,000 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "13.75 miliseconds (13,750,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "13.40 miliseconds (13,395,500 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.53 miliseconds (12,533,600 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.10 miliseconds (11,101,700 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.98 miliseconds (10,981,100 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.01 miliseconds (11,012,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.84 miliseconds (10,843,800 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.20 miliseconds (11,196,000 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.42 miliseconds (11,415,000 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.97 miliseconds (10,969,100 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.03 miliseconds (11,027,200 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.08 miliseconds (11,084,100 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.16 miliseconds (11,162,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.16 miliseconds (11,155,400 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.04 miliseconds (12,040,500 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.19 miliseconds (11,188,600 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.46 miliseconds (11,458,600 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.45 miliseconds (11,452,600 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.35 miliseconds (11,345,000 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.03 miliseconds (11,034,600 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.56 miliseconds (11,563,400 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.32 miliseconds (11,315,300 nanoseconds)"
-      },
-      {
-        "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.09 miliseconds (11,088,400 nanoseconds)"
+        "timeElapsed": "14.45 miliseconds (14,446,900 nanoseconds)"
       }
     ],
     "greedy": [
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "1.76 miliseconds (1,764,700 nanoseconds)"
+        "timeElapsed": "1.10 miliseconds (1,104,800 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.85 miliseconds (852,100 nanoseconds)"
+        "timeElapsed": "0.91 miliseconds (907,600 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "1.05 miliseconds (1,048,800 nanoseconds)"
+        "timeElapsed": "1.04 miliseconds (1,044,900 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.77 miliseconds (772,100 nanoseconds)"
+        "timeElapsed": "0.78 miliseconds (781,500 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.77 miliseconds (766,100 nanoseconds)"
+        "timeElapsed": "0.80 miliseconds (803,100 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (704,800 nanoseconds)"
+        "timeElapsed": "0.78 miliseconds (777,300 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.71 miliseconds (714,800 nanoseconds)"
+        "timeElapsed": "0.90 miliseconds (897,900 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (701,400 nanoseconds)"
+        "timeElapsed": "0.73 miliseconds (734,300 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.64 miliseconds (638,500 nanoseconds)"
+        "timeElapsed": "0.75 miliseconds (746,100 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.72 miliseconds (720,800 nanoseconds)"
+        "timeElapsed": "0.78 miliseconds (781,500 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.67 miliseconds (671,900 nanoseconds)"
+        "timeElapsed": "0.80 miliseconds (795,300 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (700,000 nanoseconds)"
+        "timeElapsed": "0.85 miliseconds (848,400 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.85 miliseconds (851,200 nanoseconds)"
+        "timeElapsed": "1.00 miliseconds (1,003,000 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.82 miliseconds (820,200 nanoseconds)"
+        "timeElapsed": "0.94 miliseconds (936,100 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.80 miliseconds (797,200 nanoseconds)"
+        "timeElapsed": "0.80 miliseconds (799,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.76 miliseconds (762,700 nanoseconds)"
+        "timeElapsed": "0.78 miliseconds (775,800 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.73 miliseconds (730,000 nanoseconds)"
+        "timeElapsed": "0.96 miliseconds (958,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.66 miliseconds (656,400 nanoseconds)"
+        "timeElapsed": "0.87 miliseconds (870,500 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (701,000 nanoseconds)"
+        "timeElapsed": "0.73 miliseconds (731,300 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.79 miliseconds (788,100 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.79 miliseconds (785,800 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.69 miliseconds (687,000 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.94 miliseconds (939,200 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.72 miliseconds (724,400 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.66 miliseconds (659,600 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.68 miliseconds (683,700 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.75 miliseconds (751,800 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.75 miliseconds (749,600 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.71 miliseconds (714,800 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (702,600 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.67 miliseconds (668,300 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.64 miliseconds (640,100 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.66 miliseconds (662,800 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.67 miliseconds (670,200 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.79 miliseconds (793,900 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.79 miliseconds (785,100 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.67 miliseconds (669,200 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.63 miliseconds (631,500 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.66 miliseconds (659,500 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.67 miliseconds (672,400 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.66 miliseconds (656,800 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.77 miliseconds (774,700 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.76 miliseconds (763,200 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.74 miliseconds (739,900 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.73 miliseconds (726,900 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (700,200 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.68 miliseconds (677,300 nanoseconds)"
+        "timeElapsed": "0.68 miliseconds (684,300 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
@@ -797,151 +689,283 @@
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.62 miliseconds (620,500 nanoseconds)"
+        "timeElapsed": "0.74 miliseconds (741,100 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.68 miliseconds (676,200 nanoseconds)"
+        "timeElapsed": "0.69 miliseconds (685,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.67 miliseconds (669,400 nanoseconds)"
+        "timeElapsed": "0.77 miliseconds (770,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.73 miliseconds (734,500 nanoseconds)"
+        "timeElapsed": "0.92 miliseconds (923,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.65 miliseconds (653,100 nanoseconds)"
+        "timeElapsed": "0.79 miliseconds (790,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.62 miliseconds (615,700 nanoseconds)"
+        "timeElapsed": "1.05 miliseconds (1,049,300 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.64 miliseconds (641,100 nanoseconds)"
+        "timeElapsed": "0.70 miliseconds (699,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.83 miliseconds (831,400 nanoseconds)"
+        "timeElapsed": "0.66 miliseconds (656,900 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "1.05 miliseconds (1,046,700 nanoseconds)"
+        "timeElapsed": "0.70 miliseconds (697,100 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.76 miliseconds (762,200 nanoseconds)"
+        "timeElapsed": "0.87 miliseconds (869,800 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.74 miliseconds (739,500 nanoseconds)"
+        "timeElapsed": "0.87 miliseconds (866,100 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.69 miliseconds (686,100 nanoseconds)"
+        "timeElapsed": "0.78 miliseconds (778,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.63 miliseconds (628,200 nanoseconds)"
+        "timeElapsed": "0.82 miliseconds (821,100 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.67 miliseconds (666,900 nanoseconds)"
+        "timeElapsed": "0.71 miliseconds (711,100 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.67 miliseconds (674,700 nanoseconds)"
+        "timeElapsed": "0.66 miliseconds (660,100 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.66 miliseconds (662,900 nanoseconds)"
+        "timeElapsed": "0.84 miliseconds (841,300 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.80 miliseconds (801,000 nanoseconds)"
+        "timeElapsed": "0.77 miliseconds (767,500 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.82 miliseconds (823,400 nanoseconds)"
+        "timeElapsed": "0.66 miliseconds (663,800 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.81 miliseconds (805,700 nanoseconds)"
+        "timeElapsed": "0.78 miliseconds (779,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.71 miliseconds (710,800 nanoseconds)"
+        "timeElapsed": "0.65 miliseconds (652,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.71 miliseconds (711,300 nanoseconds)"
+        "timeElapsed": "0.66 miliseconds (658,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.71 miliseconds (714,500 nanoseconds)"
+        "timeElapsed": "0.68 miliseconds (675,500 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.60 miliseconds (595,400 nanoseconds)"
+        "timeElapsed": "0.81 miliseconds (813,000 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.66 miliseconds (662,300 nanoseconds)"
+        "timeElapsed": "0.87 miliseconds (866,900 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (698,600 nanoseconds)"
+        "timeElapsed": "0.94 miliseconds (937,900 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.79 miliseconds (788,300 nanoseconds)"
+        "timeElapsed": "0.88 miliseconds (878,000 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.72 miliseconds (721,100 nanoseconds)"
+        "timeElapsed": "0.81 miliseconds (811,800 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.67 miliseconds (666,600 nanoseconds)"
+        "timeElapsed": "0.90 miliseconds (903,100 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.68 miliseconds (678,400 nanoseconds)"
+        "timeElapsed": "0.87 miliseconds (874,500 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.64 miliseconds (638,800 nanoseconds)"
+        "timeElapsed": "1.05 miliseconds (1,052,300 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.63 miliseconds (633,300 nanoseconds)"
+        "timeElapsed": "0.73 miliseconds (731,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.72 miliseconds (723,200 nanoseconds)"
+        "timeElapsed": "0.64 miliseconds (639,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (696,600 nanoseconds)"
+        "timeElapsed": "0.65 miliseconds (654,800 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (704,800 nanoseconds)"
+        "timeElapsed": "0.70 miliseconds (703,600 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.72 miliseconds (723,500 nanoseconds)"
+        "timeElapsed": "0.68 miliseconds (679,400 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.69 miliseconds (689,200 nanoseconds)"
+        "timeElapsed": "0.66 miliseconds (659,600 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.63 miliseconds (629,800 nanoseconds)"
+        "timeElapsed": "0.74 miliseconds (737,600 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (785,000 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (721,500 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.68 miliseconds (682,000 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.70 miliseconds (701,900 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (655,100 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.58 miliseconds (583,000 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (770,800 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.83 miliseconds (832,500 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (822,400 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.85 miliseconds (853,500 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.97 miliseconds (974,300 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.75 miliseconds (752,800 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.89 miliseconds (886,400 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.77 miliseconds (771,500 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.74 miliseconds (743,600 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.62 miliseconds (622,100 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.65 miliseconds (654,900 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (711,200 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.66 miliseconds (659,000 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (819,900 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.84 miliseconds (841,300 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.99 miliseconds (992,200 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.72 miliseconds (719,500 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.71 miliseconds (709,300 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.83 miliseconds (834,700 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.69 miliseconds (694,200 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (792,100 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.73 miliseconds (730,700 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.98 miliseconds (978,000 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.79 miliseconds (790,900 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.85 miliseconds (852,600 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.67 miliseconds (671,100 nanoseconds)"
+      },
+      {
+        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
+        "timeElapsed": "0.82 miliseconds (817,600 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
@@ -949,1463 +973,1439 @@
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.72 miliseconds (723,200 nanoseconds)"
+        "timeElapsed": "0.70 miliseconds (696,600 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (699,900 nanoseconds)"
+        "timeElapsed": "0.67 miliseconds (666,800 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (696,800 nanoseconds)"
+        "timeElapsed": "0.65 miliseconds (648,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.73 miliseconds (725,900 nanoseconds)"
+        "timeElapsed": "0.66 miliseconds (656,900 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.91 miliseconds (911,900 nanoseconds)"
+        "timeElapsed": "0.71 miliseconds (709,400 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.66 miliseconds (658,300 nanoseconds)"
+        "timeElapsed": "0.67 miliseconds (667,900 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (700,000 nanoseconds)"
+        "timeElapsed": "0.69 miliseconds (687,300 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.94 miliseconds (942,000 nanoseconds)"
+        "timeElapsed": "0.85 miliseconds (849,400 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.71 miliseconds (706,100 nanoseconds)"
+        "timeElapsed": "0.83 miliseconds (825,000 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (697,400 nanoseconds)"
+        "timeElapsed": "0.73 miliseconds (730,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.77 miliseconds (772,600 nanoseconds)"
+        "timeElapsed": "0.78 miliseconds (780,400 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.72 miliseconds (721,700 nanoseconds)"
+        "timeElapsed": "0.66 miliseconds (664,500 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (700,700 nanoseconds)"
+        "timeElapsed": "0.75 miliseconds (754,500 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.65 miliseconds (650,300 nanoseconds)"
+        "timeElapsed": "0.82 miliseconds (816,500 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.64 miliseconds (638,100 nanoseconds)"
+        "timeElapsed": "0.91 miliseconds (913,300 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.68 miliseconds (684,000 nanoseconds)"
+        "timeElapsed": "0.84 miliseconds (836,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (698,400 nanoseconds)"
+        "timeElapsed": "0.78 miliseconds (775,500 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.76 miliseconds (761,100 nanoseconds)"
+        "timeElapsed": "0.71 miliseconds (713,000 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.82 miliseconds (818,300 nanoseconds)"
+        "timeElapsed": "0.62 miliseconds (620,800 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.68 miliseconds (679,100 nanoseconds)"
+        "timeElapsed": "0.74 miliseconds (743,900 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.72 miliseconds (719,900 nanoseconds)"
+        "timeElapsed": "0.82 miliseconds (824,000 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.71 miliseconds (707,000 nanoseconds)"
+        "timeElapsed": "0.79 miliseconds (790,000 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.68 miliseconds (684,900 nanoseconds)"
+        "timeElapsed": "0.71 miliseconds (714,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.65 miliseconds (649,700 nanoseconds)"
+        "timeElapsed": "0.70 miliseconds (695,400 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.69 miliseconds (692,800 nanoseconds)"
+        "timeElapsed": "0.73 miliseconds (733,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.72 miliseconds (718,000 nanoseconds)"
+        "timeElapsed": "0.64 miliseconds (642,000 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (702,400 nanoseconds)"
+        "timeElapsed": "0.69 miliseconds (690,400 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.78 miliseconds (784,700 nanoseconds)"
+        "timeElapsed": "0.70 miliseconds (701,100 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.71 miliseconds (706,200 nanoseconds)"
+        "timeElapsed": "0.86 miliseconds (855,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.62 miliseconds (622,400 nanoseconds)"
+        "timeElapsed": "0.83 miliseconds (827,800 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.66 miliseconds (655,000 nanoseconds)"
+        "timeElapsed": "0.96 miliseconds (960,000 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (701,000 nanoseconds)"
+        "timeElapsed": "0.67 miliseconds (667,900 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.75 miliseconds (746,400 nanoseconds)"
+        "timeElapsed": "0.61 miliseconds (614,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.72 miliseconds (718,500 nanoseconds)"
+        "timeElapsed": "0.70 miliseconds (703,000 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.73 miliseconds (725,500 nanoseconds)"
+        "timeElapsed": "0.80 miliseconds (799,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.63 miliseconds (628,900 nanoseconds)"
+        "timeElapsed": "0.78 miliseconds (779,900 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.63 miliseconds (633,300 nanoseconds)"
+        "timeElapsed": "0.69 miliseconds (688,300 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.71 miliseconds (710,500 nanoseconds)"
+        "timeElapsed": "0.69 miliseconds (689,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.75 miliseconds (748,600 nanoseconds)"
+        "timeElapsed": "0.70 miliseconds (698,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.94 miliseconds (935,000 nanoseconds)"
+        "timeElapsed": "0.66 miliseconds (659,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.79 miliseconds (793,000 nanoseconds)"
+        "timeElapsed": "0.62 miliseconds (623,900 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.78 miliseconds (782,200 nanoseconds)"
+        "timeElapsed": "0.61 miliseconds (605,400 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.75 miliseconds (751,400 nanoseconds)"
+        "timeElapsed": "1.25 miliseconds (1,251,400 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.71 miliseconds (706,700 nanoseconds)"
+        "timeElapsed": "0.84 miliseconds (836,000 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.67 miliseconds (667,700 nanoseconds)"
+        "timeElapsed": "0.65 miliseconds (648,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.74 miliseconds (736,000 nanoseconds)"
+        "timeElapsed": "0.59 miliseconds (594,400 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.75 miliseconds (750,100 nanoseconds)"
+        "timeElapsed": "0.67 miliseconds (665,800 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (699,500 nanoseconds)"
+        "timeElapsed": "0.68 miliseconds (675,200 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.70 miliseconds (704,800 nanoseconds)"
+        "timeElapsed": "0.59 miliseconds (589,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.71 miliseconds (714,400 nanoseconds)"
+        "timeElapsed": "0.86 miliseconds (859,600 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.71 miliseconds (709,600 nanoseconds)"
+        "timeElapsed": "0.80 miliseconds (800,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.62 miliseconds (619,800 nanoseconds)"
+        "timeElapsed": "0.73 miliseconds (733,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.66 miliseconds (660,300 nanoseconds)"
+        "timeElapsed": "0.69 miliseconds (685,700 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.88 miliseconds (883,300 nanoseconds)"
+        "timeElapsed": "0.64 miliseconds (635,000 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.76 miliseconds (755,500 nanoseconds)"
+        "timeElapsed": "0.70 miliseconds (697,600 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.78 miliseconds (781,900 nanoseconds)"
+        "timeElapsed": "0.69 miliseconds (685,300 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.69 miliseconds (693,900 nanoseconds)"
+        "timeElapsed": "0.67 miliseconds (665,800 nanoseconds)"
       },
       {
         "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.69 miliseconds (692,000 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.67 miliseconds (670,100 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.69 miliseconds (692,500 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.75 miliseconds (753,200 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.63 miliseconds (634,900 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.76 miliseconds (757,000 nanoseconds)"
-      },
-      {
-        "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari}",
-        "timeElapsed": "0.79 miliseconds (787,700 nanoseconds)"
+        "timeElapsed": "0.78 miliseconds (782,000 nanoseconds)"
       }
     ],
     "bfs": [
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.30 miliseconds (12,304,900 nanoseconds)"
+        "timeElapsed": "14.16 miliseconds (14,163,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.65 miliseconds (11,648,900 nanoseconds)"
+        "timeElapsed": "13.06 miliseconds (13,061,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.38 miliseconds (11,383,000 nanoseconds)"
+        "timeElapsed": "15.96 miliseconds (15,962,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.77 miliseconds (11,769,800 nanoseconds)"
+        "timeElapsed": "13.55 miliseconds (13,549,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.45 miliseconds (11,454,300 nanoseconds)"
+        "timeElapsed": "11.87 miliseconds (11,868,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.43 miliseconds (11,431,600 nanoseconds)"
+        "timeElapsed": "14.57 miliseconds (14,565,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.64 miliseconds (11,639,300 nanoseconds)"
+        "timeElapsed": "15.27 miliseconds (15,274,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.68 miliseconds (11,682,600 nanoseconds)"
+        "timeElapsed": "17.07 miliseconds (17,071,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.26 miliseconds (11,258,900 nanoseconds)"
+        "timeElapsed": "16.69 miliseconds (16,689,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.76 miliseconds (11,758,200 nanoseconds)"
+        "timeElapsed": "14.58 miliseconds (14,582,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.68 miliseconds (11,675,800 nanoseconds)"
+        "timeElapsed": "12.77 miliseconds (12,765,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.86 miliseconds (11,858,700 nanoseconds)"
+        "timeElapsed": "13.00 miliseconds (12,995,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.37 miliseconds (11,374,300 nanoseconds)"
+        "timeElapsed": "11.89 miliseconds (11,892,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.34 miliseconds (11,335,900 nanoseconds)"
+        "timeElapsed": "12.67 miliseconds (12,665,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.97 miliseconds (10,966,400 nanoseconds)"
+        "timeElapsed": "12.61 miliseconds (12,607,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.17 miliseconds (11,174,100 nanoseconds)"
+        "timeElapsed": "13.79 miliseconds (13,790,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.96 miliseconds (10,955,600 nanoseconds)"
+        "timeElapsed": "13.00 miliseconds (13,002,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.25 miliseconds (11,251,600 nanoseconds)"
+        "timeElapsed": "13.15 miliseconds (13,154,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.36 miliseconds (11,363,700 nanoseconds)"
+        "timeElapsed": "12.39 miliseconds (12,391,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.87 miliseconds (10,865,300 nanoseconds)"
+        "timeElapsed": "11.41 miliseconds (11,406,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.40 miliseconds (11,398,900 nanoseconds)"
+        "timeElapsed": "11.73 miliseconds (11,727,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.18 miliseconds (11,177,600 nanoseconds)"
+        "timeElapsed": "11.38 miliseconds (11,381,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.75 miliseconds (11,749,800 nanoseconds)"
+        "timeElapsed": "12.12 miliseconds (12,117,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.16 miliseconds (11,163,100 nanoseconds)"
+        "timeElapsed": "11.04 miliseconds (11,036,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.35 miliseconds (11,347,100 nanoseconds)"
+        "timeElapsed": "11.94 miliseconds (11,937,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.76 miliseconds (11,763,500 nanoseconds)"
+        "timeElapsed": "12.08 miliseconds (12,081,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.16 miliseconds (11,159,400 nanoseconds)"
+        "timeElapsed": "11.19 miliseconds (11,189,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.49 miliseconds (12,487,200 nanoseconds)"
+        "timeElapsed": "11.24 miliseconds (11,236,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.26 miliseconds (12,261,700 nanoseconds)"
+        "timeElapsed": "11.59 miliseconds (11,591,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "13.30 miliseconds (13,298,600 nanoseconds)"
+        "timeElapsed": "11.04 miliseconds (11,039,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.99 miliseconds (11,992,600 nanoseconds)"
+        "timeElapsed": "11.06 miliseconds (11,060,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.14 miliseconds (12,138,300 nanoseconds)"
+        "timeElapsed": "11.11 miliseconds (11,114,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.19 miliseconds (12,186,400 nanoseconds)"
+        "timeElapsed": "11.33 miliseconds (11,334,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.08 miliseconds (12,084,800 nanoseconds)"
+        "timeElapsed": "10.39 miliseconds (10,387,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.53 miliseconds (11,528,800 nanoseconds)"
+        "timeElapsed": "12.66 miliseconds (12,663,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.33 miliseconds (11,333,800 nanoseconds)"
+        "timeElapsed": "12.71 miliseconds (12,711,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.29 miliseconds (12,286,900 nanoseconds)"
+        "timeElapsed": "12.12 miliseconds (12,123,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "15.65 miliseconds (15,650,100 nanoseconds)"
+        "timeElapsed": "11.42 miliseconds (11,420,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "13.40 miliseconds (13,402,500 nanoseconds)"
+        "timeElapsed": "11.10 miliseconds (11,102,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.33 miliseconds (11,330,200 nanoseconds)"
+        "timeElapsed": "10.98 miliseconds (10,984,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.39 miliseconds (11,388,500 nanoseconds)"
+        "timeElapsed": "11.00 miliseconds (11,004,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.74 miliseconds (11,739,200 nanoseconds)"
+        "timeElapsed": "10.82 miliseconds (10,820,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.19 miliseconds (11,194,100 nanoseconds)"
+        "timeElapsed": "11.04 miliseconds (11,039,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.22 miliseconds (11,217,400 nanoseconds)"
+        "timeElapsed": "10.87 miliseconds (10,870,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.22 miliseconds (11,215,300 nanoseconds)"
+        "timeElapsed": "11.13 miliseconds (11,133,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.98 miliseconds (10,978,500 nanoseconds)"
+        "timeElapsed": "11.17 miliseconds (11,174,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.19 miliseconds (11,190,200 nanoseconds)"
+        "timeElapsed": "11.09 miliseconds (11,091,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.05 miliseconds (11,046,800 nanoseconds)"
+        "timeElapsed": "11.55 miliseconds (11,546,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.02 miliseconds (11,019,200 nanoseconds)"
+        "timeElapsed": "10.47 miliseconds (10,470,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.65 miliseconds (11,651,000 nanoseconds)"
+        "timeElapsed": "11.07 miliseconds (11,074,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.88 miliseconds (10,882,200 nanoseconds)"
+        "timeElapsed": "10.86 miliseconds (10,857,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.29 miliseconds (11,291,200 nanoseconds)"
+        "timeElapsed": "10.99 miliseconds (10,992,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.27 miliseconds (11,269,800 nanoseconds)"
+        "timeElapsed": "10.66 miliseconds (10,661,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.92 miliseconds (10,918,200 nanoseconds)"
+        "timeElapsed": "10.88 miliseconds (10,875,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.18 miliseconds (11,176,500 nanoseconds)"
+        "timeElapsed": "10.66 miliseconds (10,663,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.90 miliseconds (10,895,900 nanoseconds)"
+        "timeElapsed": "10.70 miliseconds (10,702,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.51 miliseconds (11,506,100 nanoseconds)"
+        "timeElapsed": "10.75 miliseconds (10,751,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.18 miliseconds (11,179,800 nanoseconds)"
+        "timeElapsed": "11.02 miliseconds (11,024,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.99 miliseconds (10,987,600 nanoseconds)"
+        "timeElapsed": "10.99 miliseconds (10,994,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.68 miliseconds (11,675,400 nanoseconds)"
+        "timeElapsed": "11.72 miliseconds (11,718,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.17 miliseconds (11,167,200 nanoseconds)"
+        "timeElapsed": "11.22 miliseconds (11,218,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.22 miliseconds (11,217,400 nanoseconds)"
+        "timeElapsed": "10.84 miliseconds (10,836,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.80 miliseconds (10,796,700 nanoseconds)"
+        "timeElapsed": "11.32 miliseconds (11,320,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.27 miliseconds (11,273,700 nanoseconds)"
+        "timeElapsed": "11.73 miliseconds (11,732,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.80 miliseconds (11,799,200 nanoseconds)"
+        "timeElapsed": "10.55 miliseconds (10,552,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.38 miliseconds (11,384,000 nanoseconds)"
+        "timeElapsed": "11.02 miliseconds (11,024,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.24 miliseconds (11,242,200 nanoseconds)"
+        "timeElapsed": "12.18 miliseconds (12,178,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.62 miliseconds (11,621,900 nanoseconds)"
+        "timeElapsed": "11.38 miliseconds (11,375,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.21 miliseconds (11,211,200 nanoseconds)"
+        "timeElapsed": "11.02 miliseconds (11,015,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.37 miliseconds (11,366,800 nanoseconds)"
+        "timeElapsed": "10.85 miliseconds (10,848,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.37 miliseconds (11,365,400 nanoseconds)"
+        "timeElapsed": "10.28 miliseconds (10,284,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.11 miliseconds (11,114,100 nanoseconds)"
+        "timeElapsed": "10.72 miliseconds (10,719,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.45 miliseconds (11,445,200 nanoseconds)"
+        "timeElapsed": "10.82 miliseconds (10,819,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.43 miliseconds (11,430,700 nanoseconds)"
+        "timeElapsed": "10.55 miliseconds (10,553,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.30 miliseconds (11,299,600 nanoseconds)"
+        "timeElapsed": "10.93 miliseconds (10,927,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.02 miliseconds (11,022,000 nanoseconds)"
+        "timeElapsed": "10.97 miliseconds (10,968,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.07 miliseconds (11,070,800 nanoseconds)"
+        "timeElapsed": "10.43 miliseconds (10,427,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.22 miliseconds (11,215,800 nanoseconds)"
+        "timeElapsed": "10.77 miliseconds (10,766,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.48 miliseconds (11,481,000 nanoseconds)"
+        "timeElapsed": "11.34 miliseconds (11,343,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.26 miliseconds (11,255,300 nanoseconds)"
+        "timeElapsed": "10.78 miliseconds (10,775,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.95 miliseconds (10,945,900 nanoseconds)"
+        "timeElapsed": "10.89 miliseconds (10,891,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.04 miliseconds (11,036,300 nanoseconds)"
+        "timeElapsed": "16.51 miliseconds (16,513,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.97 miliseconds (10,973,000 nanoseconds)"
+        "timeElapsed": "15.10 miliseconds (15,103,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.80 miliseconds (10,797,600 nanoseconds)"
+        "timeElapsed": "14.82 miliseconds (14,819,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.35 miliseconds (11,350,000 nanoseconds)"
+        "timeElapsed": "14.42 miliseconds (14,422,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.13 miliseconds (11,126,300 nanoseconds)"
+        "timeElapsed": "12.38 miliseconds (12,383,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.05 miliseconds (11,054,500 nanoseconds)"
+        "timeElapsed": "11.85 miliseconds (11,854,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.47 miliseconds (11,474,800 nanoseconds)"
+        "timeElapsed": "10.73 miliseconds (10,733,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "15.09 miliseconds (15,091,300 nanoseconds)"
+        "timeElapsed": "11.34 miliseconds (11,338,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "21.30 miliseconds (21,296,500 nanoseconds)"
+        "timeElapsed": "11.55 miliseconds (11,551,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "17.87 miliseconds (17,874,000 nanoseconds)"
+        "timeElapsed": "12.15 miliseconds (12,146,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "15.16 miliseconds (15,156,600 nanoseconds)"
+        "timeElapsed": "12.15 miliseconds (12,149,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "14.60 miliseconds (14,602,200 nanoseconds)"
+        "timeElapsed": "11.65 miliseconds (11,645,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.80 miliseconds (12,796,100 nanoseconds)"
+        "timeElapsed": "12.25 miliseconds (12,246,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.63 miliseconds (11,625,400 nanoseconds)"
+        "timeElapsed": "12.39 miliseconds (12,389,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.77 miliseconds (11,770,100 nanoseconds)"
+        "timeElapsed": "12.22 miliseconds (12,223,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.36 miliseconds (12,358,200 nanoseconds)"
+        "timeElapsed": "12.55 miliseconds (12,551,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "13.33 miliseconds (13,332,000 nanoseconds)"
+        "timeElapsed": "12.66 miliseconds (12,660,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.53 miliseconds (12,529,200 nanoseconds)"
+        "timeElapsed": "11.82 miliseconds (11,818,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.70 miliseconds (11,698,300 nanoseconds)"
+        "timeElapsed": "11.21 miliseconds (11,214,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.57 miliseconds (11,572,000 nanoseconds)"
+        "timeElapsed": "11.66 miliseconds (11,658,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.38 miliseconds (11,383,600 nanoseconds)"
+        "timeElapsed": "12.52 miliseconds (12,516,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.52 miliseconds (11,518,100 nanoseconds)"
+        "timeElapsed": "11.32 miliseconds (11,323,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.64 miliseconds (12,640,200 nanoseconds)"
+        "timeElapsed": "10.91 miliseconds (10,907,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.64 miliseconds (12,644,600 nanoseconds)"
+        "timeElapsed": "11.32 miliseconds (11,322,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "13.42 miliseconds (13,417,800 nanoseconds)"
+        "timeElapsed": "11.66 miliseconds (11,663,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.60 miliseconds (12,601,000 nanoseconds)"
+        "timeElapsed": "11.17 miliseconds (11,165,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "13.18 miliseconds (13,183,800 nanoseconds)"
+        "timeElapsed": "11.00 miliseconds (10,997,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.53 miliseconds (12,532,600 nanoseconds)"
+        "timeElapsed": "11.04 miliseconds (11,036,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.70 miliseconds (12,703,800 nanoseconds)"
+        "timeElapsed": "11.57 miliseconds (11,574,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.29 miliseconds (11,290,600 nanoseconds)"
+        "timeElapsed": "10.85 miliseconds (10,847,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.45 miliseconds (11,449,800 nanoseconds)"
+        "timeElapsed": "10.86 miliseconds (10,863,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.80 miliseconds (12,799,900 nanoseconds)"
+        "timeElapsed": "11.40 miliseconds (11,399,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.67 miliseconds (11,667,400 nanoseconds)"
+        "timeElapsed": "11.16 miliseconds (11,156,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.36 miliseconds (11,364,800 nanoseconds)"
+        "timeElapsed": "11.86 miliseconds (11,860,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.57 miliseconds (11,569,100 nanoseconds)"
+        "timeElapsed": "11.05 miliseconds (11,053,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.10 miliseconds (12,102,800 nanoseconds)"
+        "timeElapsed": "11.01 miliseconds (11,012,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.19 miliseconds (11,190,900 nanoseconds)"
+        "timeElapsed": "11.60 miliseconds (11,598,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.39 miliseconds (11,392,600 nanoseconds)"
+        "timeElapsed": "11.89 miliseconds (11,894,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.43 miliseconds (11,428,800 nanoseconds)"
+        "timeElapsed": "11.68 miliseconds (11,678,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.68 miliseconds (11,682,900 nanoseconds)"
+        "timeElapsed": "10.95 miliseconds (10,947,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.13 miliseconds (11,127,500 nanoseconds)"
+        "timeElapsed": "10.92 miliseconds (10,924,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.41 miliseconds (11,412,600 nanoseconds)"
+        "timeElapsed": "10.58 miliseconds (10,575,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.86 miliseconds (11,855,400 nanoseconds)"
+        "timeElapsed": "10.91 miliseconds (10,912,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.30 miliseconds (11,302,200 nanoseconds)"
+        "timeElapsed": "11.32 miliseconds (11,322,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.74 miliseconds (11,741,900 nanoseconds)"
+        "timeElapsed": "11.29 miliseconds (11,286,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.30 miliseconds (11,304,700 nanoseconds)"
+        "timeElapsed": "12.06 miliseconds (12,060,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.93 miliseconds (11,925,200 nanoseconds)"
+        "timeElapsed": "12.60 miliseconds (12,599,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.75 miliseconds (11,745,400 nanoseconds)"
+        "timeElapsed": "11.36 miliseconds (11,364,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.50 miliseconds (12,503,500 nanoseconds)"
+        "timeElapsed": "10.52 miliseconds (10,517,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.18 miliseconds (12,180,500 nanoseconds)"
+        "timeElapsed": "11.09 miliseconds (11,088,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.66 miliseconds (11,660,000 nanoseconds)"
+        "timeElapsed": "11.02 miliseconds (11,017,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.98 miliseconds (11,980,500 nanoseconds)"
+        "timeElapsed": "10.88 miliseconds (10,875,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.97 miliseconds (11,973,800 nanoseconds)"
+        "timeElapsed": "10.97 miliseconds (10,968,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.44 miliseconds (12,439,700 nanoseconds)"
+        "timeElapsed": "10.87 miliseconds (10,869,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.79 miliseconds (11,790,000 nanoseconds)"
+        "timeElapsed": "10.77 miliseconds (10,766,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.51 miliseconds (12,505,400 nanoseconds)"
+        "timeElapsed": "11.54 miliseconds (11,542,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.36 miliseconds (12,356,800 nanoseconds)"
+        "timeElapsed": "10.67 miliseconds (10,668,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.23 miliseconds (12,233,900 nanoseconds)"
+        "timeElapsed": "10.58 miliseconds (10,582,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.73 miliseconds (11,731,800 nanoseconds)"
+        "timeElapsed": "11.19 miliseconds (11,188,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.86 miliseconds (11,863,600 nanoseconds)"
+        "timeElapsed": "10.84 miliseconds (10,835,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.12 miliseconds (12,121,100 nanoseconds)"
+        "timeElapsed": "10.89 miliseconds (10,885,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.74 miliseconds (11,735,700 nanoseconds)"
+        "timeElapsed": "10.98 miliseconds (10,982,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.93 miliseconds (11,931,900 nanoseconds)"
+        "timeElapsed": "10.79 miliseconds (10,790,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.51 miliseconds (12,510,300 nanoseconds)"
+        "timeElapsed": "10.84 miliseconds (10,840,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.91 miliseconds (11,912,900 nanoseconds)"
+        "timeElapsed": "11.38 miliseconds (11,377,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.89 miliseconds (11,891,500 nanoseconds)"
+        "timeElapsed": "11.02 miliseconds (11,021,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.30 miliseconds (12,304,300 nanoseconds)"
+        "timeElapsed": "10.89 miliseconds (10,890,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.34 miliseconds (12,343,000 nanoseconds)"
+        "timeElapsed": "11.22 miliseconds (11,215,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.08 miliseconds (12,079,000 nanoseconds)"
+        "timeElapsed": "11.64 miliseconds (11,642,400 nanoseconds)"
       }
     ],
     "astar": [
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.65 miliseconds (8,654,300 nanoseconds)"
+        "timeElapsed": "8.13 miliseconds (8,126,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.36 miliseconds (8,362,800 nanoseconds)"
+        "timeElapsed": "7.86 miliseconds (7,855,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.84 miliseconds (7,836,200 nanoseconds)"
+        "timeElapsed": "7.47 miliseconds (7,470,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.72 miliseconds (7,722,500 nanoseconds)"
+        "timeElapsed": "8.03 miliseconds (8,033,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.69 miliseconds (7,685,700 nanoseconds)"
+        "timeElapsed": "7.67 miliseconds (7,668,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.14 miliseconds (8,140,100 nanoseconds)"
+        "timeElapsed": "7.60 miliseconds (7,600,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.68 miliseconds (7,684,500 nanoseconds)"
+        "timeElapsed": "7.77 miliseconds (7,774,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.93 miliseconds (7,932,300 nanoseconds)"
+        "timeElapsed": "7.61 miliseconds (7,614,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.05 miliseconds (8,047,700 nanoseconds)"
+        "timeElapsed": "7.89 miliseconds (7,890,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.74 miliseconds (8,742,800 nanoseconds)"
+        "timeElapsed": "8.45 miliseconds (8,451,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.25 miliseconds (8,245,600 nanoseconds)"
+        "timeElapsed": "9.54 miliseconds (9,544,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.60 miliseconds (8,601,200 nanoseconds)"
+        "timeElapsed": "8.45 miliseconds (8,445,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.50 miliseconds (7,502,600 nanoseconds)"
+        "timeElapsed": "7.56 miliseconds (7,559,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.88 miliseconds (7,880,300 nanoseconds)"
+        "timeElapsed": "7.84 miliseconds (7,844,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.65 miliseconds (7,654,700 nanoseconds)"
+        "timeElapsed": "7.43 miliseconds (7,431,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.93 miliseconds (7,929,100 nanoseconds)"
+        "timeElapsed": "7.42 miliseconds (7,418,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.69 miliseconds (7,688,200 nanoseconds)"
+        "timeElapsed": "7.28 miliseconds (7,277,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.65 miliseconds (8,648,800 nanoseconds)"
+        "timeElapsed": "6.96 miliseconds (6,962,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.06 miliseconds (8,057,800 nanoseconds)"
+        "timeElapsed": "7.33 miliseconds (7,329,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.00 miliseconds (7,999,900 nanoseconds)"
+        "timeElapsed": "7.36 miliseconds (7,364,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.45 miliseconds (8,449,200 nanoseconds)"
+        "timeElapsed": "7.63 miliseconds (7,627,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.89 miliseconds (7,891,300 nanoseconds)"
+        "timeElapsed": "7.29 miliseconds (7,292,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.21 miliseconds (8,212,400 nanoseconds)"
+        "timeElapsed": "7.59 miliseconds (7,591,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.85 miliseconds (7,852,500 nanoseconds)"
+        "timeElapsed": "7.44 miliseconds (7,441,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.81 miliseconds (7,807,800 nanoseconds)"
+        "timeElapsed": "7.73 miliseconds (7,727,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.59 miliseconds (7,586,000 nanoseconds)"
+        "timeElapsed": "7.19 miliseconds (7,187,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.75 miliseconds (7,753,000 nanoseconds)"
+        "timeElapsed": "7.19 miliseconds (7,192,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.41 miliseconds (7,411,100 nanoseconds)"
+        "timeElapsed": "7.40 miliseconds (7,400,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.87 miliseconds (7,866,100 nanoseconds)"
+        "timeElapsed": "7.78 miliseconds (7,782,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.53 miliseconds (7,529,100 nanoseconds)"
+        "timeElapsed": "7.66 miliseconds (7,664,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.83 miliseconds (7,825,300 nanoseconds)"
+        "timeElapsed": "8.06 miliseconds (8,062,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.30 miliseconds (7,304,900 nanoseconds)"
+        "timeElapsed": "7.96 miliseconds (7,956,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.71 miliseconds (7,710,400 nanoseconds)"
+        "timeElapsed": "7.41 miliseconds (7,414,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.02 miliseconds (8,021,500 nanoseconds)"
+        "timeElapsed": "7.79 miliseconds (7,785,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "9.09 miliseconds (9,089,000 nanoseconds)"
+        "timeElapsed": "7.58 miliseconds (7,581,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.56 miliseconds (8,557,000 nanoseconds)"
+        "timeElapsed": "7.68 miliseconds (7,675,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.79 miliseconds (8,787,200 nanoseconds)"
+        "timeElapsed": "7.64 miliseconds (7,637,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.45 miliseconds (8,445,600 nanoseconds)"
+        "timeElapsed": "7.95 miliseconds (7,950,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "9.34 miliseconds (9,335,600 nanoseconds)"
+        "timeElapsed": "7.74 miliseconds (7,742,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.48 miliseconds (8,483,400 nanoseconds)"
+        "timeElapsed": "7.58 miliseconds (7,576,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.68 miliseconds (7,675,100 nanoseconds)"
+        "timeElapsed": "7.65 miliseconds (7,652,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.67 miliseconds (7,674,100 nanoseconds)"
+        "timeElapsed": "7.65 miliseconds (7,645,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.36 miliseconds (8,357,200 nanoseconds)"
+        "timeElapsed": "7.85 miliseconds (7,854,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.06 miliseconds (8,061,800 nanoseconds)"
+        "timeElapsed": "7.20 miliseconds (7,202,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.52 miliseconds (7,521,500 nanoseconds)"
+        "timeElapsed": "8.01 miliseconds (8,005,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.05 miliseconds (8,051,100 nanoseconds)"
+        "timeElapsed": "7.46 miliseconds (7,459,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.98 miliseconds (7,981,400 nanoseconds)"
+        "timeElapsed": "7.85 miliseconds (7,851,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.41 miliseconds (8,410,300 nanoseconds)"
+        "timeElapsed": "7.31 miliseconds (7,305,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.87 miliseconds (7,867,400 nanoseconds)"
+        "timeElapsed": "7.75 miliseconds (7,745,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.11 miliseconds (8,113,800 nanoseconds)"
+        "timeElapsed": "7.36 miliseconds (7,357,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.05 miliseconds (8,050,600 nanoseconds)"
+        "timeElapsed": "8.36 miliseconds (8,362,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.43 miliseconds (7,432,100 nanoseconds)"
+        "timeElapsed": "7.37 miliseconds (7,373,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.21 miliseconds (7,208,700 nanoseconds)"
+        "timeElapsed": "7.76 miliseconds (7,759,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.32 miliseconds (7,318,000 nanoseconds)"
+        "timeElapsed": "7.20 miliseconds (7,202,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.41 miliseconds (7,411,500 nanoseconds)"
+        "timeElapsed": "8.09 miliseconds (8,094,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.42 miliseconds (7,421,000 nanoseconds)"
+        "timeElapsed": "7.18 miliseconds (7,184,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.54 miliseconds (7,538,500 nanoseconds)"
+        "timeElapsed": "7.76 miliseconds (7,759,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.49 miliseconds (7,492,000 nanoseconds)"
+        "timeElapsed": "7.17 miliseconds (7,172,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.69 miliseconds (7,689,900 nanoseconds)"
+        "timeElapsed": "7.53 miliseconds (7,529,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.37 miliseconds (8,374,600 nanoseconds)"
+        "timeElapsed": "7.40 miliseconds (7,398,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.93 miliseconds (7,931,100 nanoseconds)"
+        "timeElapsed": "7.24 miliseconds (7,237,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.53 miliseconds (8,530,100 nanoseconds)"
+        "timeElapsed": "7.20 miliseconds (7,203,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.83 miliseconds (8,830,400 nanoseconds)"
+        "timeElapsed": "7.80 miliseconds (7,798,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.10 miliseconds (8,095,200 nanoseconds)"
+        "timeElapsed": "7.36 miliseconds (7,359,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.17 miliseconds (8,168,400 nanoseconds)"
+        "timeElapsed": "7.38 miliseconds (7,375,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.27 miliseconds (11,266,900 nanoseconds)"
+        "timeElapsed": "7.61 miliseconds (7,606,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "17.75 miliseconds (17,748,300 nanoseconds)"
+        "timeElapsed": "7.63 miliseconds (7,633,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.11 miliseconds (11,114,000 nanoseconds)"
+        "timeElapsed": "7.61 miliseconds (7,608,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.93 miliseconds (11,926,700 nanoseconds)"
+        "timeElapsed": "7.59 miliseconds (7,591,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "11.34 miliseconds (11,341,700 nanoseconds)"
+        "timeElapsed": "7.53 miliseconds (7,529,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.21 miliseconds (10,212,000 nanoseconds)"
+        "timeElapsed": "7.66 miliseconds (7,658,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.18 miliseconds (8,184,100 nanoseconds)"
+        "timeElapsed": "7.36 miliseconds (7,359,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.67 miliseconds (7,673,200 nanoseconds)"
+        "timeElapsed": "7.54 miliseconds (7,544,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.82 miliseconds (7,819,400 nanoseconds)"
+        "timeElapsed": "7.12 miliseconds (7,122,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.53 miliseconds (8,528,900 nanoseconds)"
+        "timeElapsed": "7.92 miliseconds (7,915,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.11 miliseconds (8,111,900 nanoseconds)"
+        "timeElapsed": "7.02 miliseconds (7,019,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.92 miliseconds (7,915,500 nanoseconds)"
+        "timeElapsed": "7.75 miliseconds (7,747,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.76 miliseconds (7,763,800 nanoseconds)"
+        "timeElapsed": "6.97 miliseconds (6,974,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.82 miliseconds (7,819,200 nanoseconds)"
+        "timeElapsed": "7.57 miliseconds (7,570,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.51 miliseconds (7,513,800 nanoseconds)"
+        "timeElapsed": "7.38 miliseconds (7,378,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.39 miliseconds (8,390,500 nanoseconds)"
+        "timeElapsed": "7.24 miliseconds (7,240,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.47 miliseconds (7,469,100 nanoseconds)"
+        "timeElapsed": "7.44 miliseconds (7,443,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.76 miliseconds (8,758,600 nanoseconds)"
+        "timeElapsed": "7.63 miliseconds (7,634,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.03 miliseconds (8,030,700 nanoseconds)"
+        "timeElapsed": "7.56 miliseconds (7,559,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.22 miliseconds (8,216,500 nanoseconds)"
+        "timeElapsed": "7.14 miliseconds (7,137,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.23 miliseconds (8,228,700 nanoseconds)"
+        "timeElapsed": "7.69 miliseconds (7,693,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.57 miliseconds (8,566,400 nanoseconds)"
+        "timeElapsed": "7.69 miliseconds (7,692,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.90 miliseconds (8,901,800 nanoseconds)"
+        "timeElapsed": "7.57 miliseconds (7,572,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.38 miliseconds (8,380,200 nanoseconds)"
+        "timeElapsed": "7.49 miliseconds (7,493,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.20 miliseconds (8,196,000 nanoseconds)"
+        "timeElapsed": "7.90 miliseconds (7,901,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.74 miliseconds (8,744,400 nanoseconds)"
+        "timeElapsed": "7.72 miliseconds (7,721,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "9.37 miliseconds (9,365,400 nanoseconds)"
+        "timeElapsed": "7.94 miliseconds (7,936,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "9.70 miliseconds (9,699,500 nanoseconds)"
+        "timeElapsed": "7.82 miliseconds (7,816,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.21 miliseconds (8,212,600 nanoseconds)"
+        "timeElapsed": "7.57 miliseconds (7,569,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.49 miliseconds (8,494,900 nanoseconds)"
+        "timeElapsed": "7.64 miliseconds (7,635,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.07 miliseconds (8,074,700 nanoseconds)"
+        "timeElapsed": "7.24 miliseconds (7,236,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.29 miliseconds (8,289,600 nanoseconds)"
+        "timeElapsed": "7.87 miliseconds (7,865,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.44 miliseconds (10,439,300 nanoseconds)"
+        "timeElapsed": "7.35 miliseconds (7,346,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "10.19 miliseconds (10,187,100 nanoseconds)"
+        "timeElapsed": "11.52 miliseconds (11,517,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "12.26 miliseconds (12,263,900 nanoseconds)"
+        "timeElapsed": "10.49 miliseconds (10,488,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "9.58 miliseconds (9,579,000 nanoseconds)"
+        "timeElapsed": "10.18 miliseconds (10,184,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.87 miliseconds (7,872,500 nanoseconds)"
+        "timeElapsed": "11.50 miliseconds (11,502,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "9.54 miliseconds (9,541,900 nanoseconds)"
+        "timeElapsed": "9.51 miliseconds (9,511,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.94 miliseconds (7,935,700 nanoseconds)"
+        "timeElapsed": "9.46 miliseconds (9,455,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "9.74 miliseconds (9,735,900 nanoseconds)"
+        "timeElapsed": "7.95 miliseconds (7,952,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.73 miliseconds (7,727,300 nanoseconds)"
+        "timeElapsed": "7.29 miliseconds (7,291,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.66 miliseconds (7,660,500 nanoseconds)"
+        "timeElapsed": "7.40 miliseconds (7,398,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.63 miliseconds (7,634,800 nanoseconds)"
+        "timeElapsed": "7.12 miliseconds (7,119,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.57 miliseconds (8,574,100 nanoseconds)"
+        "timeElapsed": "7.55 miliseconds (7,545,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.95 miliseconds (7,950,300 nanoseconds)"
+        "timeElapsed": "7.28 miliseconds (7,275,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.64 miliseconds (7,643,800 nanoseconds)"
+        "timeElapsed": "7.22 miliseconds (7,217,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.76 miliseconds (7,757,700 nanoseconds)"
+        "timeElapsed": "7.29 miliseconds (7,286,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.83 miliseconds (7,825,300 nanoseconds)"
+        "timeElapsed": "7.10 miliseconds (7,101,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.44 miliseconds (7,435,200 nanoseconds)"
+        "timeElapsed": "7.47 miliseconds (7,469,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.43 miliseconds (8,432,000 nanoseconds)"
+        "timeElapsed": "7.76 miliseconds (7,764,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.79 miliseconds (7,789,200 nanoseconds)"
+        "timeElapsed": "7.73 miliseconds (7,725,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.76 miliseconds (7,760,800 nanoseconds)"
+        "timeElapsed": "7.54 miliseconds (7,537,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.71 miliseconds (7,713,500 nanoseconds)"
+        "timeElapsed": "7.59 miliseconds (7,589,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.88 miliseconds (7,878,400 nanoseconds)"
+        "timeElapsed": "7.30 miliseconds (7,297,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.84 miliseconds (7,836,900 nanoseconds)"
+        "timeElapsed": "7.56 miliseconds (7,556,800 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.56 miliseconds (7,559,600 nanoseconds)"
+        "timeElapsed": "7.82 miliseconds (7,818,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.89 miliseconds (7,885,600 nanoseconds)"
+        "timeElapsed": "7.45 miliseconds (7,445,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.80 miliseconds (7,803,000 nanoseconds)"
+        "timeElapsed": "7.82 miliseconds (7,824,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.91 miliseconds (7,907,700 nanoseconds)"
+        "timeElapsed": "7.38 miliseconds (7,383,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.30 miliseconds (8,302,800 nanoseconds)"
+        "timeElapsed": "7.68 miliseconds (7,683,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.92 miliseconds (7,922,500 nanoseconds)"
+        "timeElapsed": "7.25 miliseconds (7,247,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.70 miliseconds (7,702,800 nanoseconds)"
+        "timeElapsed": "7.40 miliseconds (7,404,400 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.73 miliseconds (7,729,300 nanoseconds)"
+        "timeElapsed": "7.00 miliseconds (7,004,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.55 miliseconds (7,552,600 nanoseconds)"
+        "timeElapsed": "7.65 miliseconds (7,651,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.05 miliseconds (8,048,600 nanoseconds)"
+        "timeElapsed": "7.02 miliseconds (7,018,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.54 miliseconds (7,541,700 nanoseconds)"
+        "timeElapsed": "7.43 miliseconds (7,425,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.71 miliseconds (7,709,700 nanoseconds)"
+        "timeElapsed": "7.53 miliseconds (7,534,900 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "6.97 miliseconds (6,971,400 nanoseconds)"
+        "timeElapsed": "7.40 miliseconds (7,396,100 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.75 miliseconds (7,746,200 nanoseconds)"
+        "timeElapsed": "7.37 miliseconds (7,370,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.62 miliseconds (7,621,200 nanoseconds)"
+        "timeElapsed": "6.85 miliseconds (6,848,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.01 miliseconds (8,011,500 nanoseconds)"
+        "timeElapsed": "7.89 miliseconds (7,887,200 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.55 miliseconds (7,546,200 nanoseconds)"
+        "timeElapsed": "7.14 miliseconds (7,144,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.08 miliseconds (8,083,300 nanoseconds)"
+        "timeElapsed": "7.71 miliseconds (7,709,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.06 miliseconds (8,055,000 nanoseconds)"
+        "timeElapsed": "7.13 miliseconds (7,133,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.90 miliseconds (7,902,100 nanoseconds)"
+        "timeElapsed": "7.90 miliseconds (7,896,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.86 miliseconds (7,860,600 nanoseconds)"
+        "timeElapsed": "7.00 miliseconds (6,999,000 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.89 miliseconds (7,892,300 nanoseconds)"
+        "timeElapsed": "7.68 miliseconds (7,675,700 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.65 miliseconds (7,652,200 nanoseconds)"
+        "timeElapsed": "7.60 miliseconds (7,602,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.44 miliseconds (8,435,300 nanoseconds)"
+        "timeElapsed": "7.68 miliseconds (7,678,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.44 miliseconds (8,436,300 nanoseconds)"
+        "timeElapsed": "7.52 miliseconds (7,515,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.71 miliseconds (8,712,000 nanoseconds)"
+        "timeElapsed": "7.62 miliseconds (7,618,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.65 miliseconds (8,650,500 nanoseconds)"
+        "timeElapsed": "7.56 miliseconds (7,563,500 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.71 miliseconds (8,708,700 nanoseconds)"
+        "timeElapsed": "7.57 miliseconds (7,566,300 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "8.20 miliseconds (8,196,700 nanoseconds)"
+        "timeElapsed": "7.87 miliseconds (7,868,600 nanoseconds)"
       },
       {
         "status": "success: goal vertex found {rs-jih}",
-        "timeElapsed": "7.97 miliseconds (7,968,100 nanoseconds)"
+        "timeElapsed": "7.48 miliseconds (7,476,100 nanoseconds)"
       }
     ]
   },
@@ -2416,26 +2416,118 @@
     {
       "algorithm": "dijkstra",
       "status": "success: goal vertex found {rs-jih} (total distance: 17.68 KM)",
-      "pathRoutes": "'itc-87','itc-77','itc-76','itc-105','itc-106','rs-pratama','itc-103','itc-89','itc-68','itc-67','itc-102','itc-71','itc-70','itc-69','itc-97','itc-98','itc-100','itc-60','itc-59','itc-91','itc-32','itc-42','itc-37','itc-33','itc-20','rs-jih'",
-      "averageTime": "12.14 miliseconds (12,136,960 nanoseconds)"
+      "pathRoutes": [
+        "itc-87",
+        "itc-77",
+        "itc-76",
+        "itc-105",
+        "itc-106",
+        "rs-pratama",
+        "itc-103",
+        "itc-89",
+        "itc-68",
+        "itc-67",
+        "itc-102",
+        "itc-71",
+        "itc-70",
+        "itc-69",
+        "itc-97",
+        "itc-98",
+        "itc-100",
+        "itc-60",
+        "itc-59",
+        "itc-91",
+        "itc-32",
+        "itc-42",
+        "itc-37",
+        "itc-33",
+        "itc-20",
+        "rs-jih"
+      ],
+      "averageTime": "12.64 miliseconds (12,644,960 nanoseconds)"
     },
     {
       "algorithm": "greedy",
       "status": "failed: leaf vertex reached {rs-umum-veteran-patmasari} (total distance: 7.17 KM)",
-      "pathRoutes": "'itc-87','itc-86','itc-79','itc-109','itc-110','rs-umum-veteran-patmasari'",
-      "averageTime": "0.73 miliseconds (727,638 nanoseconds)"
+      "pathRoutes": [
+        "itc-87",
+        "itc-86",
+        "itc-79",
+        "itc-109",
+        "itc-110",
+        "rs-umum-veteran-patmasari"
+      ],
+      "averageTime": "0.77 miliseconds (766,863 nanoseconds)"
     },
     {
       "algorithm": "bfs",
       "status": "success: goal vertex found {rs-jih} (total distance: 19.306 KM)",
-      "pathRoutes": "'itc-87','itc-77','itc-76','itc-105','itc-106','rs-pratama','itc-103','itc-89','itc-68','itc-67','itc-102','itc-101','itc-72','itc-66','itc-65','itc-64','itc-63','itc-69','itc-97','itc-98','itc-100','itc-60','itc-59','itc-91','itc-32','itc-42','itc-37','itc-57','itc-20','rs-jih'",
-      "averageTime": "11.86 miliseconds (11,857,245 nanoseconds)"
+      "pathRoutes": [
+        "itc-87",
+        "itc-77",
+        "itc-76",
+        "itc-105",
+        "itc-106",
+        "rs-pratama",
+        "itc-103",
+        "itc-89",
+        "itc-68",
+        "itc-67",
+        "itc-102",
+        "itc-101",
+        "itc-72",
+        "itc-66",
+        "itc-65",
+        "itc-64",
+        "itc-63",
+        "itc-69",
+        "itc-97",
+        "itc-98",
+        "itc-100",
+        "itc-60",
+        "itc-59",
+        "itc-91",
+        "itc-32",
+        "itc-42",
+        "itc-37",
+        "itc-57",
+        "itc-20",
+        "rs-jih"
+      ],
+      "averageTime": "11.69 miliseconds (11,690,694 nanoseconds)"
     },
     {
       "algorithm": "astar",
       "status": "success: goal vertex found {rs-jih} (total distance: 17.68 KM)",
-      "pathRoutes": "'itc-87','itc-77','itc-76','itc-105','itc-106','rs-pratama','itc-103','itc-89','itc-68','itc-67','itc-102','itc-71','itc-70','itc-69','itc-97','itc-98','itc-100','itc-60','itc-59','itc-91','itc-32','itc-42','itc-37','itc-33','itc-20','rs-jih'",
-      "averageTime": "8.28 miliseconds (8,282,606 nanoseconds)"
+      "pathRoutes": [
+        "itc-87",
+        "itc-77",
+        "itc-76",
+        "itc-105",
+        "itc-106",
+        "rs-pratama",
+        "itc-103",
+        "itc-89",
+        "itc-68",
+        "itc-67",
+        "itc-102",
+        "itc-71",
+        "itc-70",
+        "itc-69",
+        "itc-97",
+        "itc-98",
+        "itc-100",
+        "itc-60",
+        "itc-59",
+        "itc-91",
+        "itc-32",
+        "itc-42",
+        "itc-37",
+        "itc-33",
+        "itc-20",
+        "rs-jih"
+      ],
+      "averageTime": "7.68 miliseconds (7,678,472 nanoseconds)"
     }
   ]
 }

@@ -72,7 +72,7 @@ function benchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy', 
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = path.dirname(__filename);
     
-    const dirPath = path.join(__dirname, 'csvs');
+    const dirPath = path.join(__dirname, 'results-csvs');
     const benchmarkResultsFilename = `benchmark-results-${startId}-${goalId !== null ? goalId : 'nearest-hospital'}.json`;
     const execTimeHistoryNsFilename = `exec-time-history-${startId}-${goalId !== null ? goalId : 'nearest-hospital'}.json`;
     
@@ -92,11 +92,11 @@ function benchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy', 
     
     // Write benchmark results to file
     fs.writeFileSync(path.join(dirPath, benchmarkResultsFilename), JSON.stringify(results[0], null, 2));
-    console.log(`Benchmark results saved to ./csvs/${benchmarkResultsFilename}`);
+    console.log(`Benchmark results saved to ./results-csvs/${benchmarkResultsFilename}`);
     
     // Write execution time history to file using the custom replacer
     fs.writeFileSync(path.join(dirPath, execTimeHistoryNsFilename), JSON.stringify(results[1], replacer, 2));
-    console.log(`Execution time history saved to ./csvs/${execTimeHistoryNsFilename}`);
+    console.log(`Execution time history saved to ./results-csvs/${execTimeHistoryNsFilename}`);
 }
 
 export default benchmark;
