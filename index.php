@@ -66,20 +66,21 @@
         }
 
         .distance-card {
-            position: absolute;
-            top: 10px;
-            left: 310px; 
-            z-index: 1000;
-            max-width: 200px;
-            margin-left: 10px; 
-            background-color: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 150px;
-            max-height: 100px;
-         
-        }
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        z-index: 1000;
+        max-width: 200px;
+        background-color: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 140px;
+        max-height: 100px;
+    }
+
+
+ 
 
     </style>
 </head>
