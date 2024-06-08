@@ -15,9 +15,11 @@ class Result {
 
     getTotalDistance() {
         let totalDistance = 0;
-        this.#pathRoutes.forEach(path => {
-            totalDistance += path.cost;
-        });
+        for (let i = 1; i < this.#pathRoutes.length; i++) {
+            const currVertex = this.#pathRoutes[i].vertex;
+            const prevVertex = this.#pathRoutes[i - 1].vertex;
+            totalDistance += currVertex.haversineDistanceFrom(prevVertex);
+        }
         return totalDistance;
     }
 
