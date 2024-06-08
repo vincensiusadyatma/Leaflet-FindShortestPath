@@ -53,7 +53,7 @@ function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy
 
     return [
         {
-            history: runHistory,
+            // history: runHistory,
             startId: startId,
             goalId: goalId !== null ? goalId : 'null / nearest hospital',
             iterations: nTimes,
