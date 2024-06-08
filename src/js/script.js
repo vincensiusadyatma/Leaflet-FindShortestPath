@@ -22,6 +22,7 @@ const fillStartButton = document.getElementById("fillStartButton");
 const fillGoalButton = document.getElementById("fillGoalButton");
 const selectAlgorithm = document.getElementById("algorithmSelect");
 const notification = document.getElementById("notification");
+const distanceText = document.getElementById("distance")
 
 // create marker icons
 var hospitalIcon = L.icon({
@@ -387,30 +388,50 @@ var goalIcon = L.icon({
 
           
             let result = null;
+            let routePathResult = null ;
+            let status = null;
+            let distance;
+            
             switch (algorithm) {
                 case "greedy":
-                    result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "greedy").getRouteIds();
-                    makeRouteLine(result, "green");
+                    result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "greedy")
+                    routePathResult = result.getRouteIds()
+                    status = result.getStatus();
+                    distance = result.getTotalDistance();
+                    console.log(distance)
+                    makeRouteLine(routePathResult, "green");
                     break;
                 case "dijkstra":
-                    result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "dijkstra").getRouteIds();
-                    makeRouteLine(result, "red");
+                    result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "dijkstra")
+                    routePathResult = result.getRouteIds()
+                    status = result.getStatus();
+                    distance = result.getTotalDistance();
+                    makeRouteLine(routePathResult, "red");
                     break;
                 case "astar":
-                    result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "astar").getRouteIds();
-                    makeRouteLine(result, "yellow");
+                    result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "astar")
+                    routePathResult = result.getRouteIds()
+                    status = result.getStatus();
+                    distance = result.getTotalDistance();
+                    makeRouteLine(routePathResult, "yellow");
                     break;
                 case "bfs":
-                    result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "bfs").getRouteIds();
-                    makeRouteLine(result, "orange");
+                    result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "bfs")
+                    routePathResult = result.getRouteIds()
+                    status = result.getStatus();
+                    distance = result.getTotalDistance();
+                    makeRouteLine(routePathResult, "orange");
                     break;
                 default:
                     console.error("Invalid algorithm selected");
                     return;
             }
-            
+
+            distanceText.textContent = distance
+       
+
             // Show the notification if the path is successfully formed
-            if (result.length > 0) {
+            if (status) {
                 showNotification("Route path successfully founded");
             } else {
                 showNotification("Failed to form the route path.");
