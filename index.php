@@ -82,7 +82,7 @@
             <input type="button" value="copyLatLong" id="copyLatLongButton"/>
             <input type="button" value="show graph" id="showGraphButton" />
             <div class="button-container">
-                <input type="button" value="fill start" id="fillStartButton"/>
+                <input type="button" value="fill start" id="fillStartButton" />
                 <input type="button" value="fill goal" id="fillGoalButton"/>
             </div>
             <input type="button" value="findHospital" id="findHospitalButton"/>
