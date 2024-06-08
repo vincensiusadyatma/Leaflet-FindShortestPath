@@ -10,6 +10,7 @@ const defaultLatLong = [-7.753881231082619, 110.42189287890972];
 // declaration of object html ELEMENTS
 const controlLatitude = document.getElementById("latitude");
 const controlLongitude = document.getElementById("longitude");
+const crashAudio = document.getElementById('crashAudio');
 const clickSound = document.getElementById("click-sound");
 const clickSoundAccident = document.getElementById("click-sound-crash");
 const findHospitalButton = document.getElementById("findHospitalButton");
@@ -221,7 +222,7 @@ resetButton.addEventListener("click", function () {
 //COPY LATLONG BUTTON
 copyLatLongButton.addEventListener("click", function () {
     navigator.clipboard.writeText(
-        `${controlLatitude.value}, ${controlLongitude.value}`
+        `${'latitude: ' + controlLatitude.value}, ${'longitude: ' + controlLongitude.value}`
     );
 });
 
@@ -325,8 +326,10 @@ const findNode = (id) => {
 // Variable to store reference to the current route lines
 let currentRouteLines = [];
 
+
+
 findHospitalButton.addEventListener("click", function () {
-    clickSound.play();
+    clickSound.play();     
     let algorithm = selectAlgorithm.value
     let goalPoint;
     // Remove existing route lines from map
@@ -453,7 +456,10 @@ let previousMarkerIcon = null;
 // ON MAP CLICK EVENT FUNCTION
 map.on("click", function (e) {
     // Play click sound
-    clickSoundAccident.play();
+    if(crashAudio.checked) {
+        console.log(crashAudio.checked);
+        clickSoundAccident.play(); 
+    }
 
     // Reset the icon of the previous marker if it exists
     if (previousMarker) {
@@ -471,7 +477,7 @@ map.on("click", function (e) {
     existingAmbulanceMarker = L.marker([e.latlng.lat, e.latlng.lng], {
         icon: defaultIcon,
     }).addTo(map);
-    existsAmbulanceMarker = true;
+    //existsAmbulanceMarker = true;
 
     // Update control values
     controlLatitude.value = e.latlng.lat;
