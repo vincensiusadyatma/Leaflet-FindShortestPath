@@ -1,4 +1,4 @@
-// import another js files
+// import other modules
 import Vertex from "./classes/Vertex.js";
 import Graph from "./classes/Graph.js";
 import Result from "./classes/Result.js";
@@ -12,7 +12,7 @@ const controlLatitude = document.getElementById("latitude");
 const controlLongitude = document.getElementById("longitude");
 const clickSound = document.getElementById("click-sound");
 const clickSoundAccident = document.getElementById("click-sound-crash");
-const findHosp = document.getElementById("findHospitalButton");
+const findHospitalButton = document.getElementById("findHospitalButton");
 const graphButton = document.getElementById("showGraphButton");
 const resetButton = document.getElementById("resetButton");
 const copyLatLongButton = document.getElementById("copyLatLongButton");
@@ -24,14 +24,11 @@ const selectAlgorithm = document.getElementById("algorithmSelect");
 const notification = document.getElementById("notification");
 const distanceText = document.getElementById("distance")
 
-// Disable the start button as it's the default input
-// fillStartButton.disabled = true;
-
 // create marker icons
 var hospitalIcon = L.icon({
     iconUrl: "https://cdn-icons-png.freepik.com/512/6395/6395229.png",
     iconSize: [25, 25],
-    iconAnchor: [25, 25],
+    iconAnchor: [12.5, 25],
     popupAnchor: [-12.5, -25],
 });
 var intersectionIcon = L.icon({
@@ -44,7 +41,7 @@ var intersectionIcon = L.icon({
 var ambulanceIcon = L.icon({
     iconUrl: "https://cdn-icons-png.freepik.com/512/2894/2894975.png",
     iconSize: [30, 30],
-    iconAnchor: [15, 30],
+    iconAnchor: [15, 15],
     popupAnchor: [0, -30],
 });
 
@@ -53,6 +50,13 @@ var goalIcon = L.icon({
     iconSize: [30, 30],
     iconAnchor: [15, 30],
     popupAnchor: [0, -30],
+});
+
+var defaultIcon = L.icon({
+    iconUrl: "https://www.pinclipart.com/picdir/big/79-798120_push-pin-clipart.png",
+    iconSize: [15, 25],
+    iconAnchor: [7.5, 25],
+    popupAnchor: [0, -25],
 });
 
 
@@ -105,9 +109,6 @@ intersections_data.forEach(function (intersection) {
 
     intersection_markers.push(marker);
 });
-
-
-
 
 // INITIALIZE VERTEX CLASS
 // make hospital data to vertex class
@@ -300,25 +301,6 @@ fillGoalButton.addEventListener("click", () => {
 
 let existingAmbulanceMarker = null;
 
-map.on("click", function (e) {
-    // Play click sound
-    clickSoundAccident.play();
-
-    // Remove existing marker if present and if it's a Marker instance
-    if (existingAmbulanceMarker && existingAmbulanceMarker instanceof L.Marker) {
-        map.removeLayer(existingAmbulanceMarker);
-    }
-
-    // Set new marker at clicked location
-    existingAmbulanceMarker = L.marker([e.latlng.lat, e.latlng.lng], {
-        icon: ambulanceIcon,
-    }).addTo(map);
-
-    // Update control values
-    controlLatitude.value = e.latlng.lat;
-    controlLongitude.value = e.latlng.lng;
-});
-
 // SET DEFAULT MARKER FUNCTION
 function setDefaultMarker() {
     L.marker([defaultLatLong[0], defaultLatLong[1]], {
@@ -343,7 +325,7 @@ const findNode = (id) => {
 // Variable to store reference to the current route lines
 let currentRouteLines = [];
 
-findHosp.addEventListener("click", function () {
+findHospitalButton.addEventListener("click", function () {
     clickSound.play();
     let algorithm = selectAlgorithm.value
     // Remove existing route lines from map
@@ -417,14 +399,14 @@ findHosp.addEventListener("click", function () {
 
 
         // Show the notification if the path is successfully formed
-        if (status) {
-            showNotification("Route path successfully founded");
+        if (status.startsWith("success")) {
+            showNotification("Successfully formed the route path.");
         } else {
             showNotification("Failed to form the route path.");
         }
 
     } else {
-        alert("Pilih titik intersection untuk mencari rute");
+        alert("Pilih titik awal untuk mencari rute");
     }
 });
 
@@ -462,14 +444,49 @@ function makeRouteLine(result, color) {
 // Initialize the previous start marker
 let previousStartMarker = null;
 let previousGoalMarker = null;
+
+// Define variables to track the previous markers
+let previousMarker = null;
+let previousMarkerIcon = null;
+
+// ON MAP CLICK EVENT FUNCTION
+map.on("click", function (e) {
+    // Play click sound
+    clickSoundAccident.play();
+
+    // Reset the icon of the previous marker if it exists
+    if (previousMarker) {
+        previousMarker.setIcon(previousMarkerIcon);
+        previousMarker = null;
+        previousMarkerIcon = null;
+    }
+
+    // Remove existing ambulance marker if present
+    if (existingAmbulanceMarker) {
+        map.removeLayer(existingAmbulanceMarker);
+    }
+
+    // Set new marker at clicked location
+    existingAmbulanceMarker = L.marker([e.latlng.lat, e.latlng.lng], {
+        icon: defaultIcon,
+    }).addTo(map);
+
+    // Update control values
+    controlLatitude.value = e.latlng.lat;
+    controlLongitude.value = e.latlng.lng;
+});
+
+// HANDLE MARKER CLICK EVENT FUNCTION
 function handleMarkerClick(marker, id) {
     if (fillStartPressed) {
         // Set the start point input and update marker icon
-        startPointInput.value = id;
+        if (id !== null) {
+            startPointInput.value = id;
+        }
         fillStartPressed = false;
         fillStartButton.style.backgroundColor = "#0056b3";
 
-        // Change icon of previous start marker back to intersection icon
+        // Reset the icon of the previous start marker if it exists
         if (previousStartMarker) {
             previousStartMarker.setIcon(intersectionIcon);
         }
@@ -480,12 +497,12 @@ function handleMarkerClick(marker, id) {
         // Update the previous start marker reference
         previousStartMarker = marker;
     } else if (fillGoalPressed) {
-        // Set the goal point input and update marker icon to goal icon
+        // Set the goal point input and update marker icon
         goalPointInput.value = id;
         fillGoalPressed = false;
         fillGoalButton.style.backgroundColor = "#0056b3";
 
-        // Change icon of previous goal marker back to intersection icon
+        // Reset the icon of the previous goal marker if it exists
         if (previousGoalMarker) {
             previousGoalMarker.setIcon(intersectionIcon);
         }
@@ -496,7 +513,7 @@ function handleMarkerClick(marker, id) {
         // Update the previous goal marker reference
         previousGoalMarker = marker;
     } else {
-        //  reset the icon of the last clicked marker
+        // Reset the icon of the last clicked marker if it exists
         if (lastClickedMarker) {
             if (lastClickedMarker.options.type == "hospital") {
                 lastClickedMarker.setIcon(hospitalIcon);
@@ -512,6 +529,10 @@ function handleMarkerClick(marker, id) {
         lastClickedMarker = marker;
         lastClickedMarkerId = id;
     }
+
+    // Track the clicked marker and its original icon to reset later
+    previousMarker = marker;
+    previousMarkerIcon = (marker.options.type == "hospital") ? hospitalIcon : intersectionIcon;
 
     // Update control values
     setCurrentLocation(marker.getLatLng().lat, marker.getLatLng().lng);
