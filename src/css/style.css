@@ -63,5 +63,13 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    background-color: #0056b3;
+    background-color: #0056b3 !important;
+}
+
+#resetButton:hover {
+    background-color: #c01728 !important;
+}
+
+#findHospitalButton:hover {
+    background-color: #196317 !important;
 }

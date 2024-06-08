@@ -107,14 +107,14 @@
                     <td><input type="text" id="goalPoint" value="Nearest Hospital" disabled /></td>
                 </tr>
             </table>
-            <input type="button" value="reset" style="background: red;" id="resetButton" />
-            <input type="button" value="copyLatLong" id="copyLatLongButton" />
-            <input type="button" value="show graph" id="showGraphButton" />
+            <input type="button" value="Reset" style="background: red;" id="resetButton" />
+            <input type="button" value="Copy Latitude & Longitude" id="copyLatLongButton" />
+            <input type="button" value="Toggle Graph" id="showGraphButton" />
             <div class="button-container">
-                <input type="button" value="fill start" id="fillStartButton" />
-                <input type="button" value="fill goal" id="fillGoalButton" />
+                <input type="button" value="Fill Start" id="fillStartButton" />
+                <input type="button" value="Fill Goal" id="fillGoalButton" />
             </div>
-            <input type="button" value="findHospital" style="background: green;" id="findHospitalButton" />
+            <input type="button" value="Find Shortest Route" style="background: green;" id="findHospitalButton" />
             <div class="button-container">
                 <div class="pilih-algoritma">
                     <label for="algorithmSelect">Select Algorithm:</label>
