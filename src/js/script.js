@@ -16,8 +16,8 @@ const findHosp = document.getElementById("findHospitalButton");
 const graphButton = document.getElementById("showGraphButton");
 const resetButton = document.getElementById("resetButton");
 const copyLatLongButton = document.getElementById("copyLatLongButton");
-const startPointButton = document.getElementById("startPoint");
-const goalPointButton = document.getElementById("goalPoint");
+const startPointInput = document.getElementById("startPoint");
+const goalPointInput = document.getElementById("goalPoint");
 const fillStartButton = document.getElementById("fillStartButton");
 const fillGoalButton = document.getElementById("fillGoalButton");
 const selectAlgorithm = document.getElementById("algorithmSelect");
@@ -44,6 +44,13 @@ var ambulanceIcon = L.icon({
     popupAnchor: [0, -30],
 });
 
+var goalIcon = L.icon({
+    iconUrl: "https://cdn-icons-png.freepik.com/512/304/304465.png",
+    iconSize: [30, 30],
+    iconAnchor: [15, 30],
+    popupAnchor: [0, -30],
+});
+
 
 // INITIALIZE MARKER 
 
@@ -55,10 +62,18 @@ var ambulanceIcon = L.icon({
     // create hospital array of of object
     var hospital_markers = [];
 
+    // Initialize the hospital markers
     hospital_data.forEach(function (hospital) {
-    const marker = L.marker([hospital.latitude, hospital.longitude], {icon: hospitalIcon,}).bindPopup(hospital.id);
-    hospital_markers.push(marker);});
+        const marker = L.marker([hospital.latitude, hospital.longitude], {
+            icon: hospitalIcon
+        }).bindPopup(hospital.id);
 
+        marker.on("click", function () {
+            handleMarkerClick(marker, hospital.id);
+        });
+
+        hospital_markers.push(marker);
+    });
 
     //  ===CREATE INTERSECTION MARKER===
 
@@ -70,27 +85,19 @@ var ambulanceIcon = L.icon({
 
     // make intersection marker
     var intersection_markers = [];
+// Update the click event listener for the intersection markers
+// Initialize the intersection markers
     intersections_data.forEach(function (intersection) {
-    const marker = L.marker([intersection.latitude, intersection.longitude], {
-        icon: intersectionIcon,
-        id: intersection.id
-    }).bindPopup(intersection.id);
+        const marker = L.marker([intersection.latitude, intersection.longitude], {
+            icon: intersectionIcon,
+            id: intersection.id
+        }).bindPopup(intersection.id);
 
-    marker.on("click", function () {
-        // Reset the icon of the last clicked marker
-        if (lastClickedMarker) {
-        lastClickedMarker.setIcon(intersectionIcon);
-        }
+        marker.on("click", function () {
+            handleMarkerClick(marker, intersection.id);
+        });
 
-        // Set the icon of the current marker to the ambulance icon
-        marker.setIcon(ambulanceIcon);
-
-        // Update the last clicked marker and ID
-        lastClickedMarker = marker;
-        lastClickedMarkerId = intersection.id;
-    });
-
-    intersection_markers.push(marker);
+        intersection_markers.push(marker);
     });
 
 
@@ -167,34 +174,48 @@ var ambulanceIcon = L.icon({
     //RESET BUTTON
     resetButton.addEventListener("click", function () {
         console.log("click");
+      
+        // Reset lines and markers related to routing and searching
         linesDrawn = false;
-        controlLatitude.value = defaultLatLong[0];
-        controlLongitude.value = defaultLatLong[1];
-        map.setView([defaultLatLong[0], defaultLatLong[1]], 16);
-      
-        // Remove all markers except hospital and intersection markers akwoekawoekawokawoek
-        map.eachLayer(function (layer) {
-          if (
-            layer instanceof L.Marker &&
-            !hospital_markers.includes(layer) &&
-            !intersection_markers.includes(layer)
-          ) {
-            map.removeLayer(layer);
-          }
-        });
-      
-    
-        // Remove all drawn lines from map hehehehehe
         drawnLines.forEach((line) => map.removeLayer(line));
         drawnLines = [];
       
-        // Remove the existing ambulance marker :v
+        // Remove existing ambulance marker
         if (existingAmbulanceMarker) {
           map.removeLayer(existingAmbulanceMarker);
           existingAmbulanceMarker = null;
         }
-      });
       
+        // Clear route-related input fields and buttons
+        controlLatitude.value = "";
+        controlLongitude.value = "";
+        startPointInput.value = "";
+        goalPointInput.value = "";
+        fillStartPressed = false;
+        fillGoalPressed = false;
+        fillStartButton.style.backgroundColor = "#0056b3";
+        fillGoalButton.style.backgroundColor = "#0056b3";
+        startPointInput.disabled = false;
+        goalPointInput.disabled = false;
+      
+        hospital_markers.forEach((marker) => {
+            marker.setIcon(hospitalIcon);
+        });
+        intersection_markers.forEach((marker) => {
+            marker.setIcon(intersectionIcon);
+        });
+    
+        // Reset variabel marker terakhir
+        lastClickedMarker = null;
+        lastClickedMarkerId = null;
+        // Reset algorithm selection
+        selectAlgorithm.selectedIndex = 0; 
+
+        // Hapus jalur rute
+        currentRouteLines.forEach((line) => map.removeLayer(line));
+        currentRouteLines = [];
+        
+        });
 
 
        //COPY LATLONG BUTTON
@@ -258,27 +279,31 @@ var ambulanceIcon = L.icon({
 
 
 
-    // create toggle fill start and fill goal poin
-    fillStartButton.addEventListener("click", function () {
-        console.log("click");
-        startPointButton.disabled = false;
-        goalPointButton.disabled = true;
-        fillStartButton.disabled = true;
-        fillGoalButton.disabled = false;
+    let fillStartPressed = false;
+    let fillGoalPressed = false;
+    
+    // Update the click event listener for the Fill Start button
+    fillStartButton.addEventListener("click", () => {
+        fillStartPressed = true;
+        fillGoalPressed = false;
         fillStartButton.style.backgroundColor = "#3a3a3a";
         fillGoalButton.style.backgroundColor = "#0056b3";
+        startPointInput.disabled = true;
+        goalPointInput.disabled = true;
     });
     
-    fillGoalButton.addEventListener("click", function () {
-        console.log("click");
-        goalPointButton.disabled = false;
-        startPointButton.disabled = true;
-        fillGoalButton.disabled = true;
-        fillStartButton.disabled = false;
+    // Update the click event listener for the Fill Goal button
+    fillGoalButton.addEventListener("click", () => {
+        fillStartPressed = false;
+        fillGoalPressed = true;
         fillGoalButton.style.backgroundColor = "#3a3a3a";
         fillStartButton.style.backgroundColor = "#0056b3";
+        startPointInput.disabled = true;
+        goalPointInput.disabled = true;
     });
     
+
+ 
 
 
     // ON MAP CLICK EVENT FUNCTION
@@ -339,6 +364,13 @@ var ambulanceIcon = L.icon({
         currentRouteLines = [];
 
         // Check if a starting point has been selected
+        if (goalPointInput.value) {
+            var goalPoint = goalPointInput.value
+            lastClickedMarkerId = startPointInput.value;
+        }else{
+            var goalPoint = null
+        }
+      
         if (lastClickedMarkerId !== null) {
             const fullVertices = PERSIMPANGAN.concat(RUMAH_SAKIT);
             fullVertices.forEach((vertexData) => {
@@ -353,22 +385,23 @@ var ambulanceIcon = L.icon({
                 );
             });
 
+          
             let result = null;
             switch (algorithm) {
                 case "greedy":
-                    result = graph.computeShortestRoute(lastClickedMarkerId, null, "greedy").getRouteIds();
+                    result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "greedy").getRouteIds();
                     makeRouteLine(result, "green");
                     break;
                 case "dijkstra":
-                    result = graph.computeShortestRoute(lastClickedMarkerId, null, "dijkstra").getRouteIds();
+                    result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "dijkstra").getRouteIds();
                     makeRouteLine(result, "red");
                     break;
                 case "astar":
-                    result = graph.computeShortestRoute(lastClickedMarkerId, null, "astar").getRouteIds();
+                    result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "astar").getRouteIds();
                     makeRouteLine(result, "yellow");
                     break;
                 case "bfs":
-                    result = graph.computeShortestRoute(lastClickedMarkerId, null, "bfs").getRouteIds();
+                    result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "bfs").getRouteIds();
                     makeRouteLine(result, "orange");
                     break;
                 default:
@@ -413,8 +446,63 @@ var ambulanceIcon = L.icon({
     
 
 
+    // HANDLE MARKER CLICK EVENT
 
+        // Initialize the previous start marker
+        let previousStartMarker = null;
+        let previousGoalMarker = null;
+        function handleMarkerClick(marker, id) {
+            if (fillStartPressed) {
+                // Set the start point input and update marker icon
+                startPointInput.value = id;
+                fillStartPressed = false;
+                fillStartButton.style.backgroundColor = "#0056b3";
+                startPointInput.disabled = false;
 
+                // Change icon of previous start marker back to intersection icon
+                if (previousStartMarker) {
+                    previousStartMarker.setIcon(intersectionIcon);
+                }
+
+                // Set the icon of the current marker to the ambulance icon
+                marker.setIcon(ambulanceIcon);
+                
+                // Update the previous start marker reference
+                previousStartMarker = marker;
+            } else if (fillGoalPressed) {
+                // Set the goal point input and update marker icon to goal icon
+                goalPointInput.value = id;
+                fillGoalPressed = false;
+                fillGoalButton.style.backgroundColor = "#0056b3";
+                goalPointInput.disabled = false;
+
+                // Change icon of previous goal marker back to intersection icon
+                if (previousGoalMarker) {
+                    previousGoalMarker.setIcon(intersectionIcon);
+                }
+
+                // Set the icon of the current marker to the goal icon
+                marker.setIcon(goalIcon);
+
+                // Update the previous goal marker reference
+                previousGoalMarker = marker;
+            } else {
+                //  reset the icon of the last clicked marker
+                if (lastClickedMarker) {
+                    lastClickedMarker.setIcon(intersectionIcon);
+                }
+
+                // Set the icon of the current marker to the ambulance icon
+                marker.setIcon(ambulanceIcon);
+
+                // Update the last clicked marker and ID
+                lastClickedMarker = marker;
+                lastClickedMarkerId = id;
+            }
+
+            // Update control values
+            setCurrentLocation(marker.getLatLng().lat, marker.getLatLng().lng);
+        }
 
 
 
