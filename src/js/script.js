@@ -190,12 +190,12 @@ resetButton.addEventListener("click", function () {
     controlLatitude.value = "";
     controlLongitude.value = "";
     startPointInput.value = "";
-    goalPointInput.value = "";
+    goalPointInput.value = "Nearest Hospital";
     distanceText.textContent = "0 KM";
     fillStartPressed = false;
     fillGoalPressed = false;
-    fillStartButton.style.backgroundColor = "#0056b3";
-    fillGoalButton.style.backgroundColor = "#0056b3";
+    fillStartButton.style.backgroundColor = "#007bff";
+    fillGoalButton.style.backgroundColor = "#007bff";
     startPointInput.disabled = true;
     goalPointInput.disabled = true;
 
@@ -282,7 +282,7 @@ fillStartButton.addEventListener("click", () => {
     fillStartPressed = true;
     fillGoalPressed = false;
     fillStartButton.style.backgroundColor = "#3a3a3a";
-    fillGoalButton.style.backgroundColor = "#0056b3";
+    fillGoalButton.style.backgroundColor = "#007bff";
     startPointInput.disabled = true;
     goalPointInput.disabled = true;
 });
@@ -292,7 +292,7 @@ fillGoalButton.addEventListener("click", () => {
     fillStartPressed = false;
     fillGoalPressed = true;
     fillGoalButton.style.backgroundColor = "#3a3a3a";
-    fillStartButton.style.backgroundColor = "#0056b3";
+    fillStartButton.style.backgroundColor = "#007bff";
     startPointInput.disabled = true;
     goalPointInput.disabled = true;
 });
@@ -328,19 +328,21 @@ let currentRouteLines = [];
 findHospitalButton.addEventListener("click", function () {
     clickSound.play();
     let algorithm = selectAlgorithm.value
+    let goalPoint;
     // Remove existing route lines from map
     currentRouteLines.forEach((line) => map.removeLayer(line));
     currentRouteLines = [];
 
     // Check if a starting point has been selected
-    if (goalPointInput.value) {
-        var goalPoint = goalPointInput.value
+    if (goalPointInput.value !== "Nearest Hospital") {
+        goalPoint = goalPointInput.value
         lastClickedMarkerId = startPointInput.value;
     } else {
-        var goalPoint = null
+        goalPoint = null
+        lastClickedMarkerId = startPointInput.value;
     }
 
-    if (lastClickedMarkerId !== null) {
+    if (lastClickedMarkerId !== "" || startPointInput.value !== "") {
         const fullVertices = PERSIMPANGAN.concat(RUMAH_SAKIT);
         fullVertices.forEach((vertexData) => {
             graph.createVertex(
@@ -366,7 +368,6 @@ findHospitalButton.addEventListener("click", function () {
                 routePathResult = result.getRouteIds()
                 status = result.getStatus();
                 distance = result.getTotalDistance();
-                console.log(distance)
                 makeRouteLine(routePathResult, "green");
                 break;
             case "dijkstra":
@@ -481,10 +482,10 @@ function handleMarkerClick(marker, id) {
     if (fillStartPressed) {
         // Set the start point input and update marker icon
         if (id !== null) {
-            startPointInput.value = id;
+        startPointInput.value = id;
         }
         fillStartPressed = false;
-        fillStartButton.style.backgroundColor = "#0056b3";
+        fillStartButton.style.backgroundColor = "#007bff";
 
         // Reset the icon of the previous start marker if it exists
         if (previousStartMarker) {
@@ -500,7 +501,7 @@ function handleMarkerClick(marker, id) {
         // Set the goal point input and update marker icon
         goalPointInput.value = id;
         fillGoalPressed = false;
-        fillGoalButton.style.backgroundColor = "#0056b3";
+        fillGoalButton.style.backgroundColor = "#007bff";
 
         // Reset the icon of the previous goal marker if it exists
         if (previousGoalMarker) {

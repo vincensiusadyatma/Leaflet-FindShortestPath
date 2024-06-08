@@ -104,7 +104,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: right;"><label for="goalPoint">Goal Point</label></td>
-                    <td><input type="text" id="goalPoint" disabled /></td>
+                    <td><input type="text" id="goalPoint" value="Nearest Hospital" disabled /></td>
                 </tr>
             </table>
             <input type="button" value="reset" style="background: red;" id="resetButton" />

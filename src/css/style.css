@@ -55,7 +55,7 @@ input[type="button"] {
     display: block;
     width: 100%;
     padding: 10px;
-    background: #007BFF;
+    background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 4px;
@@ -63,5 +63,5 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    background: #0056b3;
+    background-color: #0056b3;
 }
