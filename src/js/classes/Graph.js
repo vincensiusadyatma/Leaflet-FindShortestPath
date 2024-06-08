@@ -171,7 +171,6 @@ class Graph {
      * @returns an array containing the pathRoutes and status
      */
     greedy(startVertex, goalVertex) {
-        const vertices = structuredClone(this._vertices);
         let queue = new Queue();
         let visited = new Set();
         let pathRoutes = [];
@@ -219,13 +218,12 @@ class Graph {
 
     /**
      * Backtracking algorithm, this algorithm properly handles leaf nodes by backtracking
-     * and selecting another path based on cost. This approach is a Breadth-First-Search (BFS).
+     * and selecting another path based on cost. This approach is a Best-First-Search (BFS).
      * @param startVertex Starting vertex
      * @param goalVertex Goal vertex, can be null
      * @returns an array containing the pathRoutes and status
      */
     bfs(startVertex, goalVertex) {
-        const vertices = structuredClone(this._vertices);
         // Making a priority queue with lower cost as the priority
         let priorityQueue = new PriorityQueue();
         let visited = new Set();
