@@ -208,7 +208,7 @@ map.on('click', function (e) {
     existingAmbulanceMarker = L.marker([e.latlng.lat, e.latlng.lng], {
         icon: ambulanceIcon
     }).addTo(map);
-    existsAmbulanceMarker = true;
+    //existsAmbulanceMarker = true;
 
     // Update control values
     controlLatitude.value = e.latlng.lat;
