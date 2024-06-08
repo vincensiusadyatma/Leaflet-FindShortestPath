@@ -32,10 +32,10 @@ var hospitalIcon = L.icon({
     popupAnchor: [-12.5, -25],
 });
 var intersectionIcon = L.icon({
-    iconUrl: "https://cdn-icons-png.freepik.com/512/1946/1946345.png",
-    iconSize: [25, 25],
-    iconAnchor: [25, 25],
-    popupAnchor: [-7.5, -15],
+    iconUrl: "src/public/intersection.png",
+    iconSize: [20, 20],
+    iconAnchor: [10, 10],
+    popupAnchor: [0, -10],
 });
 
 var ambulanceIcon = L.icon({
@@ -251,7 +251,7 @@ graphButton.addEventListener("click", function () {
                         [hospital.latitude, hospital.longitude],
                         [neighbor.latitude, neighbor.longitude],
                     ];
-                    const line = L.polyline(latlngs, { color: "red", weight: 5, type: "graph" }).addTo(
+                    const line = L.polyline(latlngs, { color: "red", weight: 4, opacity: 0.75, type: "graph" }).addTo(
                         map
                     );
                     drawnLines.push(line);
@@ -266,7 +266,7 @@ graphButton.addEventListener("click", function () {
                         [intersection.latitude, intersection.longitude],
                         [neighbor.latitude, neighbor.longitude],
                     ];
-                    const line = L.polyline(latlngs, { color: "blue", weight: 5, type: "graph" }).addTo(
+                    const line = L.polyline(latlngs, { color: "blue", weight: 4, opacity: 0.75, type: "graph" }).addTo(
                         map
                     );
                     drawnLines.push(line);
@@ -467,7 +467,7 @@ function makeRouteLine(result, color) {
                 [currentNode.latitude, currentNode.longitude],
                 [nextNode.latitude, nextNode.longitude],
             ];
-            const line = L.polyline(latlngs, { color: color, weight: 5 }).addTo(map);
+            const line = L.polyline(latlngs, { color: color, weight: 8 }).addTo(map);
             currentRouteLines.push(line);
         }
     }
