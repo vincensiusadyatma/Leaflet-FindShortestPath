@@ -50,7 +50,7 @@
             position: fixed;
             top: 10px;
             right: 10px;
-            background-color: #4caf50;
+            background-color: #00c200;
             color: white;
             padding: 10px;
             border-radius: 5px;

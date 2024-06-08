@@ -401,9 +401,9 @@ findHospitalButton.addEventListener("click", function () {
 
         // Show the notification if the path is successfully formed
         if (status.startsWith("success")) {
-            showNotification("Successfully formed the route path.");
+            showNotification("Successfully formed the route path.", status.split(":")[0]);
         } else {
-            showNotification("Failed to form the route path.");
+            showNotification("Failed to form the route path.", status.split(":")[0]);
         }
 
     } else {
@@ -482,7 +482,7 @@ function handleMarkerClick(marker, id) {
     if (fillStartPressed) {
         // Set the start point input and update marker icon
         if (id !== null) {
-        startPointInput.value = id;
+            startPointInput.value = id;
         }
         fillStartPressed = false;
         fillStartButton.style.backgroundColor = "#007bff";
@@ -540,12 +540,17 @@ function handleMarkerClick(marker, id) {
 }
 
 // HANDLE SHOW NOTIFICATION
-function showNotification(message) {
+function showNotification(message, status) {
     notification.textContent = message;
     notification.classList.remove('hide');
     notification.classList.add('show');
+    if (status === "success") {
+        notification.style.backgroundColor = "#00c200";
+    } else {
+        notification.style.backgroundColor = "#f00000";
+    }
     setTimeout(() => {
         notification.classList.remove('show');
         notification.classList.add('hide');
-    }, 3000);
+    }, 10000);
 }
