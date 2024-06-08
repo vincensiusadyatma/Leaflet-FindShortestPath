@@ -45,7 +45,25 @@
             font-size: 16px; 
         }
 
+        .notification {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         
+            z-index: 1000;
+        }
 
+        .notification.hide{
+            display: none;
+        }
+        .notification.show {
+            display: block;
+        }
 
 
     </style>
@@ -101,6 +119,8 @@
         </div>
     </div>
     
+    <div id="notification" class="notification hide">Route path successfully founded</div>
+
     <audio id="click-sound" src="src/public/ambulance_sound.mp3" preload="auto"></audio>
     <audio id="click-sound-crash" src="src/public/car-accident__sound.mp3" preload="auto"></audio>
 

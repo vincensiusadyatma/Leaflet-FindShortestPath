@@ -21,7 +21,7 @@ const goalPointInput = document.getElementById("goalPoint");
 const fillStartButton = document.getElementById("fillStartButton");
 const fillGoalButton = document.getElementById("fillGoalButton");
 const selectAlgorithm = document.getElementById("algorithmSelect");
-
+const notification = document.getElementById("notification");
 
 // create marker icons
 var hospitalIcon = L.icon({
@@ -408,8 +408,16 @@ var goalIcon = L.icon({
                     console.error("Invalid algorithm selected");
                     return;
             }
+            
+            // Show the notification if the path is successfully formed
+            if (result.length > 0) {
+                showNotification("Route path successfully founded");
+            } else {
+                showNotification("Failed to form the route path.");
+            }
+
         } else {
-            alert("Pilih titik interception untuk mencari rute");
+                alert("Pilih titik interception untuk mencari rute");
         }
     });
 
@@ -504,6 +512,16 @@ var goalIcon = L.icon({
             setCurrentLocation(marker.getLatLng().lat, marker.getLatLng().lng);
         }
 
+    // HANDLE SHOW NOTIFICATION
+    function showNotification(message) {
+            notification.textContent = message;
+            notification.classList.remove('hide');
+            notification.classList.add('show');
+            setTimeout(() => {
+                notification.classList.remove('show');
+                notification.classList.add('hide');
+        }, 3000);
+    }
 
 
 
