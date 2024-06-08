@@ -66,6 +66,7 @@ var hospital_markers = [];
 // Initialize the hospital markers
 hospital_data.forEach(function (hospital) {
     const marker = L.marker([hospital.latitude, hospital.longitude], {
+        type: "hospital",
         icon: hospitalIcon
     }).bindPopup(hospital.id);
 
@@ -90,6 +91,7 @@ var intersection_markers = [];
 // Initialize the intersection markers
 intersections_data.forEach(function (intersection) {
     const marker = L.marker([intersection.latitude, intersection.longitude], {
+        type: "intersection",
         icon: intersectionIcon,
         id: intersection.id
     }).bindPopup(intersection.id);
@@ -518,7 +520,11 @@ function handleMarkerClick(marker, id) {
     } else {
         //  reset the icon of the last clicked marker
         if (lastClickedMarker) {
-            lastClickedMarker.setIcon(intersectionIcon);
+            if (lastClickedMarker.options.type == "hospital") {
+                lastClickedMarker.setIcon(hospitalIcon);
+            } else if (lastClickedMarker.options.type == "intersection") {
+                lastClickedMarker.setIcon(intersectionIcon);
+            }
         }
 
         // Set the icon of the current marker to the ambulance icon
