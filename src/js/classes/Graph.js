@@ -186,7 +186,7 @@ class Graph {
             ++iterations;
 
             const { vertex: currVertex, cost } = queue.dequeue();
-            console.log(`Iteration: ${iterations} (${currVertex.getId()}: ${currVertex.getVertexType()})`);
+            // console.log(`Iteration: ${iterations} (${currVertex.getId()}: ${currVertex.getVertexType()})`);
 
             // Mark current vertex as visited
             visited.add(currVertex.getId());
@@ -239,7 +239,7 @@ class Graph {
             ++iterations;
 
             const { vertex: currVertex, cost, path } = priorityQueue.dequeue();
-            console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
+            // console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
 
             // Mark current vertex as visited
             visited.add(currVertex.getId());
@@ -316,7 +316,7 @@ class Graph {
             ++iterations;
 
             const { vertex: currVertex, cost } = priorityQueue.dequeue();
-            console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
+            // console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
 
             // Check for goal conditions
             if (goalVertex !== null && currVertex.getId() === goalVertex.getId()) {
@@ -406,7 +406,7 @@ class Graph {
             ++iterations;
 
             const { vertex: currVertex } = priorityQueue.dequeue();
-            console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
+            // console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
 
             // Stop if we reached the goal
             if (goalVertex !== null && currVertex.getId() === goalVertex.getId()) {
