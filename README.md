@@ -2,7 +2,7 @@
 
 This is a project for "Algorithm Strategy Analysis" course.
 The name itself came from the title of our paper, which analyzes how greedy algorithm works on closed graph map.
-The application visualize how the four shortest path finder algorithms. 
+The application visualize how the four shortest path finder algorithms work. 
 It uses object oriented approach using Graph and predefined Vertex points using JavaScript.
 The graph lines are drawn over Yogyakarta, Indonesia using [Open Street Map](https://www.openstreetmap.org/).
 
