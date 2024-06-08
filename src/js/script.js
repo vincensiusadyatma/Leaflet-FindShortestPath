@@ -24,6 +24,9 @@ const selectAlgorithm = document.getElementById("algorithmSelect");
 const notification = document.getElementById("notification");
 const distanceText = document.getElementById("distance")
 
+// Disable the start button as it's the default input
+// fillStartButton.disabled = true;
+
 // create marker icons
 var hospitalIcon = L.icon({
     iconUrl: "https://cdn-icons-png.freepik.com/512/6395/6395229.png",
@@ -133,11 +136,7 @@ for (const data of intersections_data) {
     intersection_vertices.push(vertex);
 }
 
-
-
-
-
-// INITIALIZE THE MAP
+// Initialize map object
 var map = L.map("map").setView([defaultLatLong[0], defaultLatLong[1]], 16);
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -164,17 +163,14 @@ intersection_markers.forEach(function (marker) {
     marker.addTo(map);
 });
 
-
-
-// INITIALIZE FUNCTION
+///////////////////////////////////// FUNCTIONS /////////////////////////////////////
 
 function setCurrentLocation(lat, lon) {
     controlLatitude.value = lat;
     controlLongitude.value = lon;
 }
 
-
-//RESET BUTTON
+// Reset Button
 resetButton.addEventListener("click", function () {
     console.log("click");
 
@@ -194,12 +190,13 @@ resetButton.addEventListener("click", function () {
     controlLongitude.value = "";
     startPointInput.value = "";
     goalPointInput.value = "";
+    distanceText.textContent = "0 KM";
     fillStartPressed = false;
     fillGoalPressed = false;
     fillStartButton.style.backgroundColor = "#0056b3";
     fillGoalButton.style.backgroundColor = "#0056b3";
-    startPointInput.disabled = false;
-    goalPointInput.disabled = false;
+    startPointInput.disabled = true;
+    goalPointInput.disabled = true;
 
     hospital_markers.forEach((marker) => {
         marker.setIcon(hospitalIcon);
@@ -220,16 +217,12 @@ resetButton.addEventListener("click", function () {
 
 });
 
-
 //COPY LATLONG BUTTON
 copyLatLongButton.addEventListener("click", function () {
     navigator.clipboard.writeText(
         `${controlLatitude.value}, ${controlLongitude.value}`
     );
 });
-
-
-
 
 // CREATE SHOW GRAPH BUTTON
 let linesDrawn = false;
@@ -279,10 +272,8 @@ graphButton.addEventListener("click", function () {
     linesDrawn = !linesDrawn;
 });
 
-
-
-
-let fillStartPressed = false;
+// Default is on since the start point is the first to be filled
+let fillStartPressed = true;
 let fillGoalPressed = false;
 
 // Update the click event listener for the Fill Start button
@@ -305,14 +296,9 @@ fillGoalButton.addEventListener("click", () => {
     goalPointInput.disabled = true;
 });
 
-
-
-
-
 // ON MAP CLICK EVENT FUNCTION
 
 let existingAmbulanceMarker = null;
-
 
 map.on("click", function (e) {
     // Play click sound
@@ -353,8 +339,6 @@ const full_vertex = PERSIMPANGAN.concat(RUMAH_SAKIT);
 const findNode = (id) => {
     return full_vertex.find((intersection) => intersection.id === id);
 };
-
-console.log(findNode("itc-15"))
 
 // Variable to store reference to the current route lines
 let currentRouteLines = [];
@@ -444,8 +428,6 @@ findHosp.addEventListener("click", function () {
     }
 });
 
-
-
 //MAKE ROUTE LINE FUNCTION
 function makeRouteLine(result, color) {
     let routePath = [];
@@ -475,8 +457,6 @@ function makeRouteLine(result, color) {
     }
 }
 
-
-
 // HANDLE MARKER CLICK EVENT
 
 // Initialize the previous start marker
@@ -488,7 +468,6 @@ function handleMarkerClick(marker, id) {
         startPointInput.value = id;
         fillStartPressed = false;
         fillStartButton.style.backgroundColor = "#0056b3";
-        startPointInput.disabled = false;
 
         // Change icon of previous start marker back to intersection icon
         if (previousStartMarker) {
@@ -505,7 +484,6 @@ function handleMarkerClick(marker, id) {
         goalPointInput.value = id;
         fillGoalPressed = false;
         fillGoalButton.style.backgroundColor = "#0056b3";
-        goalPointInput.disabled = false;
 
         // Change icon of previous goal marker back to intersection icon
         if (previousGoalMarker) {
