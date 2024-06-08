@@ -73,8 +73,8 @@ function benchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy', 
     const __dirname = path.dirname(__filename);
     
     const dirPath = path.join(__dirname, 'results-csvs');
-    const benchmarkResultsFilename = `benchmark-results-${startId}-${goalId !== null ? goalId : 'nearest-hospital'}.json`;
-    const execTimeHistoryNsFilename = `exec-time-history-${startId}-${goalId !== null ? goalId : 'nearest-hospital'}.json`;
+    const benchmarkResultsFilename = `benchmark-results-${startId}_to_${goalId !== null ? goalId : 'nearest-hospital'}.json`;
+    const execTimeHistoryNsFilename = `exec-time-history-${startId}_to_${goalId !== null ? goalId : 'nearest-hospital'}.json`;
     
     // Ensure the directory exists
     if (!fs.existsSync(dirPath)) {
