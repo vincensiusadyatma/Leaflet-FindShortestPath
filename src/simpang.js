@@ -1,5 +1,5 @@
 const PERSIMPANGAN = [
-  { id: "itc-1", vertexType: 'intersection', latitude: -7.748520314216934, longitude: 110.43439865112306, label: 'Jalan Tajem', neighborIds: ["rs-medika-respati", 'itc-18', 'itc-2'] },
+  { id: "itc-1", vertexType: 'intersection', latitude: -7.748520314216934, longitude: 110.43439865112306, label: 'Jalan Tajem', neighborIds: ["rs-medika-respati", 'itc-181', 'itc-2'] },
     { id: "itc-2", vertexType: 'intersection', latitude: -7.751212574736011, longitude: 110.43439865112306, label: 'Jalan Tajem', neighborIds: ['itc-1', 'itc-5', 'itc-3'] },
     { id: "itc-3", vertexType: 'intersection', latitude: -7.761532304217272, longitude: 110.43270349502565, label: 'Jalan Tajem', neighborIds: ['itc-2', 'itc-4', 'itc-26'] },
     { id: "itc-4", vertexType: 'intersection', latitude: -7.760453302378131, longitude: 110.42862653732301, label: 'Jalan Sabo', neighborIds: ['itc-3', 'itc-13', 'itc-5'] },
@@ -16,7 +16,7 @@ const PERSIMPANGAN = [
     { id: "itc-15", vertexType: 'intersection', latitude: -7.753301523156896, longitude: 110.42330235242845, label: 'Jalan Kepuhsari', neighborIds: ['itc-16', 'itc-14'] },
     { id: "itc-16", vertexType: 'intersection', latitude: -7.752831112012443, longitude: 110.41960358619691, label: 'Jalan Kepuhsari', neighborIds: ['itc-15', 'itc-94'] },
     { id: "itc-17", vertexType: 'intersection', latitude: -7.744972244696349, longitude: 110.42408019304278, label: 'Jalan Raya Pringgondani', neighborIds: ['itc-7', 'itc-10', 'itc-118'] },
-    { id: "itc-18", vertexType: 'intersection', latitude: -7.745033372738852, longitude: 110.43406873941423, label: 'Jalan Raya Tajem', neighborIds: ['itc-1', 'itc-6'] },
+    { id: "itc-18", vertexType: 'intersection', latitude: -7.745033372738852, longitude: 110.43406873941423, label: 'Jalan Raya Tajem', neighborIds: ['itc-1', 'itc-181'] },
     { id: "itc-19", vertexType: 'intersection', latitude: -7.763956061796632, longitude: 110.42223215103151, label: 'Jalan Padjajaran: Ring Road Utara', neighborIds: ['itc-26', 'itc-41'] },
     { id: "itc-20", vertexType: 'intersection', latitude: -7.759143082136332, longitude: 110.40407091379167, label: 'Jalan Padjajaran: Ring Road Utara', neighborIds: ['itc-22', 'itc-21', 'itc-33'] },
     { id: "itc-21", vertexType: 'intersection', latitude: -7.7573039831454285, longitude: 110.40475755929948, label: 'Jalan Selotomo', neighborIds: ['itc-20', 'itc-23', 'rs-bethesda'] },
@@ -168,7 +168,7 @@ const PERSIMPANGAN = [
     {id: 'itc-168', vertexType: 'intersection', latitude: -7.781155834348968, longitude: 110.35009145736696, label: 'Jalan Godean', neighborIds: ['itc-167', 'itc-169']},
     {id: 'itc-169', vertexType: 'intersection', latitude: -7.781751116696869, longitude: 110.35266637802124, label:'Jalan Godean', neighborIds: ['itc-168', 'itc-170']},
     {id: 'itc-170', vertexType: 'intersection', latitude: -7.782877898826981, longitude: 110.35794496536255, label: 'Jalan Kyai Mojo', neighborIds: ['itc-169', 'itc-171']},
-    {id: 'itc-171', vertexType: 'intersection', latitude: -7.782835378801595, longitude: 110.36083102226259, label: 'Jalan Kyai Mojo', neighborIds: ['itc-170', 'itc-172']},
+    {id: 'itc-171', vertexType: 'intersection', latitude: -7.782835378801595, longitude: 110.36083102226259, label: 'Jalan Kyai Mojo', neighborIds: ['itc-170', 'itc-172', 'itc-180']},
     {id: 'itc-172', vertexType: 'intersection', latitude: -7.782851323811624, longitude: 110.3633898496628, label: 'Jalan Diponegoro', neighborIds: ['itc-145', 'itc-171']},
     {id: 'itc-173', vertexType: 'intersection', latitude: -7.766932587066738, longitude: 110.33507108688356, label: 'Jalan Siliwangi', neighborIds: ['itc-165', 'itc-174']},
     {id: 'itc-174', vertexType: 'intersection', latitude: -7.755557894725262, longitude: 110.33891201019289, label: 'jalan Siliwangi', neighborIds: ['itc-173', 'itc-175']},
@@ -177,7 +177,8 @@ const PERSIMPANGAN = [
     {id: 'itc-177', vertexType: 'intersection', latitude: -7.748573468589234, longitude: 110.3606915473938, label: 'Jalan Siliwangi', neighborIds: ['itc-176', 'itc-178']},
     {id: 'itc-178', vertexType: 'intersection', latitude: -7.749253843962016, longitude: 110.36232233047487, label: 'Jalan Padjajaran', neighborIds: ['itc-177', 'itc-179', 'itc-180']},
     {id: 'itc-179', vertexType: 'intersection', latitude: -7.751188655419261, longitude: 110.37118434906006, label: 'Simpang Empat Monjali', neighborIds: ['itc-178', 'itc-142']},
-    {id: 'itc-180', vertexType: 'intersection', latitude: -7.761255909921328, longitude: 110.36180734634401, label: 'Jalan Magelang', neighborIds: ['itc-178', 'itc-114']}
+    {id: 'itc-180', vertexType: 'intersection', latitude: -7.761255909921328, longitude: 110.36180734634401, label: 'Jalan Magelang', neighborIds: ['itc-178', 'itc-114', 'itc-171']},
+    {id: 'itc-181', vertexType: 'intersection', latitude: -7.7481030521613325, longitude: 110.43435305356982, label: 'Jalan Raya Tajem', neighborIds: ['rs-medika-respati', 'itc-18', 'itc-1']}
 ]
 
 export default PERSIMPANGAN;

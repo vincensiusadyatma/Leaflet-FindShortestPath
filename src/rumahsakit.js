@@ -6,7 +6,7 @@ const RUMAH_SAKIT = [
   { id: "rs-panti-rapih", vertexType: 'hospital', latitude: -7.7773502, longitude: 110.377592, label: 'Panti Rapih', neighborIds: ['itc-111'] },
   { id: "rs-universitas-ahmad-dahlan", vertexType: 'hospital', latitude: -7.7471329, longitude: 110.424855, label: 'Rumah Sakit Universitas Ahmad Dahlan', neighborIds: ['itc-8', 'itc-9'] },
   { id: "rs-sadewa", vertexType: 'hospital', latitude: -7.77110765, longitude: 110.41580, label: 'RSKIA Sadewa', neighborIds: ['itc-31'] },
-  { id: "rs-medika-respati", vertexType: 'hospital', latitude: -7.7483661, longitude: 110.433771, label: 'Rumah Sakit Medika Respati', neighborIds: ['itc-1'] },
+  { id: "rs-medika-respati", vertexType: 'hospital', latitude: -7.7483661, longitude: 110.433771, label: 'Rumah Sakit Medika Respati', neighborIds: ['itc-1', 'itc-181'] },
   { id: "rs-hermina", vertexType: 'hospital', latitude: -7.770076, longitude: 110.43256, label: 'Rumah Sakit Hermina', neighborIds: ['itc-96'] },
   { id: "rs-bethesda", vertexType: 'hospital', latitude: -7.7839063, longitude: 110.377551, label: 'Rumah Sakit Bethesda', neighborIds: ['itc-36'] },
   { id: "rs-dr-soetarto", vertexType: 'hospital', latitude: -7.78582, longitude: 110.3769, label: 'Rumah Sakit Dr Soetarto', neighborIds: ['itc-48'] },
