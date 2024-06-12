@@ -5,15 +5,16 @@
   "averageTime": [
     {
       "algorithm": "dijkstra",
-      "status": "success: goal vertex found {rs-jogja} (total distance: 6.29 KM)",
+      "status": "success: goal vertex found {rs-jogja} (total distance: 6.313 KM)",
       "pathRoutes": [
         "itc-87",
         "itc-77",
         "itc-76",
         "itc-74",
+        "itc-104",
         "rs-jogja"
       ],
-      "averageTime": "0.05 miliseconds (45,013 nanoseconds)"
+      "averageTime": "0.05 miliseconds (46,063 nanoseconds)"
     },
     {
       "algorithm": "greedy",
@@ -23,36 +24,38 @@
         "itc-86",
         "itc-79",
         "itc-109",
+        "itc-213",
         "itc-110",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.02 miliseconds (20,136 nanoseconds)"
+      "averageTime": "0.01 miliseconds (13,461 nanoseconds)"
     },
     {
       "algorithm": "bfs",
-      "status": "success: goal vertex found {rs-jogja} (total distance: 6.456 KM)",
+      "status": "success: goal vertex found {rs-jogja} (total distance: 6.608 KM)",
+      "pathRoutes": [
+        "itc-87",
+        "itc-77",
+        "itc-150",
+        "itc-74",
+        "itc-104",
+        "itc-212",
+        "rs-jogja"
+      ],
+      "averageTime": "0.05 miliseconds (46,022 nanoseconds)"
+    },
+    {
+      "algorithm": "astar",
+      "status": "success: goal vertex found {rs-jogja} (total distance: 6.313 KM)",
       "pathRoutes": [
         "itc-87",
         "itc-77",
         "itc-76",
-        "itc-105",
         "itc-74",
         "itc-104",
         "rs-jogja"
       ],
-      "averageTime": "0.04 miliseconds (44,780 nanoseconds)"
-    },
-    {
-      "algorithm": "astar",
-      "status": "success: goal vertex found {rs-jogja} (total distance: 6.29 KM)",
-      "pathRoutes": [
-        "itc-87",
-        "itc-77",
-        "itc-76",
-        "itc-74",
-        "rs-jogja"
-      ],
-      "averageTime": "0.04 miliseconds (37,826 nanoseconds)"
+      "averageTime": "0.03 miliseconds (31,120 nanoseconds)"
     }
   ]
 }
