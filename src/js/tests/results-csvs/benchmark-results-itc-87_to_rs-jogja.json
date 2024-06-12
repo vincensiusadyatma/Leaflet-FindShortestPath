@@ -14,7 +14,7 @@
         "itc-104",
         "rs-jogja"
       ],
-      "averageTime": "0.05 miliseconds (46,063 nanoseconds)"
+      "averageTime": "0.07 miliseconds (71,199 nanoseconds)"
     },
     {
       "algorithm": "greedy",
@@ -28,7 +28,7 @@
         "itc-110",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.01 miliseconds (13,461 nanoseconds)"
+      "averageTime": "0.03 miliseconds (27,058 nanoseconds)"
     },
     {
       "algorithm": "bfs",
@@ -42,7 +42,7 @@
         "itc-212",
         "rs-jogja"
       ],
-      "averageTime": "0.05 miliseconds (46,022 nanoseconds)"
+      "averageTime": "0.05 miliseconds (50,321 nanoseconds)"
     },
     {
       "algorithm": "astar",
@@ -55,7 +55,7 @@
         "itc-104",
         "rs-jogja"
       ],
-      "averageTime": "0.03 miliseconds (31,120 nanoseconds)"
+      "averageTime": "0.04 miliseconds (42,248 nanoseconds)"
     }
   ]
 }

@@ -31,7 +31,7 @@
         "itc-20",
         "rs-jih"
       ],
-      "averageTime": "0.29 miliseconds (292,364 nanoseconds)"
+      "averageTime": "0.40 miliseconds (404,344 nanoseconds)"
     },
     {
       "algorithm": "greedy",
@@ -45,7 +45,7 @@
         "itc-110",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.01 miliseconds (14,555 nanoseconds)"
+      "averageTime": "0.03 miliseconds (29,792 nanoseconds)"
     },
     {
       "algorithm": "bfs",
@@ -92,7 +92,7 @@
         "itc-20",
         "rs-jih"
       ],
-      "averageTime": "0.40 miliseconds (402,112 nanoseconds)"
+      "averageTime": "0.48 miliseconds (479,959 nanoseconds)"
     },
     {
       "algorithm": "astar",
@@ -122,7 +122,7 @@
         "itc-20",
         "rs-jih"
       ],
-      "averageTime": "0.16 miliseconds (158,071 nanoseconds)"
+      "averageTime": "0.21 miliseconds (208,584 nanoseconds)"
     }
   ]
 }
