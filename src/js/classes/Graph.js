@@ -107,7 +107,24 @@ class Graph {
         return this.isConnected(vertex1, vertex2);
     }
 
-    updateVertexConnections() { }
+    /**
+     * Iterates through all vertices and checks if they are valid. For each vertex, 
+     * this also checks the neighbors of the vertex and prints a warning if a neighbor
+     * of the current vertex has invalid neighbor.
+     */
+    checkVerticesValidity() {
+        for (let vertex of this._vertices.values()) {
+            if (!(vertex instanceof Vertex)) {
+                throw new Error('Vertex is undefined');
+            }
+            for (let neighborId of vertex.getNeighborIds()) {
+                const neighbor = this.getVertex(neighborId);
+                if (!neighbor) {
+                    console.warn(`Neighbor ${neighborId} of vertex ${vertex.getId()} is not found`);
+                }
+            }
+        }
+    }
 
     // Shortest path finder caller
 
