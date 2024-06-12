@@ -13,6 +13,7 @@ const controlLongitude = document.getElementById("longitude");
 const crashAudio = document.getElementById('crashAudio');
 const clickSound = document.getElementById("click-sound");
 const clickSoundAccident = document.getElementById("click-sound-crash");
+const clickAmbulanceSound = document.getElementById('ambulanceAudio');
 const findHospitalButton = document.getElementById("findHospitalButton");
 const graphButton = document.getElementById("showGraphButton");
 const resetButton = document.getElementById("resetButton");
@@ -329,7 +330,11 @@ let currentRouteLines = [];
 
 
 findHospitalButton.addEventListener("click", function () {
-    clickSound.play();     
+    
+    if (clickAmbulanceSound.checked) {
+        clickSound.play();
+    }
+
     let algorithm = selectAlgorithm.value
     let goalPoint;
     // Remove existing route lines from map

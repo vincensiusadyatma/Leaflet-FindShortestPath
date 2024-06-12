@@ -109,8 +109,13 @@
             </table>
             <input type="button" value="Reset" style="background: red;" id="resetButton" />
             <div style="">
-                <input type="checkbox" id="crashAudio">
+                <input type="checkbox" id="crashAudio" checked>
                 <label for="crashAudio">Crash audio</label>
+            </div>
+
+            <div style="">
+                <input type="checkbox" id="ambulanceAudio" checked>
+                <label for="ambulanceAudio">Ambulance audio</label>
             </div>
             <input type="button" value="Copy Latitude & Longitude" id="copyLatLongButton" />
             <input type="button" value="Toggle Graph" id="showGraphButton" />
