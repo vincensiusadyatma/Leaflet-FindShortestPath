@@ -1,5 +1,5 @@
 import Graph from "../classes/Graph.js";
-import PERSIMPANGAN from "../../persimpangan.js";
+import PERSIMPANGAN from "../../simpang.js";
 import RUMAH_SAKIT from "../../rumahsakit.js";
 import { hrtime } from 'process';
 import fs from 'fs';

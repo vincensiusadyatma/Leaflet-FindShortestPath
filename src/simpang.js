@@ -106,8 +106,8 @@ const PERSIMPANGAN = [
     {id: 'itc-106', vertexType: 'intersection', latitude: -7.815946540688034, longitude: 110.37316381931306, label: 'Jalan Sisingramangaraja', neighborIds: ['itc-73', 'itc-105']},
     {id: 'itc-107', vertexType: 'intersection', latitude: -7.808405079666344, longitude: 110.3691351413727, label: 'Jalan Brigadir Jenderal Katomso', neighborIds: ['itc-211', 'itc-83', 'rs-tht-dr-pomo']},
     {id: 'itc-108', vertexType: 'intersection', latitude: -7.796813604665394, longitude: 110.37263810634614, label: 'Jalan Juminahan', neighborIds: ['rs-lempuyangwangi', 'itc-61', 'itc-203']},
-    {id: 'itc-109', vertexType: 'intersection', latitude: -7.827627830026737, longitude: 110.3605628013611, label: 'Jalan Krapyak Kulon', neighborIds: ['itc-79', 'itc-222']},
-    {id: 'itc-110', vertexType: 'intersection', latitude: -7.830008689614815, longitude: 110.36020874977113, label: 'Jalan Kyai Haji Ali maksum', neighborIds: ['itc-222', 'itc-78', 'rs-umum-veteran-patmasari']},
+    {id: 'itc-109', vertexType: 'intersection', latitude: -7.827627830026737, longitude: 110.3605628013611, label: 'Jalan Krapyak Kulon', neighborIds: ['itc-79', 'itc-213']},
+    {id: 'itc-110', vertexType: 'intersection', latitude: -7.830008689614815, longitude: 110.36020874977113, label: 'Jalan Kyai Haji Ali maksum', neighborIds: ['itc-213', 'itc-78', 'rs-umum-veteran-patmasari']},
     {id: 'itc-111', vertexType: 'intersection', latitude: -7.776159681337243, longitude: 110.37741780281068, label: 'Jalan Colombo', neighborIds: ['rs-panti-rapih', 'itc-113', 'itc-204']},
     {id: 'itc-112', vertexType: 'intersection', latitude: -7.782941678857006, longitude: 110.37232160568239, label: 'Jalan Cornelis Simanjuntak', neighborIds: ['itc-45', 'itc-46', 'itc-145']},
     {id: 'itc-113', vertexType: 'intersection', latitude: -7.776042749383896, longitude: 110.37607669830322, label: 'Bundaran UGM', neighborIds: ['itc-46', 'itc-45', 'itc-111']},
@@ -210,7 +210,7 @@ const PERSIMPANGAN = [
     {id: 'itc-210', vertexType: 'intersection', latitude: -7.809134214747651, longitude: 110.36865234375001, label: 'Jalan Madyosuro', neighborIds: ['rs-tht-dr-pomo', 'itc-211']}, 
     {id: 'itc-211', vertexType: 'intersection', latitude: -7.809165433340936, longitude: 110.36907076835632, label: 'Jalan mantrigawen Lor', neighborIds: ['itc-210', 'itc-107']},
     {id: 'itc-212', vertexType: 'intersection', latitude: -7.82485151952444, longitude: 110.37789791822435, label: 'Jalan Tritunggal', neighborIds: ['itc-104', 'itc-88', 'rs-jogja']},
-    {id: 'itc-222', vertexType: 'intersection', latitude: -7.829661233244595, longitude: 110.3602758049965, label: 'Jalan Kyai haji Ali Maksum', neighborIds: ['rs-umum-veteran-patmasari', 'itc-109', 'itc-110']}
+    {id: 'itc-213', vertexType: 'intersection', latitude: -7.829661233244595, longitude: 110.3602758049965, label: 'Jalan Kyai haji Ali Maksum', neighborIds: ['rs-umum-veteran-patmasari', 'itc-109', 'itc-110']}
 ]
 
 export default PERSIMPANGAN;

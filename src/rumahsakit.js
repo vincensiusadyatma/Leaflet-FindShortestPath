@@ -1,7 +1,7 @@
 const RUMAH_SAKIT = [
   { id: "rs-pratama", vertexType: 'hospital', latitude: -7.8158269625591315, longitude: 110.37370026111604, label: 'Rumah Sakit Pratama', neighborIds: ['itc-103', 'itc-106'] },
   { id: "rs-jogja", vertexType: 'hospital', latitude: -7.825565824571337, longitude: 110.37804007530214, label: 'Rumah Sakit Jogja', neighborIds: ['itc-104', 'itc-212'] },
-  { id: "rs-umum-veteran-patmasari", vertexType: 'hospital', latitude: -7.830014004018314, longitude: 110.35995930433275, label: 'Rumah Sakit Umum veteran Patmasari', neighborIds: ['itc-110', 'itc-222'] },
+  { id: "rs-umum-veteran-patmasari", vertexType: 'hospital', latitude: -7.830014004018314, longitude: 110.35995930433275, label: 'Rumah Sakit Umum veteran Patmasari', neighborIds: ['itc-110', 'itc-213'] },
   { id: "rs-jih", vertexType: 'hospital', latitude: -7.75766276, longitude: 110.403521, label: 'JIH', neighborIds: ['itc-21', 'itc-20'] },
   { id: "rs-panti-rapih", vertexType: 'hospital', latitude: -7.7773502, longitude: 110.377592, label: 'Panti Rapih', neighborIds: ['itc-111', 'itc-204'] },
   { id: "rs-universitas-ahmad-dahlan", vertexType: 'hospital', latitude: -7.7471329, longitude: 110.424855, label: 'Rumah Sakit Universitas Ahmad Dahlan', neighborIds: ['itc-8', 'itc-9'] },
