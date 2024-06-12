@@ -75,7 +75,7 @@ const PERSIMPANGAN = [
     { id: "itc-75", vertexType: 'intersection', latitude: -7.814681668078089, longitude: 110.36845922470094, label: 'Jalan Sunan Kalijaga', neighborIds: ['itc-76', 'itc-73', 'itc-80', 'itc-211'] },
     { id: "itc-76", vertexType: 'intersection', latitude: -7.824566704857581, longitude: 110.36768674850464, label: 'Jalan Gadjah Mada', neighborIds: ['itc-75', 'itc-74', 'itc-77'] },
     { id: "itc-77", vertexType: 'intersection', latitude: -7.835556889961546, longitude: 110.36558389663696, label: 'Jalan Diponegoro', neighborIds: ['itc-76', 'itc-78', 'itc-150']},
-    { id: "itc-78", vertexType: 'intersection', latitude: -7.833346121669659, longitude: 110.3589963912964, label: 'Jalan Dr. Wahidin', neighborIds: ['itc-77', "rs-hermina", 'itc-79'] },
+    { id: "itc-78", vertexType: 'intersection', latitude: -7.833346121669659, longitude: 110.3589963912964, label: 'Jalan Dr. Wahidin', neighborIds: ['itc-77', 'itc-79']},
     { id: "itc-79", vertexType: 'intersection', latitude: -7.827755376420936, longitude: 110.35397529602052, label: 'Jalan Ahmad Yani', neighborIds: ['itc-78', 'itc-85', 'itc-80'] },
     { id: "itc-80", vertexType: 'intersection', latitude: -7.813044768423498, longitude: 110.35603523254396, label: 'Jalan Jenderal Soedirman', neighborIds: ['itc-79', 'itc-81', 'itc-75'] },
     { id: "itc-81", vertexType: 'intersection', latitude: -7.811896808993447, longitude: 110.3494691848755, label: 'Jalan Parangtritis', neighborIds: ['itc-80', 'itc-85', 'itc-163']},
