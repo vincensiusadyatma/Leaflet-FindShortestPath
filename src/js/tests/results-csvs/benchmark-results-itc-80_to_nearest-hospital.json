@@ -1,0 +1,70 @@
+{
+  "startId": "itc-80",
+  "goalId": "null / nearest hospital",
+  "iterations": 250,
+  "averageTime": [
+    {
+      "algorithm": "dijkstra",
+      "status": "success: nearest hospital found {rs-pratama} (total distance: 2.011 KM)",
+      "pathRoutes": [
+        "itc-80",
+        "itc-75",
+        "itc-73",
+        "itc-103",
+        "rs-pratama"
+      ],
+      "averageTime": "0.12 miliseconds (119,616 nanoseconds)"
+    },
+    {
+      "algorithm": "greedy",
+      "status": "success: nearest hospital found {rs-umum-veteran-patmasari} (total distance: 11.836 KM)",
+      "pathRoutes": [
+        "itc-80",
+        "itc-81",
+        "itc-163",
+        "itc-162",
+        "itc-161",
+        "itc-160",
+        "itc-159",
+        "itc-158",
+        "itc-157",
+        "itc-156",
+        "itc-155",
+        "itc-154",
+        "itc-153",
+        "itc-152",
+        "itc-85",
+        "itc-79",
+        "itc-109",
+        "itc-213",
+        "itc-110",
+        "rs-umum-veteran-patmasari"
+      ],
+      "averageTime": "0.06 miliseconds (60,574 nanoseconds)"
+    },
+    {
+      "algorithm": "bfs",
+      "status": "success: nearest hospital found {rs-pratama} (total distance: 2.011 KM)",
+      "pathRoutes": [
+        "itc-80",
+        "itc-75",
+        "itc-73",
+        "itc-103",
+        "rs-pratama"
+      ],
+      "averageTime": "0.07 miliseconds (72,533 nanoseconds)"
+    },
+    {
+      "algorithm": "astar",
+      "status": "success: nearest hospital found {rs-tht-dr-pomo} (total distance: 2.151 KM)",
+      "pathRoutes": [
+        "itc-80",
+        "itc-75",
+        "itc-211",
+        "itc-107",
+        "rs-tht-dr-pomo"
+      ],
+      "averageTime": "0.13 miliseconds (128,633 nanoseconds)"
+    }
+  ]
+}

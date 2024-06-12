@@ -1,0 +1,53 @@
+{
+  "startId": "itc-70",
+  "goalId": "null / nearest hospital",
+  "iterations": 250,
+  "averageTime": [
+    {
+      "algorithm": "dijkstra",
+      "status": "success: nearest hospital found {rs-hidayatullah} (total distance: 1.479 KM)",
+      "pathRoutes": [
+        "itc-70",
+        "itc-71",
+        "rs-hidayatullah"
+      ],
+      "averageTime": "0.05 miliseconds (53,799 nanoseconds)"
+    },
+    {
+      "algorithm": "greedy",
+      "status": "success: nearest hospital found {rs-happy-land} (total distance: 1.949 KM)",
+      "pathRoutes": [
+        "itc-70",
+        "itc-69",
+        "itc-97",
+        "itc-98",
+        "itc-100",
+        "rs-happy-land"
+      ],
+      "averageTime": "0.01 miliseconds (9,261 nanoseconds)"
+    },
+    {
+      "algorithm": "bfs",
+      "status": "success: nearest hospital found {rs-happy-land} (total distance: 1.949 KM)",
+      "pathRoutes": [
+        "itc-70",
+        "itc-69",
+        "itc-97",
+        "itc-98",
+        "itc-100",
+        "rs-happy-land"
+      ],
+      "averageTime": "0.01 miliseconds (9,636 nanoseconds)"
+    },
+    {
+      "algorithm": "astar",
+      "status": "success: nearest hospital found {rs-hidayatullah} (total distance: 1.479 KM)",
+      "pathRoutes": [
+        "itc-70",
+        "itc-71",
+        "rs-hidayatullah"
+      ],
+      "averageTime": "0.05 miliseconds (45,328 nanoseconds)"
+    }
+  ]
+}
