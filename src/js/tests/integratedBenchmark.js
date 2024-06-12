@@ -1,5 +1,5 @@
 import Graph from "../classes/Graph.js";
-import PERSIMPANGAN from "../../persimpangan.js";
+import PERSIMPANGAN from "../../simpang.js";
 import RUMAH_SAKIT from "../../rumahsakit.js";
 import { hrtime } from 'process';
 import fs from 'fs';
@@ -16,6 +16,8 @@ function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy
     fullVertices.forEach(vertexData => {
         graph.createVertex(vertexData.id, vertexData.vertexType, vertexData.latitude, vertexData.longitude, vertexData.label, vertexData.neighborIds, true);
     });
+
+    graph.checkVerticesValidity();
 
     algorithms.forEach(algorithm => {
         runHistory[algorithm] = [];
