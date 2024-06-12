@@ -5,20 +5,16 @@
   "averageTime": [
     {
       "algorithm": "dijkstra",
-      "status": "success: goal vertex found {rs-jih} (total distance: 17.68 KM)",
+      "status": "success: goal vertex found {rs-jih} (total distance: 17.764 KM)",
       "pathRoutes": [
         "itc-87",
         "itc-77",
         "itc-76",
-        "itc-105",
-        "itc-106",
-        "rs-pratama",
-        "itc-103",
-        "itc-89",
-        "itc-68",
-        "itc-67",
-        "itc-102",
-        "itc-71",
+        "itc-75",
+        "itc-211",
+        "itc-107",
+        "itc-83",
+        "itc-209",
         "itc-70",
         "itc-69",
         "itc-97",
@@ -27,6 +23,7 @@
         "itc-60",
         "itc-59",
         "itc-91",
+        "itc-198",
         "itc-32",
         "itc-42",
         "itc-37",
@@ -34,7 +31,7 @@
         "itc-20",
         "rs-jih"
       ],
-      "averageTime": "0.20 miliseconds (199,444 nanoseconds)"
+      "averageTime": "0.29 miliseconds (292,364 nanoseconds)"
     },
     {
       "algorithm": "greedy",
@@ -44,27 +41,34 @@
         "itc-86",
         "itc-79",
         "itc-109",
+        "itc-213",
         "itc-110",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.02 miliseconds (23,954 nanoseconds)"
+      "averageTime": "0.01 miliseconds (14,555 nanoseconds)"
     },
     {
       "algorithm": "bfs",
-      "status": "success: goal vertex found {rs-jih} (total distance: 19.306 KM)",
+      "status": "success: goal vertex found {rs-jih} (total distance: 23.088 KM)",
       "pathRoutes": [
         "itc-87",
         "itc-77",
-        "itc-76",
+        "itc-150",
+        "itc-74",
         "itc-105",
         "itc-106",
         "rs-pratama",
         "itc-103",
         "itc-89",
         "itc-68",
-        "itc-67",
-        "itc-102",
+        "rs-bhakti-ibu",
+        "itc-206",
+        "itc-207",
+        "itc-208",
+        "itc-71",
+        "rs-hidayatullah",
         "itc-101",
+        "itc-205",
         "itc-72",
         "itc-66",
         "itc-65",
@@ -73,35 +77,35 @@
         "itc-69",
         "itc-97",
         "itc-98",
-        "itc-100",
-        "itc-60",
-        "itc-59",
-        "itc-91",
+        "itc-99",
+        "itc-51",
+        "itc-56",
+        "itc-43",
         "itc-32",
         "itc-42",
         "itc-37",
         "itc-57",
+        "itc-134",
+        "itc-136",
+        "itc-132",
+        "itc-22",
         "itc-20",
         "rs-jih"
       ],
-      "averageTime": "0.25 miliseconds (248,720 nanoseconds)"
+      "averageTime": "0.40 miliseconds (402,112 nanoseconds)"
     },
     {
       "algorithm": "astar",
-      "status": "success: goal vertex found {rs-jih} (total distance: 17.68 KM)",
+      "status": "success: goal vertex found {rs-jih} (total distance: 17.764 KM)",
       "pathRoutes": [
         "itc-87",
         "itc-77",
         "itc-76",
-        "itc-105",
-        "itc-106",
-        "rs-pratama",
-        "itc-103",
-        "itc-89",
-        "itc-68",
-        "itc-67",
-        "itc-102",
-        "itc-71",
+        "itc-75",
+        "itc-211",
+        "itc-107",
+        "itc-83",
+        "itc-209",
         "itc-70",
         "itc-69",
         "itc-97",
@@ -110,6 +114,7 @@
         "itc-60",
         "itc-59",
         "itc-91",
+        "itc-198",
         "itc-32",
         "itc-42",
         "itc-37",
@@ -117,7 +122,7 @@
         "itc-20",
         "rs-jih"
       ],
-      "averageTime": "0.14 miliseconds (142,743 nanoseconds)"
+      "averageTime": "0.16 miliseconds (158,071 nanoseconds)"
     }
   ]
 }

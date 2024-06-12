@@ -203,7 +203,7 @@ const PERSIMPANGAN = [
     {id: 'itc-203', vertexType: 'intersection', latitude: -7.79619974180538, longitude: 110.37268102169038, label: 'Jalan Hayam Wuruk', neighborIds: ['rs-lempuyangwangi', 'itc-108']},
     {id: 'itc-204', vertexType: 'intersection', latitude: -7.776191640099252, longitude: 110.37816077470781, label: 'Jalan Colombo', neighborIds: ['itc-111', 'itc-44']},
     {id: 'itc-205', vertexType: 'intersection', latitude: -7.815428959433617, longitude: 110.38827002048494, label: 'Kalan Veteran', neighborIds: ['rs-hidayatullah', 'itc-101', 'itc-72']},
-    {id: 'itc-206', vertexType: 'intersection', latitude: -7.8129487654007646, longitude: 110.38153767585756, label: 'Jalan Golo', neighborIds: ['rs-bhakti-bu', 'itc-207']},
+    {id: 'itc-206', vertexType: 'intersection', latitude: -7.8129487654007646, longitude: 110.38153767585756, label: 'Jalan Golo', neighborIds: ['rs-bhakti-ibu', 'itc-207']},
     {id: 'itc-207', vertexType: 'intersection', latitude: -7.8122397006027215, longitude: 110.38283050060274, label: 'Jalan Tohpati', neighborIds: ['itc-206', 'itc-67', 'itc-208']},
     {id: 'itc-208', vertexType: 'intersection', latitude: -7.810625120806628, longitude: 110.38244962692262, label: 'Jalan Batikan', neighborIds: ['itc-207', 'itc-71']},
     {id: 'itc-209', vertexType: 'intersection', latitude: -7.80180903500198, longitude: 110.38049697875978, label: 'Jalan Kusumanegara', neighborIds: ['itc-208', 'itc-70', 'itc-83']},
