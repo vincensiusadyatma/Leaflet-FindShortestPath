@@ -192,46 +192,58 @@ class Graph {
         let visited = new Set();
         let pathRoutes = [];
         let status = 'failed';
-
+    
         // Initialize the queue with the start vertex
         queue.enqueue({ vertex: startVertex, cost: 0 });
         pathRoutes.push({ vertex: startVertex, cost: 0 });
-
+    
         // While the queue is not empty
-        let iterations = 0;
+        // let iterations = 0;
         while (!queue.isEmpty()) {
-            ++iterations;
-
+            // ++iterations;
+    
             const { vertex: currVertex, cost } = queue.dequeue();
             // console.log(`Iteration: ${iterations} (${currVertex.getId()}: ${currVertex.getVertexType()})`);
-
+    
             // Mark current vertex as visited
             visited.add(currVertex.getId());
-
-            // Check  goal conditions
+    
+            // Check goal conditions
             if (goalVertex !== null && currVertex.getId() === goalVertex.getId()) {
                 // Specific goal vertex found
                 status = `success: goal vertex found {${currVertex.getId()}}`;
                 break;
             } else if (goalVertex === null && currVertex.getVertexType() === 'hospital') {
                 // Hospital vertex found
-                    status = `success: nearest hospital found {${currVertex.getId()}}`;
+                status = `success: nearest hospital found {${currVertex.getId()}}`;
                 break;
             }
-
-            // Get neighbors and add them to queue with their costs
-            let neighborHood = this.nearestNeighborsOf(currVertex);
-            neighborHood = neighborHood.sort((v1, v2) => v1.cost < v2.cost ? -1 : 1).filter(neighbor => !visited.has(neighbor.vertex.getId()));
-            if (neighborHood.length === 0) {
+    
+            // Find the neighbor with the smallest cost that hasn't been visited
+            let minCost = Infinity;
+            let nextNeighbor = null;
+            let neighbors = this.nearestNeighborsOf(currVertex);
+    
+            for (let neighbor of neighbors) {
+                if (!visited.has(neighbor.vertex.getId()) && neighbor.cost < minCost) {
+                    minCost = neighbor.cost;
+                    nextNeighbor = neighbor;
+                }
+            }
+    
+            if (nextNeighbor !== null) {
+                queue.enqueue({ vertex: nextNeighbor.vertex, cost: nextNeighbor.cost });
+                pathRoutes.push({ vertex: nextNeighbor.vertex, cost: nextNeighbor.cost });
+            } else {
                 // Reached leaf vertex, jalan buntu
                 status = `failed: leaf vertex reached {${currVertex.getId()}}`;
                 break;
             }
-            queue.enqueue({ vertex: neighborHood[0].vertex, cost: neighborHood[0].cost });
-            pathRoutes.push({ vertex: neighborHood[0].vertex, cost: neighborHood[0].cost });
         }
+    
         return [pathRoutes, status];
     }
+    
 
     /**
      * Backtracking algorithm, this algorithm properly handles leaf nodes by backtracking
@@ -250,10 +262,10 @@ class Graph {
         // Initialize the queue with the start vertex
         priorityQueue.enqueue({ vertex: startVertex, cost: 0, path: [{ vertex: startVertex, cost: 0 }] });
 
+        // let iterations = 0;
         // While the queue is not empty
-        let iterations = 0;
         while (!priorityQueue.isEmpty()) {
-            ++iterations;
+            // ++iterations;
 
             const { vertex: currVertex, cost, path } = priorityQueue.dequeue();
             // console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
@@ -327,10 +339,9 @@ class Graph {
         distances[startVertex.getId()] = 0;
         priorityQueue.enqueue({ vertex: startVertex, cost: 0 });
 
-        let iterations = 0;
-        const maxIterations = vertices.size ** 2;
+        // let iterations = 0; const maxIterations = vertices.size ** 2;
         while (!priorityQueue.isEmpty()) {
-            ++iterations;
+            // ++iterations;
 
             const { vertex: currVertex, cost } = priorityQueue.dequeue();
             // console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
@@ -418,9 +429,9 @@ class Graph {
         distances[startVertex.getId()] = 0;
         priorityQueue.enqueue({ vertex: startVertex, cost: 0 });
 
-        let iterations = 0;
+        // let iterations = 0;
         while (!priorityQueue.isEmpty()) {
-            ++iterations;
+            // ++iterations;
 
             const { vertex: currVertex } = priorityQueue.dequeue();
             // console.log(`Iteration: ${iterations} (${currVertex.getId()})`);
