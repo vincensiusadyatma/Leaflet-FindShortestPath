@@ -128,10 +128,10 @@
                 <div class="pilih-algoritma">
                     <label for="algorithmSelect">Select Algorithm:</label>
                     <select id="algorithmSelect">
-                        <option value="greedy">Greedy</option>
+                        <option value="greedy">Simple Greedy</option>
+                        <option value="bfs">Greedy BFS</option>
                         <option value="dijkstra">Dijkstra</option>
                         <option value="astar">A*</option>
-                        <option value="bfs">BFS</option>
                     </select>
                 </div>
             </div>
