@@ -465,7 +465,7 @@ useAllAlgorithmButton.addEventListener("click", async function () {
         routePathResult = result.getRouteIds()
         status = result.getStatus();
         distance = result.getTotalDistance();
-        makeRouteLine(routePathResult, "cyan", 8, 1);
+        makeRouteLine(routePathResult, "blue", 8, 1);
 
         await delay(1000);
 
