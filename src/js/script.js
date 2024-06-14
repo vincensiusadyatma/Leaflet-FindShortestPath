@@ -14,6 +14,7 @@ const crashAudio = document.getElementById('crashAudio');
 const clickSound = document.getElementById("click-sound");
 const clickSoundAccident = document.getElementById("click-sound-crash");
 const clickAmbulanceSound = document.getElementById('ambulanceAudio');
+const animatePathCheckbox = document.getElementById("animatePath");
 const findHospitalButton = document.getElementById("findHospitalButton");
 const graphButton = document.getElementById("showGraphButton");
 const resetButton = document.getElementById("resetButton");
@@ -503,7 +504,7 @@ useAllAlgorithmButton.addEventListener("click", async function () {
 });
 
 //MAKE ROUTE LINE FUNCTION
-function makeRouteLine(result, color, weight = 8, opacity = 1, dashArray = "0", dashOffset = "0") {
+async function makeRouteLine(result, color, weight = 8, opacity = 1, dashArray = "0", dashOffset = "0") {
     let routePath = [];
 
     // Create an object array for the route path
@@ -525,6 +526,11 @@ function makeRouteLine(result, color, weight = 8, opacity = 1, dashArray = "0", 
                 [currentNode.latitude, currentNode.longitude],
                 [nextNode.latitude, nextNode.longitude],
             ];
+
+            if (animatePathCheckbox.checked) {
+                await delay(200);
+            }
+
             const line = L.polyline(latlngs, { 
                 color: color, 
                 weight: weight, 

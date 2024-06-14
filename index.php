@@ -142,14 +142,17 @@
                 </tr>
             </table>
             <input type="button" value="Reset" style="background: red;" id="resetButton" />
-            <div style="">
+            <div>
                 <input type="checkbox" id="crashAudio">
                 <label for="crashAudio">Crash audio</label>
             </div>
-
-            <div style="">
+            <div>
                 <input type="checkbox" id="ambulanceAudio">
                 <label for="ambulanceAudio">Ambulance audio</label>
+            </div>
+            <div>
+                <input type="checkbox" id="animatePath" checked>
+                <label for="animatePath">Animate Path</label>
             </div>
             <input type="button" value="Copy Latitude & Longitude" id="copyLatLongButton" />
             <input type="button" value="Toggle Graph" id="showGraphButton" />
