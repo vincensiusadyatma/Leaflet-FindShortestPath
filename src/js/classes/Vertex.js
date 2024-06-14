@@ -93,7 +93,7 @@ class Vertex {
     distanceFrom(vertex) {
         console.log(vertex == null ? 'null' : '(exists)');
         if (!(vertex instanceof Vertex)) {
-            throw new TypeError("The vertex must be an instance of Vertex class.");
+            throw new Error("The vertex must be an instance of Vertex class.");
         }
         return Math.sqrt(Math.pow(this.#lat - vertex.getLat(), 2) + Math.pow(this.#lon - vertex.getLon(), 2));
     }
@@ -109,7 +109,7 @@ class Vertex {
     // Calculate the Manhattan distance to another vertex
     manhattanDistanceFrom(vertex) {
         if (!(vertex instanceof Vertex)) {
-            throw new TypeError("The vertex must be an instance of Vertex class.");
+            throw new Error("The vertex must be an instance of Vertex class.");
         }
         return Math.abs(this.#lat - vertex.getLat()) + Math.abs(this.#lon - vertex.getLon());
     }
@@ -125,7 +125,7 @@ class Vertex {
     // Haversine formula to calculate the distance between two points on the Earth
     haversineDistanceFrom(vertex) {
         if (!(vertex instanceof Vertex)) {
-            throw new TypeError("The vertex must be an instance of Vertex class.");
+            throw new Error("The vertex must be an instance of Vertex class.");
         }
         const R = 6378.137; // Radius Bumi dalam kilometer
         const distanceLat = Math.radians(vertex.getLat() - this.#lat);
