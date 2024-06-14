@@ -142,12 +142,12 @@
                 </tr>
             </table>
             <input type="button" value="Reset" style="background: red; margin-bottom: 10px;" id="resetButton" />
-            <div style="">
+            <div>
                 <input type="checkbox" id="crashAudio" checked>
                 <label for="crashAudio">Crash audio</label>
             </div>
 
-            <div style="">
+            <div>
                 <input type="checkbox" id="ambulanceAudio" checked>
                 <label for="ambulanceAudio">Ambulance audio</label>
             </div>
