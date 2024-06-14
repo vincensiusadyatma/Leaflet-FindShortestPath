@@ -28,19 +28,23 @@
         "itc-110",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.02 miliseconds (24,090 nanoseconds)"
+      "averageTime": "0.04 miliseconds (36,984 nanoseconds)"
     },
     {
       "algorithm": "bfs",
-      "status": "success: nearest hospital found {rs-pratama} (total distance: 2.012 KM)",
+      "status": "success: nearest hospital found {rs-lempuyangwangi} (total distance: 4.901 KM)",
       "pathRoutes": [
         "itc-80",
-        "itc-75",
-        "itc-73",
-        "itc-103",
-        "rs-pratama"
+        "itc-81",
+        "itc-84",
+        "itc-82",
+        "itc-271",
+        "itc-83",
+        "itc-268",
+        "itc-108",
+        "rs-lempuyangwangi"
       ],
-      "averageTime": "0.05 miliseconds (45,478 nanoseconds)"
+      "averageTime": "0.08 miliseconds (75,087 nanoseconds)"
     },
     {
       "algorithm": "dijkstra",
@@ -52,19 +56,19 @@
         "itc-103",
         "rs-pratama"
       ],
-      "averageTime": "0.06 miliseconds (64,978 nanoseconds)"
+      "averageTime": "0.11 miliseconds (107,100 nanoseconds)"
     },
     {
       "algorithm": "astar",
-      "status": "success: nearest hospital found {rs-tht-dr-pomo} (total distance: 2.153 KM)",
+      "status": "success: nearest hospital found {rs-pratama} (total distance: 2.012 KM)",
       "pathRoutes": [
         "itc-80",
         "itc-75",
-        "itc-211",
-        "itc-107",
-        "rs-tht-dr-pomo"
+        "itc-73",
+        "itc-103",
+        "rs-pratama"
       ],
-      "averageTime": "0.08 miliseconds (75,455 nanoseconds)"
+      "averageTime": "0.14 miliseconds (136,463 nanoseconds)"
     }
   ]
 }

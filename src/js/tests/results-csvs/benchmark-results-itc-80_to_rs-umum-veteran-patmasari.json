@@ -28,15 +28,44 @@
         "itc-110",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.04 miliseconds (40,803 nanoseconds)"
+      "averageTime": "0.09 miliseconds (85,980 nanoseconds)"
     },
     {
       "algorithm": "bfs",
-      "status": "success: goal vertex found {rs-umum-veteran-patmasari} (total distance: 6.454 KM)",
+      "status": "success: goal vertex found {rs-umum-veteran-patmasari} (total distance: 19.84 KM)",
       "pathRoutes": [
         "itc-80",
-        "itc-75",
-        "itc-73",
+        "itc-81",
+        "itc-84",
+        "itc-82",
+        "itc-271",
+        "itc-83",
+        "itc-268",
+        "itc-269",
+        "itc-51",
+        "itc-99",
+        "itc-262",
+        "itc-199",
+        "rs-happy-land",
+        "itc-100",
+        "itc-98",
+        "itc-97",
+        "itc-69",
+        "itc-63",
+        "itc-64",
+        "itc-65",
+        "itc-66",
+        "itc-72",
+        "itc-205",
+        "itc-101",
+        "itc-102",
+        "itc-71",
+        "itc-208",
+        "itc-207",
+        "itc-206",
+        "rs-bhakti-ibu",
+        "itc-68",
+        "itc-89",
         "itc-103",
         "rs-pratama",
         "itc-106",
@@ -48,7 +77,7 @@
         "itc-110",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.29 miliseconds (294,923 nanoseconds)"
+      "averageTime": "0.79 miliseconds (785,793 nanoseconds)"
     },
     {
       "algorithm": "dijkstra",
@@ -60,7 +89,7 @@
         "itc-213",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.08 miliseconds (79,484 nanoseconds)"
+      "averageTime": "0.12 miliseconds (115,489 nanoseconds)"
     },
     {
       "algorithm": "astar",
@@ -72,7 +101,7 @@
         "itc-213",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.06 miliseconds (57,344 nanoseconds)"
+      "averageTime": "0.08 miliseconds (77,884 nanoseconds)"
     }
   ]
 }
