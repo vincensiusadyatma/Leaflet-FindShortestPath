@@ -169,7 +169,7 @@
                     </select>
                 </div>
             </div>
-
+            <input type="button" value="Use All Algorithms" id="useAllAlgorithm" />
         </div>
     </div>
 

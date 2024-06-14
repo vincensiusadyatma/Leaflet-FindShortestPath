@@ -25,6 +25,7 @@ const fillGoalButton = document.getElementById("fillGoalButton");
 const selectAlgorithm = document.getElementById("algorithmSelect");
 const notification = document.getElementById("notification");
 const distanceText = document.getElementById("distance")
+const useAllAlgorithmButton = document.getElementById("useAllAlgorithm");
 
 // create marker icons
 var hospitalIcon = L.icon({
@@ -249,7 +250,7 @@ graphButton.addEventListener("click", function () {
                         [hospital.latitude, hospital.longitude],
                         [neighbor.latitude, neighbor.longitude],
                     ];
-                    const line = L.polyline(latlngs, { color: "red", weight: 4, opacity: 0.75, type: "graph" }).addTo(
+                    const line = L.polyline(latlngs, { color: "purple", weight: 2, opacity: 0.75, type: "graph" }).addTo(
                         map
                     );
                     drawnLines.push(line);
@@ -264,7 +265,7 @@ graphButton.addEventListener("click", function () {
                         [intersection.latitude, intersection.longitude],
                         [neighbor.latitude, neighbor.longitude],
                     ];
-                    const line = L.polyline(latlngs, { color: "blue", weight: 4, opacity: 0.75, type: "graph" }).addTo(
+                    const line = L.polyline(latlngs, { color: "black", weight: 4, opacity: 0.75, type: "graph" }).addTo(
                         map
                     );
                     drawnLines.push(line);
@@ -327,10 +328,8 @@ const findNode = (id) => {
 // Variable to store reference to the current route lines
 let currentRouteLines = [];
 
-
-
 findHospitalButton.addEventListener("click", function () {
-    
+
     if (clickAmbulanceSound.checked) {
         clickSound.play();
     }
@@ -419,8 +418,92 @@ findHospitalButton.addEventListener("click", function () {
     }
 });
 
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// USE ALL ALGORITHM BUTTON
+useAllAlgorithmButton.addEventListener("click", async function () {
+    if (clickAmbulanceSound.checked) {
+        clickSound.play();
+    }
+
+    let goalPoint;
+    // Remove existing route lines from map
+    currentRouteLines.forEach((line) => map.removeLayer(line));
+    currentRouteLines = [];
+
+    // Check if a starting point has been selected
+    if (goalPointInput.value !== "Nearest Hospital") {
+        goalPoint = goalPointInput.value
+        lastClickedMarkerId = startPointInput.value;
+    } else {
+        goalPoint = null
+        lastClickedMarkerId = startPointInput.value;
+    }
+
+    if (lastClickedMarkerId !== "" || startPointInput.value !== "") {
+        const fullVertices = PERSIMPANGAN.concat(RUMAH_SAKIT);
+        fullVertices.forEach((vertexData) => {
+            graph.createVertex(
+                vertexData.id,
+                vertexData.vertexType,
+                vertexData.latitude,
+                vertexData.longitude,
+                vertexData.label,
+                vertexData.neighborIds,
+                true
+            );
+        });
+
+        let result = null;
+        let routePathResult = null;
+        let status = null;
+        let distance;
+
+        result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "greedy")
+        routePathResult = result.getRouteIds()
+        status = result.getStatus();
+        distance = result.getTotalDistance();
+        makeRouteLine(routePathResult, "cyan", 8, 1);
+
+        await delay(1000);
+
+        result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "bfs")
+        routePathResult = result.getRouteIds()
+        status = result.getStatus();
+        distance = result.getTotalDistance();
+        makeRouteLine(routePathResult, "orange", 10, 1, "10, 20");
+
+        await delay(1000);
+
+        result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "dijkstra")
+        routePathResult = result.getRouteIds()
+        status = result.getStatus();
+        distance = result.getTotalDistance();
+        makeRouteLine(routePathResult, "green", 4, 1);
+
+        await delay(1000);
+
+        result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "astar")
+        routePathResult = result.getRouteIds()
+        status = result.getStatus();
+        distance = result.getTotalDistance();
+        makeRouteLine(routePathResult, "red", 6, 1, "10, 20", "-20");
+
+        distanceText.textContent = distance.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 3 }) + " KM"
+
+        // Show the notification if the path is successfully formed
+        if (status.startsWith("success")) {
+            showNotification("Successfully formed the route path.", status.split(":")[0]);
+        }
+    } else {
+        alert("Pilih titik awal untuk mencari rute");
+    }
+});
+
 //MAKE ROUTE LINE FUNCTION
-function makeRouteLine(result, color) {
+function makeRouteLine(result, color, weight = 8, opacity = 1, dashArray = "0", dashOffset = "0") {
     let routePath = [];
 
     // Create an object array for the route path
@@ -442,7 +525,13 @@ function makeRouteLine(result, color) {
                 [currentNode.latitude, currentNode.longitude],
                 [nextNode.latitude, nextNode.longitude],
             ];
-            const line = L.polyline(latlngs, { color: color, weight: 8 }).addTo(map);
+            const line = L.polyline(latlngs, { 
+                color: color, 
+                weight: weight, 
+                opacity: opacity, 
+                dashArray: dashArray,
+                dashOffset: dashOffset
+            }).addTo(map);
             currentRouteLines.push(line);
         }
     }
@@ -461,9 +550,9 @@ let previousMarkerIcon = null;
 // ON MAP CLICK EVENT FUNCTION
 map.on("click", function (e) {
     // Play click sound
-    if(crashAudio.checked) {
+    if (crashAudio.checked) {
         console.log(crashAudio.checked);
-        clickSoundAccident.play(); 
+        clickSoundAccident.play();
     }
 
     // Reset the icon of the previous marker if it exists
