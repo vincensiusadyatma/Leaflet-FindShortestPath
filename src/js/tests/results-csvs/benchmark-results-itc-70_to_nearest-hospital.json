@@ -14,7 +14,7 @@
         "itc-100",
         "rs-happy-land"
       ],
-      "averageTime": "0.01 miliseconds (5,720 nanoseconds)"
+      "averageTime": "0.00 miliseconds (4,812 nanoseconds)"
     },
     {
       "algorithm": "bfs",
@@ -27,7 +27,7 @@
         "itc-100",
         "rs-happy-land"
       ],
-      "averageTime": "0.01 miliseconds (8,495 nanoseconds)"
+      "averageTime": "0.01 miliseconds (9,615 nanoseconds)"
     },
     {
       "algorithm": "dijkstra",
@@ -37,7 +37,7 @@
         "itc-71",
         "rs-hidayatullah"
       ],
-      "averageTime": "0.04 miliseconds (36,497 nanoseconds)"
+      "averageTime": "0.04 miliseconds (40,517 nanoseconds)"
     },
     {
       "algorithm": "astar",
@@ -47,7 +47,7 @@
         "itc-71",
         "rs-hidayatullah"
       ],
-      "averageTime": "0.04 miliseconds (41,183 nanoseconds)"
+      "averageTime": "0.03 miliseconds (33,898 nanoseconds)"
     }
   ]
 }

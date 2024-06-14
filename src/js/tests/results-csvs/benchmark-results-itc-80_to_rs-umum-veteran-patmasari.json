@@ -28,7 +28,7 @@
         "itc-110",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.04 miliseconds (42,357 nanoseconds)"
+      "averageTime": "0.04 miliseconds (40,803 nanoseconds)"
     },
     {
       "algorithm": "bfs",
@@ -48,7 +48,7 @@
         "itc-110",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.30 miliseconds (304,304 nanoseconds)"
+      "averageTime": "0.29 miliseconds (294,923 nanoseconds)"
     },
     {
       "algorithm": "dijkstra",
@@ -60,7 +60,7 @@
         "itc-213",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.08 miliseconds (83,182 nanoseconds)"
+      "averageTime": "0.08 miliseconds (79,484 nanoseconds)"
     },
     {
       "algorithm": "astar",
@@ -72,7 +72,7 @@
         "itc-213",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.06 miliseconds (56,704 nanoseconds)"
+      "averageTime": "0.06 miliseconds (57,344 nanoseconds)"
     }
   ]
 }
