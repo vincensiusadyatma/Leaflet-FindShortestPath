@@ -141,14 +141,14 @@
                     <td><input type="text" id="goalPoint" value="Nearest Hospital" disabled /></td>
                 </tr>
             </table>
-            <input type="button" value="Reset" style="background: red; margin-bottom: 10px;" id="resetButton" />
-            <div>
-                <input type="checkbox" id="crashAudio" checked>
+            <input type="button" value="Reset" style="background: red;" id="resetButton" />
+            <div style="">
+                <input type="checkbox" id="crashAudio">
                 <label for="crashAudio">Crash audio</label>
             </div>
 
-            <div>
-                <input type="checkbox" id="ambulanceAudio" checked>
+            <div style="">
+                <input type="checkbox" id="ambulanceAudio">
                 <label for="ambulanceAudio">Ambulance audio</label>
             </div>
             <input type="button" value="Copy Latitude & Longitude" id="copyLatLongButton" />
