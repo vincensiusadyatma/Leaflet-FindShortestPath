@@ -17,6 +17,8 @@ function runBenchmark(startId, goalId, nTimes, algorithms = ['dijkstra', 'greedy
         graph.createVertex(vertexData.id, vertexData.vertexType, vertexData.latitude, vertexData.longitude, vertexData.label, vertexData.neighborIds, true);
     });
 
+    graph.checkVerticesValidity();
+
     algorithms.forEach(algorithm => {
         runHistory[algorithm] = [];
         execTimeHistoryNs[algorithm] = [];

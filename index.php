@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="src/css/style.css">
     <title>Greedy Ambulance</title>
     <style>
+        #map {
+            height: 100vh;
+        }
+
         .button-container {
             display: flex;
             justify-content: space-between;
@@ -55,7 +59,6 @@
             padding: 10px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
             z-index: 1000;
         }
 
@@ -80,11 +83,42 @@
             max-width: 140px;
             max-height: 100px;
         }
+
+        .toggle-button {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            z-index: 99999;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .toggle-button:hover {
+            background-color: #555;
+        }
+
+        .card {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .hidden {
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+            overflow: hidden;
+        }
     </style>
 </head>
 
 <body>
     <div id="map"></div>
+
+    <button class="toggle-button" onclick="toggleCard()">Hide and Show</button>
 
     <div class="card">
         <h1>Greedy Ambulance</h1>
@@ -128,10 +162,10 @@
                 <div class="pilih-algoritma">
                     <label for="algorithmSelect">Select Algorithm:</label>
                     <select id="algorithmSelect">
-                        <option value="greedy">Greedy</option>
+                        <option value="greedy">Simple Greedy</option>
+                        <option value="bfs">Greedy BFS</option>
                         <option value="dijkstra">Dijkstra</option>
                         <option value="astar">A*</option>
-                        <option value="bfs">BFS</option>
                     </select>
                 </div>
             </div>
@@ -151,6 +185,11 @@
 
     <script type="module" src="src/js/script.js"></script>
 
+    <script>
+        function toggleCard() {
+            document.querySelector(".card").classList.toggle("hidden");
+        }
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,78 @@
+{
+  "startId": "itc-80",
+  "goalId": "rs-umum-veteran-patmasari",
+  "iterations": 250,
+  "averageTime": [
+    {
+      "algorithm": "greedy",
+      "status": "success: goal vertex found {rs-umum-veteran-patmasari} (total distance: 11.846 KM)",
+      "pathRoutes": [
+        "itc-80",
+        "itc-81",
+        "itc-163",
+        "itc-162",
+        "itc-161",
+        "itc-160",
+        "itc-159",
+        "itc-158",
+        "itc-157",
+        "itc-156",
+        "itc-155",
+        "itc-154",
+        "itc-153",
+        "itc-152",
+        "itc-85",
+        "itc-79",
+        "itc-109",
+        "itc-213",
+        "itc-110",
+        "rs-umum-veteran-patmasari"
+      ],
+      "averageTime": "0.04 miliseconds (42,357 nanoseconds)"
+    },
+    {
+      "algorithm": "bfs",
+      "status": "success: goal vertex found {rs-umum-veteran-patmasari} (total distance: 6.454 KM)",
+      "pathRoutes": [
+        "itc-80",
+        "itc-75",
+        "itc-73",
+        "itc-103",
+        "rs-pratama",
+        "itc-106",
+        "itc-105",
+        "itc-74",
+        "itc-150",
+        "itc-77",
+        "itc-78",
+        "itc-110",
+        "rs-umum-veteran-patmasari"
+      ],
+      "averageTime": "0.30 miliseconds (304,304 nanoseconds)"
+    },
+    {
+      "algorithm": "dijkstra",
+      "status": "success: goal vertex found {rs-umum-veteran-patmasari} (total distance: 2.661 KM)",
+      "pathRoutes": [
+        "itc-80",
+        "itc-79",
+        "itc-109",
+        "itc-213",
+        "rs-umum-veteran-patmasari"
+      ],
+      "averageTime": "0.08 miliseconds (83,182 nanoseconds)"
+    },
+    {
+      "algorithm": "astar",
+      "status": "success: goal vertex found {rs-umum-veteran-patmasari} (total distance: 2.661 KM)",
+      "pathRoutes": [
+        "itc-80",
+        "itc-79",
+        "itc-109",
+        "itc-213",
+        "rs-umum-veteran-patmasari"
+      ],
+      "averageTime": "0.06 miliseconds (56,704 nanoseconds)"
+    }
+  ]
+}
