@@ -400,7 +400,7 @@ class Graph {
         if (goalVertex === null) {
             return radius;
         }
-        return vertex.haversineDistanceFrom(goalVertex);
+        return vertex.haversineDistanceFrom(goalVertex) * 0.9;
     }
 
     /**
@@ -470,7 +470,7 @@ class Graph {
 
             // Increase the radius if goal vertex is null to expand the search
             if (goalVertex === null) {
-                searchRadius += 2;
+                searchRadius += 1; // KM
             }
         }
 
