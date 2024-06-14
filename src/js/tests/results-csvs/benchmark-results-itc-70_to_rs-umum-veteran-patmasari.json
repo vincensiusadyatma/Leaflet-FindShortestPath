@@ -4,32 +4,8 @@
   "iterations": 250,
   "averageTime": [
     {
-      "algorithm": "dijkstra",
-      "status": "success: goal vertex found {rs-umum-veteran-patmasari} (total distance: 7.272 KM)",
-      "pathRoutes": [
-        "itc-70",
-        "itc-71",
-        "itc-208",
-        "itc-207",
-        "itc-206",
-        "rs-bhakti-ibu",
-        "itc-68",
-        "itc-89",
-        "itc-103",
-        "rs-pratama",
-        "itc-106",
-        "itc-105",
-        "itc-76",
-        "itc-77",
-        "itc-78",
-        "itc-110",
-        "rs-umum-veteran-patmasari"
-      ],
-      "averageTime": "0.22 miliseconds (219,153 nanoseconds)"
-    },
-    {
       "algorithm": "greedy",
-      "status": "failed: leaf vertex reached {rs-panti-rapih} (total distance: 6.089 KM)",
+      "status": "failed: leaf vertex reached {rs-panti-rapih} (total distance: 6.094 KM)",
       "pathRoutes": [
         "itc-70",
         "itc-69",
@@ -50,11 +26,11 @@
         "itc-111",
         "rs-panti-rapih"
       ],
-      "averageTime": "0.04 miliseconds (39,815 nanoseconds)"
+      "averageTime": "0.03 miliseconds (30,354 nanoseconds)"
     },
     {
       "algorithm": "bfs",
-      "status": "success: goal vertex found {rs-umum-veteran-patmasari} (total distance: 11.544 KM)",
+      "status": "success: goal vertex found {rs-umum-veteran-patmasari} (total distance: 11.554 KM)",
       "pathRoutes": [
         "itc-70",
         "itc-69",
@@ -84,11 +60,11 @@
         "itc-110",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.27 miliseconds (267,468 nanoseconds)"
+      "averageTime": "0.22 miliseconds (215,771 nanoseconds)"
     },
     {
-      "algorithm": "astar",
-      "status": "success: goal vertex found {rs-umum-veteran-patmasari} (total distance: 7.272 KM)",
+      "algorithm": "dijkstra",
+      "status": "success: goal vertex found {rs-umum-veteran-patmasari} (total distance: 7.278 KM)",
       "pathRoutes": [
         "itc-70",
         "itc-71",
@@ -108,7 +84,31 @@
         "itc-110",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.09 miliseconds (91,484 nanoseconds)"
+      "averageTime": "0.15 miliseconds (151,210 nanoseconds)"
+    },
+    {
+      "algorithm": "astar",
+      "status": "success: goal vertex found {rs-umum-veteran-patmasari} (total distance: 7.278 KM)",
+      "pathRoutes": [
+        "itc-70",
+        "itc-71",
+        "itc-208",
+        "itc-207",
+        "itc-206",
+        "rs-bhakti-ibu",
+        "itc-68",
+        "itc-89",
+        "itc-103",
+        "rs-pratama",
+        "itc-106",
+        "itc-105",
+        "itc-76",
+        "itc-77",
+        "itc-78",
+        "itc-110",
+        "rs-umum-veteran-patmasari"
+      ],
+      "averageTime": "0.08 miliseconds (75,766 nanoseconds)"
     }
   ]
 }

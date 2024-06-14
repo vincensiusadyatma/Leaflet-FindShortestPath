@@ -6,7 +6,7 @@ let parameters = {
     startId: 'itc-80',
     goalId: 'rs-umum-veteran-patmasari',
     nTimes: nTimes,
-    algorithms: ['dijkstra', 'greedy', 'bfs', 'astar']
+    algorithms: ['greedy', 'bfs', 'dijkstra', 'astar']
 };
 
 benchmark(parameters.startId, parameters.goalId, parameters.nTimes, parameters.algorithms);
@@ -15,7 +15,7 @@ parameters = {
     startId: 'itc-80',
     goalId: null,
     nTimes: nTimes,
-    algorithms: ['dijkstra', 'greedy', 'bfs', 'astar']
+    algorithms: ['greedy', 'bfs', 'dijkstra', 'astar']
 };
 
 benchmark(parameters.startId, parameters.goalId, parameters.nTimes, parameters.algorithms);
@@ -26,7 +26,7 @@ parameters = {
     startId: 'itc-70',
     goalId: 'rs-umum-veteran-patmasari',
     nTimes: nTimes,
-    algorithms: ['dijkstra', 'greedy', 'bfs', 'astar']
+    algorithms: ['greedy', 'bfs', 'dijkstra', 'astar']
 };
 
 benchmark(parameters.startId, parameters.goalId, parameters.nTimes, parameters.algorithms);
@@ -35,7 +35,7 @@ parameters = {
     startId: 'itc-70',
     goalId: null,
     nTimes: nTimes,
-    algorithms: ['dijkstra', 'greedy', 'bfs', 'astar']
+    algorithms: ['greedy', 'bfs', 'dijkstra', 'astar']
 };
 
 benchmark(parameters.startId, parameters.goalId, parameters.nTimes, parameters.algorithms);

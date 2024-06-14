@@ -4,20 +4,8 @@
   "iterations": 250,
   "averageTime": [
     {
-      "algorithm": "dijkstra",
-      "status": "success: nearest hospital found {rs-pratama} (total distance: 2.011 KM)",
-      "pathRoutes": [
-        "itc-80",
-        "itc-75",
-        "itc-73",
-        "itc-103",
-        "rs-pratama"
-      ],
-      "averageTime": "0.12 miliseconds (119,616 nanoseconds)"
-    },
-    {
       "algorithm": "greedy",
-      "status": "success: nearest hospital found {rs-umum-veteran-patmasari} (total distance: 11.836 KM)",
+      "status": "success: nearest hospital found {rs-umum-veteran-patmasari} (total distance: 11.846 KM)",
       "pathRoutes": [
         "itc-80",
         "itc-81",
@@ -40,11 +28,11 @@
         "itc-110",
         "rs-umum-veteran-patmasari"
       ],
-      "averageTime": "0.06 miliseconds (60,574 nanoseconds)"
+      "averageTime": "0.03 miliseconds (33,168 nanoseconds)"
     },
     {
       "algorithm": "bfs",
-      "status": "success: nearest hospital found {rs-pratama} (total distance: 2.011 KM)",
+      "status": "success: nearest hospital found {rs-pratama} (total distance: 2.012 KM)",
       "pathRoutes": [
         "itc-80",
         "itc-75",
@@ -52,11 +40,23 @@
         "itc-103",
         "rs-pratama"
       ],
-      "averageTime": "0.07 miliseconds (72,533 nanoseconds)"
+      "averageTime": "0.05 miliseconds (46,733 nanoseconds)"
+    },
+    {
+      "algorithm": "dijkstra",
+      "status": "success: nearest hospital found {rs-pratama} (total distance: 2.012 KM)",
+      "pathRoutes": [
+        "itc-80",
+        "itc-75",
+        "itc-73",
+        "itc-103",
+        "rs-pratama"
+      ],
+      "averageTime": "0.07 miliseconds (68,018 nanoseconds)"
     },
     {
       "algorithm": "astar",
-      "status": "success: nearest hospital found {rs-tht-dr-pomo} (total distance: 2.151 KM)",
+      "status": "success: nearest hospital found {rs-tht-dr-pomo} (total distance: 2.153 KM)",
       "pathRoutes": [
         "itc-80",
         "itc-75",
@@ -64,7 +64,7 @@
         "itc-107",
         "rs-tht-dr-pomo"
       ],
-      "averageTime": "0.13 miliseconds (128,633 nanoseconds)"
+      "averageTime": "0.08 miliseconds (79,651 nanoseconds)"
     }
   ]
 }

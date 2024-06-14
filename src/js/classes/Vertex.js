@@ -127,7 +127,7 @@ class Vertex {
         if (!(vertex instanceof Vertex)) {
             throw new TypeError("The vertex must be an instance of Vertex class.");
         }
-        const R = 6372.8; // Radius Bumi in km
+        const R = 6378.137; // Radius Bumi dalam kilometer
         const distanceLat = Math.radians(vertex.getLat() - this.#lat);
         const distanceLon = Math.radians(vertex.getLon() - this.#lon);
         const sourceLat = Math.radians(this.#lat);
