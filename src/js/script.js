@@ -17,6 +17,7 @@ const clickAmbulanceSound = document.getElementById('ambulanceAudio');
 const animatePathCheckbox = document.getElementById("animatePath");
 const findHospitalButton = document.getElementById("findHospitalButton");
 const graphButton = document.getElementById("showGraphButton");
+const symbolsButton = document.getElementById("showSymbolsButton");
 const resetButton = document.getElementById("resetButton");
 const copyLatLongButton = document.getElementById("copyLatLongButton");
 const startPointInput = document.getElementById("startPoint");
@@ -68,56 +69,54 @@ var defaultIcon = L.icon({
 
 // ====CREATE HOSPITAL MARKER===
 
-// take hospital json data
-const hospital_data = RUMAH_SAKIT;
-
-// create hospital array of of object
+const HOSPITALS = RUMAH_SAKIT;
+const INTERSECTIONS = PERSIMPANGAN;
 var hospital_markers = [];
+var intersection_markers = [];
+var allMarkers = [];
 
-// Initialize the hospital markers
-hospital_data.forEach(function (hospital) {
-    const marker = L.marker([hospital.latitude, hospital.longitude], {
-        type: "hospital",
-        icon: hospitalIcon
-    }).bindPopup(hospital.id);
+function initializeMarkers() {
+    // Initialize the hospital markers
+    HOSPITALS.forEach(function (hospital) {
+        const marker = L.marker([hospital.latitude, hospital.longitude], {
+            type: "hospital",
+            icon: hospitalIcon
+        }).bindPopup(hospital.id);
 
-    marker.on("click", function () {
-        handleMarkerClick(marker, hospital.id);
+        marker.on("click", function () {
+            handleMarkerClick(marker, hospital.id);
+        });
+
+        hospital_markers.push(marker);
     });
 
-    hospital_markers.push(marker);
-});
+    // Initialize the intersection markers
+    INTERSECTIONS.forEach(function (intersection) {
+        const marker = L.marker([intersection.latitude, intersection.longitude], {
+            type: "intersection",
+            icon: intersectionIcon,
+            id: intersection.id
+        }).bindPopup(intersection.id);
 
-//  ===CREATE INTERSECTION MARKER===
+        marker.on("click", function () {
+            handleMarkerClick(marker, intersection.id);
+        });
 
-// take intersection json data
-var intersections_data = PERSIMPANGAN;
+        intersection_markers.push(marker);
+    });
 
+    allMarkers = hospital_markers.concat(intersection_markers);
+}
+initializeMarkers();
+
+// Initialize the last clicked marker and ID
 let lastClickedMarker = null;
 let lastClickedMarkerId = null;
-
-// make intersection marker
-var intersection_markers = [];
-// Update the click event listener for the intersection markers
-// Initialize the intersection markers
-intersections_data.forEach(function (intersection) {
-    const marker = L.marker([intersection.latitude, intersection.longitude], {
-        type: "intersection",
-        icon: intersectionIcon,
-        id: intersection.id
-    }).bindPopup(intersection.id);
-
-    marker.on("click", function () {
-        handleMarkerClick(marker, intersection.id);
-    });
-
-    intersection_markers.push(marker);
-});
 
 // INITIALIZE VERTEX CLASS
 // make hospital data to vertex class
 const hospital_vertices = [];
-for (const data of hospital_data) {
+for (const data of HOSPITALS) {
     const vertex = new Vertex(
         true,
         data.latitude,
@@ -130,7 +129,7 @@ for (const data of hospital_data) {
 
 // make hospital data to intersection class
 const intersection_vertices = [];
-for (const data of intersections_data) {
+for (const data of INTERSECTIONS) {
     const vertex = new Vertex(
         false,
         data.latitude,
@@ -243,9 +242,9 @@ graphButton.addEventListener("click", function () {
         });
     } else {
         // Draw graph lines on map
-        hospital_data.forEach((hospital) => {
+        HOSPITALS.forEach((hospital) => {
             hospital.neighborIds.forEach((neighborId) => {
-                const neighbor = intersections_data.find((i) => i.id === neighborId);
+                const neighbor = INTERSECTIONS.find((i) => i.id === neighborId);
                 if (neighbor) {
                     const latlngs = [
                         [hospital.latitude, hospital.longitude],
@@ -258,9 +257,9 @@ graphButton.addEventListener("click", function () {
                 }
             });
         });
-        intersections_data.forEach((intersection) => {
+        INTERSECTIONS.forEach((intersection) => {
             intersection.neighborIds.forEach((neighborId) => {
-                const neighbor = intersections_data.find((i) => i.id === neighborId);
+                const neighbor = INTERSECTIONS.find((i) => i.id === neighborId);
                 if (neighbor) {
                     const latlngs = [
                         [intersection.latitude, intersection.longitude],
@@ -275,6 +274,19 @@ graphButton.addEventListener("click", function () {
         });
     }
     linesDrawn = !linesDrawn;
+});
+
+let symbolsDrawn = true;
+
+symbolsButton.addEventListener("click", function () {
+    if (symbolsDrawn) {
+        console.log("Removing markers");
+        allMarkers.forEach((marker) => map.removeLayer(marker));
+    } else {
+        console.log("Adding markers");
+        allMarkers.forEach((marker) => map.addLayer(marker));
+    }
+    symbolsDrawn = !symbolsDrawn;
 });
 
 // Default is on since the start point is the first to be filled
@@ -531,10 +543,10 @@ async function makeRouteLine(result, color, weight = 8, opacity = 1, dashArray =
                 await delay(200);
             }
 
-            const line = L.polyline(latlngs, { 
-                color: color, 
-                weight: weight, 
-                opacity: opacity, 
+            const line = L.polyline(latlngs, {
+                color: color,
+                weight: weight,
+                opacity: opacity,
                 dashArray: dashArray,
                 dashOffset: dashOffset
             }).addTo(map);
