@@ -32,6 +32,8 @@ If no goal point was specified, the website passes `null` to the algorithm and f
   ![image](assets/algorithm-selection.png)
 - **Showing the shortest path**<br>
   ![image](assets/shortest-path.png)
+- **Using All Algorithms**<br>
+  ![image](assets/all-algo-path.png)
 
 ## Installing
 
