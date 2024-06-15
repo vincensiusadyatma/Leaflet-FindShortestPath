@@ -376,21 +376,21 @@ findHospitalButton.addEventListener("click", function () {
                 routePathResult = result.getRouteIds()
                 status = result.getStatus();
                 distance = result.getTotalDistance();
-                makeRouteLine(routePathResult, "green");
+                makeRouteLine(routePathResult, "blue");
                 break;
             case "dijkstra":
                 result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "dijkstra")
                 routePathResult = result.getRouteIds()
                 status = result.getStatus();
                 distance = result.getTotalDistance();
-                makeRouteLine(routePathResult, "red");
+                makeRouteLine(routePathResult, "green");
                 break;
             case "astar":
                 result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "astar")
                 routePathResult = result.getRouteIds()
                 status = result.getStatus();
                 distance = result.getTotalDistance();
-                makeRouteLine(routePathResult, "yellow");
+                makeRouteLine(routePathResult, "red");
                 break;
             case "bfs":
                 result = graph.computeShortestRoute(lastClickedMarkerId, goalPoint, "bfs")
