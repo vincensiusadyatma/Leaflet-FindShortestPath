@@ -216,7 +216,7 @@ const PERSIMPANGAN = [
     {id: 'itc-216', vertexType: 'intersection', latitude: -7.786810982522671, longitude: 110.37431180477144, label: 'Jalan Yos Sudarso', neighborIds: ['itc-48', 'itc-214', 'itc-217']}, 
     {id: 'itc-217', vertexType: 'intersection', latitude: -7.788261962185988, longitude: 110.37500917911531, label: 'Jalan Yos Sudarso', neighborIds: ['itc-216', 'itc-52']},
     {id: 'itc-218', vertexType: 'intersection', latitude: -7.784227907390899, longitude: 110.37125945091249, label: 'Jalan Faridan Muridan Noto', neighborIds: ['itc-232', 'itc-219', 'itc-230']}, 
-    {id: 'itc-219', vertexType: 'intersection', latitude: -7.782925724671548, longitude: 110.37143648957438, label: 'Jalan Jenderal Sudirman', neighborIds: ['itc-145', 'itc-218', 'itc-112', 'itc-270']},
+    {id: 'itc-219', vertexType: 'intersection', latitude: -7.782925724671548, longitude: 110.37143648957438, label: 'Jalan Jenderal Sudirman', neighborIds: ['itc-145', 'itc-218', 'itc-112']},
     {id: 'itc-230', vertexType: 'intersection', latitude: -7.78567358103153, longitude: 110.36949992179872, label: 'Jalan Nyoman Oka', neighborIds: ['itc-233', 'itc-235', 'itc-218']}, 
     {id: 'itc-231', vertexType: 'intersection', latitude: -7.788256647251349, longitude: 110.3716027736664, label: 'Jalan Nyoman  Oka', neighborIds: ['itc-236', 'itc-215', 'itc-238']},
     {id: 'itc-232', vertexType: 'intersection', latitude: -7.785216493581325, longitude: 110.37168323993683, label: 'Jalan Faridan Muridan Noto', neighborIds: ['itc-239', 'itc-218']},
