@@ -22,6 +22,12 @@ The graph lines are drawn over Yogyakarta, Indonesia using [Open Street Map](htt
 
 If no goal point was specified, the website passes `null` to the algorithm and finds the nearest hospital vertex.
 
+### Simple Application Demo
+
+![Demo](assets\greedy-ambulance-demo.gif)
+
+### Feature Overview
+
 - **Main page**<br>
   ![image](assets/main-page.png)
 - **Toggling predefined graph**<br>
