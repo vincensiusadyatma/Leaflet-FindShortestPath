@@ -246,8 +246,7 @@ class Graph {
     
 
     /**
-     * Backtracking algorithm, this algorithm properly handles leaf nodes by backtracking
-     * and selecting another path based on cost. This approach is a Best-First-Search (BFS).
+     * This approach is a Best-First-Search (BFS). Utilizing priority queue to prevent leaf vertex.
      * @param startVertex Starting vertex
      * @param goalVertex Goal vertex, can be null
      * @returns an array containing the pathRoutes and status
