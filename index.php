@@ -86,8 +86,8 @@
 
         .toggle-button {
             position: fixed;
-            bottom: 10px;
-            left: 10px;
+            top: 10px;
+            right: 10px;
             z-index: 99999;
             background-color: #333;
             color: white;
