@@ -19,7 +19,6 @@
         .button-container {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 10px;
         }
 
         .button-container input {
@@ -157,7 +156,10 @@
                 <label for="animatePath">Animate Path</label>
             </div>
             <input type="button" value="Copy Latitude & Longitude" id="copyLatLongButton" />
-            <input type="button" value="Toggle Graph" id="showGraphButton" />
+            <div class="button-container">
+                <input type="button" value="Toggle Graph" id="showGraphButton" />
+                <input type="button" value="Toggle Symbols" id="showSymbolsButton" />
+            </div>
             <div class="button-container">
                 <input type="button" value="Fill Start" id="fillStartButton" />
                 <input type="button" value="Fill Goal" id="fillGoalButton" />
