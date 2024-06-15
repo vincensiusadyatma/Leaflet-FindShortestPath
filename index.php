@@ -53,7 +53,8 @@
         .notification {
             position: fixed;
             top: 10px;
-            right: 10px;
+            left: 50%;
+            transform: translateX(-50%);
             background-color: #00c200;
             color: white;
             padding: 10px;
@@ -69,6 +70,7 @@
         .notification.show {
             display: block;
         }
+
 
         .distance-card {
             position: fixed;
