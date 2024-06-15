@@ -24,7 +24,7 @@ If no goal point was specified, the website passes `null` to the algorithm and f
 
 ### Simple Application Demo
 
-![Demo](assets/greedy-ambulance-demo.gif)
+<img alt="Demo" src="assets/greedy-ambulance-demo.gif" style="width:100%">
 
 ### Feature Overview
 
