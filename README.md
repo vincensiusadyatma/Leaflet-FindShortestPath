@@ -41,6 +41,10 @@ If no goal point was specified, the website passes `null` to the algorithm and f
 - **Using All Algorithms**<br>
   ![image](assets/all-algo-path.png)
 
+## Benchmark Results
+
+can be seen on [src/js/tests/reading-results.ipynb](https://github.com/vianneynara/Leaflet-FindShortestPath/blob/main/src/js/tests/reading-results.ipynb)
+
 ## Installing
 
 1. Clone the repository in htdocs (using XAMPP apache localserver)
